@@ -1,7 +1,7 @@
-import countfiles as cf
+import procman as pm
 from items import *
-from test import *
-
+from itemlinkedlist import *
+from config import _IMAGES_PATH
 
 import os
 import random 
@@ -21,40 +21,37 @@ from copy import deepcopy
 _ADD_RATIO = 85
 _IMAGES = os.listdir(_IMAGES_PATH)
 
-def copyImage(imgmap, base, cpy):
-    base, ext = imgmap[base.itemnum]
-    copyfile(os.path.join(cf._IMAGES_PATH, base+ext), \
+def copyImage(base, cpy):
+    base, ext = base.imagename
+    copyfile(os.path.join(_IMAGES_PATH, base.imagename), \
              os.path.join(_SAVE_PATH, str(cpy.itemnum)+ext))
-    
-    
-
 
 if __name__ == '__main__':
 
     # Generate Set of all items and place in linkedlist
     itemlist = ItemLinkedList()
-    gs = list(cf.generateSet(True))
+    gs = pm.getItemList()
     random.shuffle(gs)
-    imgmap = {}
 
+    # Add all images to the linked list
     for item in gs:
         itemlist.add(item)
-        if item.found:
-            for img in _IMAGES:
-                base, ext = os.path.splitext(os.path.basename(img))
-                if int(base) == item.itemnum:
-                    imgmap[item.itemnum] = (base, ext)
 
     # List of item Groupings
     grouplist = list()
     removal = 0
     l = len(itemlist)
+    # Loop through itemlist until all images have either been found or grouped.
     while len(itemlist) > 0:
         cmpitem = itemlist.pop().value
         ival = itemlist.head
         similarlist = [cmpitem]
         print(cmpitem)
 
+        # Compare item with all other items
+        # if the qratio of the descriptions is >= _ADD_RATIO (85%) 
+        # we remove that item and add it to the similar group of the
+        # item we are looking at
         while ival != None:
             item = ival.value
             qr = fuzz.QRatio(cmpitem.description, item.description)
@@ -77,6 +74,6 @@ if __name__ == '__main__':
         if similarlist[0].found:
             for item in similarlist:
                 if not item.found:
-                    copyImage(imgmap, similarlist[0], item)
+                    copyImage(similarlist[0], item)
                     removal += 1
     print(removal)

@@ -4,7 +4,7 @@ import pyperclip as pc
 from config import *
 from random import shuffle
 
-import countfiles as cf
+import procman as pm
 
 class ItemListIterator:
     def __init__(self, itemlist):
@@ -28,7 +28,7 @@ def btn_next_fn(itemiter, tbox_text):
     
 
 if __name__ == '__main__':
-    itemlist = list(cf.generateSet())
+    itemlist = list(pm.getMissing())
     shuffle(itemlist)
     itemiter = ItemListIterator(itemlist)
 

@@ -41,7 +41,6 @@ def getFound():
 
 def getMissing():
     return applyFilter(lambda item: not item.found)
-        
 
 if __name__ == '__main__':
     try:
