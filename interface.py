@@ -1,6 +1,7 @@
 from tkinter import *
 import pyperclip as pc
 
+from config import *
 from random import shuffle
 
 import countfiles as cf

@@ -23,7 +23,6 @@ def toJSON(req):
     return json.loads(req.content)
 
 
-
 if __name__ == '__main__':
     retv = imageSearch(TEST_QUERY)
     print retv.content

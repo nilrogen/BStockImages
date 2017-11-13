@@ -18,9 +18,8 @@ from copy import deepcopy
 "           create image for all unfound items in group
 """
 
-_SAVE_PATH = '/home/michael/Desktop/Output/'
 _ADD_RATIO = 85
-_IMAGES = os.listdir(cf._IMAGES_PATH)
+_IMAGES = os.listdir(_IMAGES_PATH)
 
 def copyImage(imgmap, base, cpy):
     base, ext = imgmap[base.itemnum]

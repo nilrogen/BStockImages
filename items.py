@@ -1,26 +1,58 @@
 
 class Item(object):
-    def __init__(self, itemnum, description, found=False):
+    def __init__(self, itemnum, description, found=False, imagename=''):
         self.itemnum = int(itemnum)
         self.description = description
         self.found = found
-
+        self.imagename = imagename
+        
     def __eq__(self, other):
         return hash(self) == hash(other)
 
     def __hash__(self):
         return hash(self.itemnum)
 
+    def __lt__(self, other):
+        return self.itemnum < other.itemnum
+    def __le__(self, other):
+        return self.itemnum <= other.itemnum
+    def __gt__(self, other):
+        return self.itemnum > other.itemnum
+    def __ge__(self, other):
+        return self.itemnum >= other.itemnum
+    def __eq__(self, other):
+        return sefl.itemnum == other.itemnum
+
     def __cmp__(self, other):
         return self.itemnum - other.itemnum
 
     def __str__(self):
-        return "{}, {}, {}\n".format(self.itemnum, self.description, self.found)
+        return "{} {} {}".format(self.itemnum, self.description, self.found)
     def __repr__(self):
         return "{} {} {}".format(self.itemnum, self.description, self.found)
 
     def query(self):
         return "{} {}".format(self.itemnum, self.description)
+
+    @staticmethod
+    def toJSON(item):
+        return { 'item-num' : item.itemnum, \
+                 'description' : item.description, \
+                 'found' : item.found, \
+                 'image-name' : item.imagename }
+
+    @staticmethod
+    def fromJSON(jsn):
+        try:
+            itn = jsn['item-num']
+            des = jsn['description']
+            if not jsn['found']:
+                return Item(itn, des)
+            imn = jsn['image-name']
+            return Item(itn, des, True, imn)
+        except:
+            raise ValueError('Value is not correctly formatted')
+            
 
 class ItemContainer(object):
     def __init__(self):

@@ -1,18 +1,12 @@
 import csv
 import os
 import os.path as path
-import glob
 import copy
+import sys
+
+import config
 
 from items import *
-
-#_MANIFEST_PATH = 'C:\Users\Mike Work\Dropbox\Marketplace Images\Costco Manifest'
-#_IMAGES_PATH = 'C:\Users\Mike Work\Dropbox\Marketplace Images\Costco Images'
-#_FNAME = 'C:\Users\Mike Work\Desktop\AllFiles.csv'
-
-_MANIFEST_PATH = '/home/michael/Dropbox/Marketplace Images/Costco Manifest'
-_IMAGES_PATH = '/home/michael/Dropbox/Marketplace Images/Costco Images'
-_FNAME = '/home/michael/Desktop/AllFiles.csv'
 
 def findCols(csvin):
     # Take first item, return col of item # and description
@@ -75,7 +69,7 @@ def markFound(itemlist, imagelist):
 " @arg itemlist - an ItemContainer instance
 """
 def parseAll(itemlist):
-    files = map(lambda p: path.join(_MANIFEST_PATH, p), os.listdir(_MANIFEST_PATH))
+    files = map(lambda p: path.join(config._MANIFEST_PATH, p), os.listdir(config._MANIFEST_PATH))
 
     for filepath in files: 
         if filepath == 'AllFiles.csv':
@@ -95,7 +89,7 @@ def parseAll(itemlist):
 " @arg markfound - (default False) whether to mark found items or remove them
 """
 def generateSet(markfound=False):
-    images = list(map(lambda f: int(removeFileType(f)), os.listdir(_IMAGES_PATH)))
+    images = list(map(lambda f: int(removeFileType(f)), os.listdir(config._IMAGES_PATH)))
     itemset = ItemSet()
 
     parseAll(itemset)
@@ -117,7 +111,7 @@ if __name__ == '__main__':
         itemset = generateSet(True)
 
         fout = open(_FNAME, 'w')
-        fout.write("Item #,Description,found\n")
+        fout.write("Item #,Description,found,basename\n")
         for value in itemset.sort():
             fout.write(str(value))
         fout.close()

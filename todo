@@ -1,0 +1,17 @@
+1. Generate AllFiles, either json or csv
+
+ex json: 
+	{
+		"processed" : <boolean>
+		"count" 	: <int>,
+		"found" 	: <int>,
+		"items" 	: [
+			{
+				"item-num"    : <int>,
+				"description" : <string>,
+				"found" 	  : <boolean>,
+				"imagename"   : <string>
+
+			}
+		],
+	}
