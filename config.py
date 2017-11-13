@@ -5,7 +5,6 @@ import json
 def getDropboxPath():
     # Gets the Dropbox path depending on the platform
     fin = None
-    print(sys.platform)
     if sys.platform == 'linux':
         fin = open(os.path.join(os.getenv('HOME'), '.dropbox/info.json'))
     if sys.platform == 'win32':
