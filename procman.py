@@ -13,13 +13,41 @@ from countfiles import *
 import json
 import os
 
+itemjson = None
+itemlist = None
 
+def setall():
+    global itemjson, itemlist
+    if itemjson == None:
+        with open(_FNAME, 'r') as allitems:
+            itemjson = json.load(allitems)
+    if itemlist == None:
+        itemlist = list(map(Item.fromJSON, itemjson['items']))
+    
+def getItemJson():
+    setall()
+    return itemjson
+
+def getItemList():
+    setall()
+    return itemlist
+
+def applyFilter(fn):    
+    setall()
+    return list(filter(fn, itemlist))
+
+def getFound():
+    return applyFilter(lambda item: item.found)
+
+def getMissing():
+    return applyFilter(lambda item: not item.found)
+        
 
 if __name__ == '__main__':
     try:
+        # Otherwise print all manifests that have items that have been found
         with open(_FNAME, 'r') as allitems:
             pass
-
     except FileNotFoundError:
         jsn = { 'processed' : False, 'count' : 0, 'found' : 0 }
         
