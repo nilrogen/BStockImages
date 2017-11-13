@@ -1,14 +1,15 @@
 import json
 import os
-import urllib
+import sys
+import requests
+import shutil
 
 from random import shuffle
 
 import googleimage as gi
-import countfiles as cf
+import procman as pm
 
-_PATH_IMAGES = 'C:\Users\Mike Work\Desktop\TestImage'
-_VALID_EXT = [ 'jpg', 'png' ]
+_SAVE_PATH = os.path.join(os.getenv('HOME'), 'Images')
 
 class searchResult:
     def __init__(self, item, jsn):
@@ -18,7 +19,7 @@ class searchResult:
         if self.ext == 'jpeg':
             self.ext = 'jpg'
 
-        self.link = jsn['link']
+        self.link = jsn['link'].strip()
         self.displaylink = jsn['displayLink']
         self.priority = -1
 
@@ -43,13 +44,12 @@ class searchResult:
         " @return The priority of the image result (higher is a better result)
         """
         # check if valid image result
-        if self.ext in _VALID_EXT:
-            if self.displaylink == 'www.costco.com':
-                self.priority =  1000 - index
-            elif self.displaylink == 'www.amazon.com':
-                self.priority = 100 - index
-            else:
-                self.priority = 1000 - index
+        if self.displaylink == 'www.costco.com':
+            self.priority =  1000 - index
+        elif self.displaylink == 'www.amazon.com':
+            self.priority = 100 - index
+        else:
+            self.priority = 1000 - index
 
     def getName(self):
         return "%s.%s" % (self.item.itemnum, self.ext)
@@ -77,18 +77,16 @@ def findPictures(items, jsn):
     " @return The url of the item if found, None if not
     """
     
-    cnt = int(jsn['searchInformation']['totalResults'])
-    if cnt == 0:
+    count = int(jsn['searchInformation']['totalResults'])
+    if count == 0:
         return None
 
     results = jsn['items']
     pres = []
-    for i in range(len(results)):
+    for i in range(count):
         res = searchResult(item, results[i])
         res.setPriority(i)
         pres.append(res)
-
-    pres.sort(reverse = True) 
 
     if pres[0].priority == -1:
         return None
@@ -96,27 +94,39 @@ def findPictures(items, jsn):
     
 
 
+
 if __name__ == '__main__':
     # Generate set of Items 
+    print('hello')
 
-    """
-    itemlist = list(cf.generateSet())
+    itemlist = pm.getMissing()
 
     shuffle(itemlist)
 
-    for i in range(40):
-        item = itemlist[i] 
-        req = gi.imageSearch(formatQuery(item))
+    print(requests.get('http://google.com'))
 
-        jsn = json.loads(req.content)
-        req.close()
+    for i in range(1):
+        item = itemlist[i] 
+        #req = gi.imageSearch(formatQuery(item))
+
+
+        jsn = json.load(open(os.path.join(_SAVE_PATH, 'output.json')))
+        #if jsn['searchInformation']['totalResults'] != '0':
+           #json.dump(jsn, open(os.path.join(_SAVE_PATH, 'output.json'), 'w'), indent=4)
+        #req.close()
 
         res = findPictures(item, jsn)
+        print(res)
 
-        print item
+        print(item)
         if res is not None:
-            print formatQuery(item)
-            urllib.urlretrieve(res.link, os.path.join(_PATH_IMAGES, res.getName()))
+            print(formatQuery(item))
+            print(res.link)
 
-
-    """
+            sys.stdout.flush()
+            r = requests.get(res.link, stream=True)
+            if r.status_code == 200:
+                path = os.path.join(_SAVE_PATH, res.getName())
+                with open(path, 'wb') as fout:
+                    r.raw.decoce_content = True
+                    shutil.copyfileobj(r.raw, fout)

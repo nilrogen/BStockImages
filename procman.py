@@ -42,6 +42,21 @@ def getFound():
 def getMissing():
     return applyFilter(lambda item: not item.found)
 
+    
+"""
+def update():
+    global itemlist, itemjson
+    missing = getMissing()
+    imgs = list(map(lambda x: os.path.splitext(x)[0]), \
+                    os.listdir(_IMAGES_PATH))
+
+    for item in missing:
+        if str(item.itemnum) in imgs:
+"""
+        
+        
+
+
 if __name__ == '__main__':
     try:
         # Otherwise print all manifests that have items that have been found
