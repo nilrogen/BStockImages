@@ -2,6 +2,7 @@ import sys
 import os
 import json
 
+
 def getDropboxPath():
     # Gets the Dropbox path depending on the platform
     fin = None

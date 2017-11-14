@@ -2,7 +2,9 @@ import json
 import os
 import sys
 import requests
-import shutil
+
+import PIL as pil
+import PIL.Image as Image
 
 from random import shuffle
 
@@ -57,7 +59,6 @@ class searchResult:
 def formatQuery(itm):
     return "Costco %d %s" % (itm.itemnum, item.description)
 
-
 def findPictures(items, jsn):
     """
     " Find the picture in returned search results
@@ -83,7 +84,7 @@ def findPictures(items, jsn):
 
     results = jsn['items']
     pres = []
-    for i in range(count):
+    for i in range(len(results)):
         res = searchResult(item, results[i])
         res.setPriority(i)
         pres.append(res)
@@ -92,41 +93,57 @@ def findPictures(items, jsn):
         return None
     return pres[0]
     
-
-
+def getExt(s):
+    if s == None:
+        raise ValueError
+    elif s == 'JPEG':
+        return '.jpg'
+    elif s == 'PNG':
+        return '.png'
+    else:
+        return '.jpg'
 
 if __name__ == '__main__':
+    # Need to change user agent in order for costco cdn to accept requests 
+    HEADERS = {'User-agent': 'Mozilla/5.0'}
+
     # Generate set of Items 
-    print('hello')
-
     itemlist = pm.getMissing()
-
     shuffle(itemlist)
 
-    print(requests.get('http://google.com'))
-
-    for i in range(1):
+    for i in range(10):
         item = itemlist[i] 
-        #req = gi.imageSearch(formatQuery(item))
+
+        # Get search data 
+        searchreq = gi.imageSearch(formatQuery(item))
+        jsn = json.loads(searchreq.content)
+        searchreq.close()
+        if jsn['searchInformation']['totalResults'] == '0':
+            continue
+
+        # Find best image among results
+        image = findPictures(item, jsn)
+        # Retreive results
+        with requests.get(image.link, stream=True, headers=HEADERS) as imgreq:
+            if not imgreq.ok:
+                continue
+            imgreq.raw.decode_content = True
+            img = Image.open(imgreq.raw)
+
+            p = os.path.join(_SAVE_PATH, str(item.itemnum)+getExt(img.format))
+            with open(p, 'wb') as fout:
+                img.save(fout)
+
+            with open(os.path.join(_SAVE_PATH, 'output'), 'a') as fout:
+                fout.write(str(item)+'\r\n')
+
+        
 
 
-        jsn = json.load(open(os.path.join(_SAVE_PATH, 'output.json')))
-        #if jsn['searchInformation']['totalResults'] != '0':
-           #json.dump(jsn, open(os.path.join(_SAVE_PATH, 'output.json'), 'w'), indent=4)
-        #req.close()
 
-        res = findPictures(item, jsn)
-        print(res)
 
-        print(item)
-        if res is not None:
-            print(formatQuery(item))
-            print(res.link)
 
-            sys.stdout.flush()
-            r = requests.get(res.link, stream=True)
-            if r.status_code == 200:
-                path = os.path.join(_SAVE_PATH, res.getName())
-                with open(path, 'wb') as fout:
-                    r.raw.decoce_content = True
-                    shutil.copyfileobj(r.raw, fout)
+
+
+
+
