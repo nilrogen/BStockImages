@@ -1,98 +1,66 @@
-import json
 import os
-import sys
-import requests
+import requests 
+import json
 
 import PIL as pil
 import PIL.Image as Image
 
 from random import shuffle
+from urllib.parse import urlsplit
+from fuzzywuzzy import fuzz
 
-import googleimage as gi
+import bingimage as bi
 import procman as pm
 
 _SAVE_PATH = os.path.join(os.getenv('HOME'), 'Images')
 
-class searchResult:
-    def __init__(self, item, jsn):
-        self.item = item
-        self.mime = jsn['mime']
-        self.ext = self.mime.split('/')[1]
-        if self.ext == 'jpeg':
-            self.ext = 'jpg'
+blacklist = [ 'www.cochaser.com', \
+              'www.frugalhotspot.com' ]
+whitelist = [ 'www.costco.com', \
+              'www.costcobuisnessdelivery.com', \
+              'www.amazon.com' ]
 
-        self.link = jsn['link'].strip()
-        self.displaylink = jsn['displayLink']
-        self.priority = -1
+def getPriority(item, value):
+    retv = fuzz.UQRatio(item.description, value.name())
 
-    def __cmp__(self, other):
-        return self.priority - other.priority
+    print(value.hostLocation(), retv)
+    if value.hostLocation() in blacklist:
+        return -1
+    if value.hostLocation() in whitelist:
+        retv = round(1.25 * retv)
+    else:
+        return -1
 
-    def __str__(self):
-        return "%s - %s\n" % (self.link, self.priority)
-
-    def __repr__(self):
-        return str(self)
-
-    def setPriority(self, index):
-        """
-        " For each result check if it's a valid image (jpeg, png).
-        " Evaluate where the result is from and determine its priority.
-        " Images from Costco are the highest in the order they appear
-        " in the search results. Next are Amazon's results. 
-        "
-        " @arg res - An element in the list jsn['items']
-        " @arg index - Which element in the results list this is.
-        " @return The priority of the image result (higher is a better result)
-        """
-        # check if valid image result
-        if self.displaylink == 'www.costco.com':
-            self.priority =  1000 - index
-        elif self.displaylink == 'www.amazon.com':
-            self.priority = 100 - index
-        else:
-            self.priority = 1000 - index
-
-    def getName(self):
-        return "%s.%s" % (self.item.itemnum, self.ext)
+    try:
+        print("\nDescription: {}\nValue: {}\nQRatio: {}\nWRatio: {}\n".format( \
+            item.description, value.name(), retv, \
+            fuzz.UWRatio(item.description, value.name())))
+    except:
+        pass
+    return retv
 
 def formatQuery(itm):
     return "Costco %d %s" % (itm.itemnum, item.description)
 
-def findPictures(items, jsn):
-    """
-    " Find the picture in returned search results
-    "
-    "
-    " Helpful items
-    " jsn['items']                   - List of search results
-    " jsn['items'][i]                - An item in the results
-    " jsn['items'][i]['displayLink'] - The base website of image (www.costco.com)
-    " jsn['items'][i]['link']        - The link for the image
-    " jsn['items'][i]['mime']        - The type of image (image/jpeg)
-    "
-    " jsn['searchInformation']['totalResults'] - Number of results
-    "
-    " @arg jsn - The returned search results of a google image search
-    " @arg item - The item that is being found
-    " @return The url of the item if found, None if not
-    """
-    
-    count = int(jsn['searchInformation']['totalResults'])
-    if count == 0:
+def findBestPicture(item, bingres):
+    if bingres.valueCount() == 0:
         return None
-
-    results = jsn['items']
-    pres = []
-    for i in range(len(results)):
-        res = searchResult(item, results[i])
-        res.setPriority(i)
-        pres.append(res)
-
-    if pres[0].priority == -1:
-        return None
-    return pres[0]
     
+    topres = (-1, None)
+
+    for i in range(bingres.valueCount()):
+        if i == 10:
+            break
+        imageresult = bingres.getValue(i)
+        pri = getPriority(item, imageresult)
+        if topres[0] <= pri:
+            topres = (pri, imageresult)
+
+
+    print('*********\nBest: {} {}\n*********'.format(topres[0], \
+          topres[1].hostLocation()))
+    return topres[1]
+
 def getExt(s):
     if s == None:
         raise ValueError
@@ -112,20 +80,20 @@ if __name__ == '__main__':
     shuffle(itemlist)
 
     for i in range(10):
+        # take first item
         item = itemlist[i] 
 
         # Get search data 
-        searchreq = gi.imageSearch(formatQuery(item))
-        jsn = json.loads(searchreq.content)
-        searchreq.close()
-        if jsn['searchInformation']['totalResults'] == '0':
-            continue
+        searchreq = bi.imageSearch(formatQuery(item))
 
         # Find best image among results
-        image = findPictures(item, jsn)
+        image = findBestPicture(item, searchreq)
+        if image == None:
+            continue
+
         # Retreive results
-        with requests.get(image.link, stream=True, headers=HEADERS) as imgreq:
-            if not imgreq.ok:
+        with requests.get(image.contentLink(), stream=True, headers=HEADERS) as imgreq:
+            if imgreq.status_code != 200:
                 continue
             imgreq.raw.decode_content = True
             img = Image.open(imgreq.raw)
