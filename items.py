@@ -20,9 +20,6 @@ class Item(object):
         return self.itemnum > other.itemnum
     def __ge__(self, other):
         return self.itemnum >= other.itemnum
-    def __eq__(self, other):
-        return sefl.itemnum == other.itemnum
-
     def __cmp__(self, other):
         return self.itemnum - other.itemnum
 

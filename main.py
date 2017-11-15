@@ -16,20 +16,25 @@ _SAVE_PATH = os.path.join(os.getenv('HOME'), 'Images')
 
 blacklist = [ 'www.cochaser.com', \
               'www.frugalhotspot.com' ]
-whitelist = [ 'www.costco.com', \
-              'www.costcobuisnessdelivery.com', \
-              'www.amazon.com' ]
+whitelist = [ ('www.costco.com', 1.5), \
+              ('www.costcobuisnessdelivery.com', 1.4), \
+              ('www.amazon.com', 1.25) ]
 
 def getPriority(item, value):
     retv = fuzz.UQRatio(item.description, value.name())
+    wl = False
 
-    print(value.hostLocation(), retv)
-    if value.hostLocation() in blacklist:
+    host = value.hostLocation()
+    print(host, retv)
+
+    if host in blacklist:
         return -1
-    if value.hostLocation() in whitelist:
-        retv = round(1.25 * retv)
-    else:
-        return -1
+
+    # Loop through whitelist and if host matches multiply return value by priority factor
+    for i in range(len(whitelist)):
+        if host == whitelist[i][0]:
+            retv = round(whitelist[i][1] * retv)
+            wl = True
 
     try:
         print("\nDescription: {}\nValue: {}\nQRatio: {}\nWRatio: {}\n".format( \
@@ -37,6 +42,9 @@ def getPriority(item, value):
             fuzz.UWRatio(item.description, value.name())))
     except:
         pass
+
+    if not wl:  
+        return -1
     return retv
 
 def formatQuery(itm):
@@ -49,16 +57,16 @@ def findBestPicture(item, bingres):
     topres = (-1, None)
 
     for i in range(bingres.valueCount()):
-        if i == 10:
+        if i == 20:
             break
         imageresult = bingres.getValue(i)
         pri = getPriority(item, imageresult)
-        if topres[0] <= pri:
+        if topres[0] < pri:
             topres = (pri, imageresult)
 
 
-    print('*********\nBest: {} {}\n*********'.format(topres[0], \
-          topres[1].hostLocation()))
+    if topres[1] is not None:
+        print('*********\nBest: {} {}\n*********'.format(topres[0], topres[1].hostLocation()))
     return topres[1]
 
 def getExt(s):
@@ -79,16 +87,23 @@ if __name__ == '__main__':
     itemlist = pm.getMissing()
     shuffle(itemlist)
 
-    for i in range(10):
+    for i in range(len(itemlist)):
         # take first item
         item = itemlist[i] 
 
         # Get search data 
-        searchreq = bi.imageSearch(formatQuery(item))
+        try:
+            searchreq = bi.imageSearch(formatQuery(item))
 
-        # Find best image among results
-        image = findBestPicture(item, searchreq)
-        if image == None:
+            # Find best image among results
+            image = findBestPicture(item, searchreq)
+            if image == None:
+                continue
+        except KeyError as e:
+            print(e)
+            continue
+        except UnicodeEncodeError as e:
+            print(e)
             continue
 
         # Retreive results
@@ -102,16 +117,6 @@ if __name__ == '__main__':
             with open(p, 'wb') as fout:
                 img.save(fout)
 
-            with open(os.path.join(_SAVE_PATH, 'output'), 'a') as fout:
-                fout.write(str(item)+'\r\n')
-
-        
-
-
-
-
-
-
-
-
-
+            with open(os.path.join(_SAVE_PATH, 'output.txt'), 'a') as fout:
+                fout.write(str(item)+' {} {}\r\n'.format( \
+                        image.name(), image.hostLocation()))

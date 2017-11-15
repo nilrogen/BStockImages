@@ -10,7 +10,7 @@ from items import *
 
 def findCols(csvin):
     # Take first item, return col of item # and description
-    num, des = 0, 0
+    num, des, extret = 0, 0, 0
     value = next(csvin)
 
     for i in range(len(value)):
@@ -18,7 +18,9 @@ def findCols(csvin):
             num = i
         elif value[i].find('Description') != -1:
             des = i
-    return num, des
+        elif value[i].find('Ext. Retail') != -1:
+            extret = i
+    return num, des, extret
     
 """
 " Parses the manifest that is found in file fin. Adds all items to
@@ -34,17 +36,31 @@ def findCols(csvin):
 def parseCSV(itemset, fin):
     #Find item number column
     csvin = csv.reader(fin)
-    num, des = findCols(csvin)
+    num, des, extret = findCols(csvin)
     found, length = 0, 0
+
+    if extret == 0:
+        raise Exception('Issue finding Ext. Retail')
+
+    itemsmanifest = []
 
     for value in csvin:
         length += 1
         try:
             ival = int(value[num])
-            itemset.add(Item(ival, value[des]))
-        except:
-            print(fin)
+            itemsmanifest.append((Item(ival, value[des]), value[extret]))
+        except Exception as e:
+            print('Issue in: {} {}'.format(fin, e))
+    itemsmanifest.sort(key=lambda x: x[1], reverse=True)
 
+    
+    print(itemsmanifest[0][1])
+    print(itemsmanifest[1][1])
+    assert itemsmanifest[0][1] >= itemsmanifest[1][1]
+    manset = set(map(lambda x: x[0], itemsmanifest[0:round(.1*length)]))
+    itemset = itemset.update(manset)
+
+    print(manset)
     return found == length
             
 def removeFileType(fname):

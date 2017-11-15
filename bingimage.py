@@ -3,8 +3,8 @@ import json
 import os
 import urllib
 
-_KEY = 'd18843648d3147dc9f6dc021e4a85a97'
-#_KEY = '796faf0051e14fba9809d5fbe013c7a5'
+#_KEY = 'd18843648d3147dc9f6dc021e4a85a97'
+_KEY = '796faf0051e14fba9809d5fbe013c7a5'
 _ADDR = 'https://api.cognitive.microsoft.com/bing/v7.0/images/search'
 
 class bingValueResult(object):
@@ -31,7 +31,9 @@ class bingResults(object):
         return self.jsn['totalEstimatedMatches']
 
     def values(self):
-        return self.jsn['value']
+        if self.matchCount() != 0:
+            return self.jsn['value']
+        return 0
     
     def valueCount(self):
         return len(self.values())
@@ -44,6 +46,7 @@ def imageSearch(query):
                'User-agent' : 'Mozilla/5.0' }
     fquery = { 'q' : query } 
     with rq.get(_ADDR, fquery, headers=_headers) as request:
+        #print(request.json())
         return bingResults(request.json())
 
 _SAVE_PATH = os.path.join(os.getenv('HOME'), 'Images')

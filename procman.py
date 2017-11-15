@@ -43,17 +43,14 @@ def getMissing():
     return applyFilter(lambda item: not item.found)
 
     
-"""
-def update():
-    global itemlist, itemjson
-    missing = getMissing()
-    imgs = list(map(lambda x: os.path.splitext(x)[0]), \
-                    os.listdir(_IMAGES_PATH))
+#def update():
+    #global itemlist, itemjson
+    #missing = getMissing()
+    #imgs = list(map(lambda x: os.path.splitext(x)[0]), \
+                    #os.listdir(_IMAGES_PATH))
 
-    for item in missing:
-        if str(item.itemnum) in imgs:
-"""
-        
+    #for item in missing:
+        #if str(item.itemnum) in imgs:
         
 
 
@@ -72,7 +69,7 @@ if __name__ == '__main__':
             with open(manifest) as fin:
                 parseCSV(itemlist, fin)
 
-        imagelist = sorted(itemlist)
+        imagelist = sorted(itemlist, key=lambda i: i.itemnum)
         for image in os.listdir(_IMAGES_PATH):
             basename, ext = os.path.splitext(image)
             for item in itemlist:
@@ -81,10 +78,9 @@ if __name__ == '__main__':
                     item.imagename = '{}{}'.format(basename, ext)
                     jsn['found'] += 1
                     break
-        allitems = open(config._FNAME, 'w')
+        with open(_FNAME, 'w') as allitems:
+            jsn['count'] = len(itemlist)
+            jsn['processed'] = True
+            jsn['items'] =  list(map(lambda itm: Item.toJSON(itm), itemlist))
 
-        jsn['count'] = len(itemlist)
-        jsn['processed'] = True
-        jsn['items'] =  list(map(lambda itm: Item.toJSON(itm), itemlist))
-
-        json.dump(jsn, allitems, indent=4)
+            json.dump(jsn, allitems, indent=4)
