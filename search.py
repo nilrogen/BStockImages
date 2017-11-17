@@ -20,9 +20,10 @@ from copy import deepcopy
 
 _ADD_RATIO = 85
 _IMAGES = os.listdir(_IMAGES_PATH)
+_SAVE_PATH = os.path.join(os.getenv('HOME'), 'Images')
 
 def copyImage(base, cpy):
-    base, ext = base.imagename
+    _, ext = os.path.splitext(base.imagename)
     copyfile(os.path.join(_IMAGES_PATH, base.imagename), \
              os.path.join(_SAVE_PATH, str(cpy.itemnum)+ext))
 

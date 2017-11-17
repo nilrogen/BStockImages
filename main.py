@@ -18,7 +18,12 @@ blacklist = [ 'www.cochaser.com', \
               'www.frugalhotspot.com' ]
 whitelist = [ ('www.costco.com', 1.5), \
               ('www.costcobuisnessdelivery.com', 1.4), \
-              ('www.amazon.com', 1.25) ]
+              ('www.amazon.com', 1.25), \
+              ('www.homedepo.com', 1), \
+              ('www.ebay.com', .75), \
+              ('www.walmart.com', 1), \
+              ('www.costco.co.uk', 1.4) \ 
+              ('www.kohls.com', 1) ]
 
 def getPriority(item, value):
     retv = fuzz.UQRatio(item.description, value.name())

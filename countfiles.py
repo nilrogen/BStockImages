@@ -48,19 +48,18 @@ def parseCSV(itemset, fin):
         length += 1
         try:
             ival = int(value[num])
-            itemsmanifest.append((Item(ival, value[des]), value[extret]))
+            item = Item(ival, value[des])
+            item.extretail = value[extret]
+
+            itemsmanifest.append(item)
         except Exception as e:
             print('Issue in: {} {}'.format(fin, e))
-    itemsmanifest.sort(key=lambda x: x[1], reverse=True)
+    itemsmanifest.sort(key=lambda x: x.extretail, reverse=True)
 
-    
-    print(itemsmanifest[0][1])
-    print(itemsmanifest[1][1])
-    assert itemsmanifest[0][1] >= itemsmanifest[1][1]
-    manset = set(map(lambda x: x[0], itemsmanifest[0:round(.1*length)]))
+    assert itemsmanifest[0].extretail >= itemsmanifest[1].extretail
+    manset = set(itemsmanifest[0:round(.1*length)])
     itemset = itemset.update(manset)
 
-    print(manset)
     return found == length
             
 def removeFileType(fname):

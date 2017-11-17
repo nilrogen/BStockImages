@@ -3,15 +3,16 @@ class Item(object):
     def __init__(self, itemnum, description, found=False, imagename=''):
         self.itemnum = int(itemnum)
         self.description = description
+        self.extretail = -1.0
         self.found = found
         self.imagename = imagename
         
-    def __eq__(self, other):
-        return hash(self) == hash(other)
 
     def __hash__(self):
         return hash(self.itemnum)
 
+    def __eq__(self, other):
+        return hash(self) == hash(other)
     def __lt__(self, other):
         return self.itemnum < other.itemnum
     def __le__(self, other):
@@ -24,7 +25,11 @@ class Item(object):
         return self.itemnum - other.itemnum
 
     def __str__(self):
-        return "{} {} {}".format(self.itemnum, self.description, self.found)
+        if self.extretail == -1:
+            return "{} {} {}".format(self.itemnum, self.description, \
+                                     self.found)
+        return "{} {} {}".format(self.itemnum, self.description, \
+                                 self.extretail)
     def __repr__(self):
         return "{} {} {}".format(self.itemnum, self.description, self.found)
 
@@ -33,20 +38,28 @@ class Item(object):
 
     @staticmethod
     def toJSON(item):
-        return { 'item-num' : item.itemnum, \
+        retv = { 'item-num' : item.itemnum, \
                  'description' : item.description, \
                  'found' : item.found, \
                  'image-name' : item.imagename }
+        if item.extretail != -1:
+            retv['ext-retail'] = item.extretail
+        return retv
+
 
     @staticmethod
     def fromJSON(jsn):
         try:
             itn = jsn['item-num']
             des = jsn['description']
-            if not jsn['found']:
-                return Item(itn, des)
+            found = jsn['found']
             imn = jsn['image-name']
-            return Item(itn, des, True, imn)
+                
+            retv = Item(itn, des, found, imn)
+
+            if 'ext-retail' in jsn.keys():
+                retv.extretail = jsn['ext-retail']
+            return retv
         except:
             raise ValueError('Value is not correctly formatted')
             
