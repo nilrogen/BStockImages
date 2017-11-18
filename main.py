@@ -22,7 +22,7 @@ whitelist = [ ('www.costco.com', 1.5), \
               ('www.homedepo.com', 1), \
               ('www.ebay.com', .75), \
               ('www.walmart.com', 1), \
-              ('www.costco.co.uk', 1.4) \ 
+              ('www.costco.co.uk', 1.4), \
               ('www.kohls.com', 1) ]
 
 def getPriority(item, value):
@@ -92,7 +92,7 @@ if __name__ == '__main__':
     itemlist = pm.getMissing()
     shuffle(itemlist)
 
-    for i in range(len(itemlist)):
+    for i in range(100):
         # take first item
         item = itemlist[i] 
 
