@@ -18,9 +18,10 @@ def getDropboxPath():
 
     return jsn['personal']['path']
 
-_DROPBOX = os.path.join(getDropboxPath(), 'Marketplace Images')
-_MANIFEST_PATH = os.path.join(_DROPBOX, 'Costco Manifest')
-_IMAGES_PATH = os.path.join(_DROPBOX, 'Costco Images')
+_DROPBOX_PATH = getDropboxPath()
+_COSTCO_PATH = os.path.join(_DROPBOX_PATH, 'Marketplace Images')
+_MANIFEST_PATH = os.path.join(_COSTCO_PATH, 'Costco Manifest')
+_IMAGES_PATH = os.path.join(_DROPBOX_PATH, 'Costco Images')
 _FNAME = os.path.join(_MANIFEST_PATH, 'AllFiles.json')
 
 

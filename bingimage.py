@@ -1,3 +1,5 @@
+from PIL import Image 
+
 import requests as rq
 import json
 import os
@@ -23,17 +25,29 @@ class bingValueResult(object):
     def contentEncoding(self):
         return self.jsn['encodingFormat']
 
+    def downloadImage(self):
+        HEADERS = {'User-agent': 'Mozilla/5.0'}
+        with rq.get(self.contentLink(), stream=True, headers=HEADERS) as imgreq:
+            if imgreq.status_code != 200:
+                raise Exception('Something is wrong')
+            imgreq.raw.decode_content = True
+            img = Image.open(imgreq.raw)
+
+        return img
+
 class bingResults(object):
     def __init__(self, jsn):
         self.jsn = jsn
 
     def matchCount(self):
-        return self.jsn['totalEstimatedMatches']
+        if 'totalEstimatedMatches' in self.jsn.keys():
+            return self.jsn['totalEstimatedMatches']
+        return 0
 
     def values(self):
         if self.matchCount() != 0:
             return self.jsn['value']
-        return 0
+        return []
     
     def valueCount(self):
         return len(self.values())
@@ -48,6 +62,7 @@ def imageSearch(query):
     with rq.get(_ADDR, fquery, headers=_headers) as request:
         #print(request.json())
         return bingResults(request.json())
+
 
 _SAVE_PATH = os.path.join(os.getenv('HOME'), 'Images')
 if __name__ == '__main__':

@@ -17,11 +17,12 @@ _SAVE_PATH = os.path.join(os.getenv('HOME'), 'Images')
 blacklist = [ 'www.cochaser.com', \
               'www.frugalhotspot.com' ]
 whitelist = [ ('www.costco.com', 1.5), \
-              ('www.costcobuisnessdelivery.com', 1.4), \
+              ('www.costcobusinessdelivery.com', 1.4), \
               ('www.amazon.com', 1.25), \
               ('www.homedepo.com', 1), \
               ('www.ebay.com', .75), \
               ('www.walmart.com', 1), \
+              ('www.samsclub.com', 1), \
               ('www.costco.co.uk', 1.4), \
               ('www.kohls.com', 1) ]
 
@@ -92,7 +93,7 @@ if __name__ == '__main__':
     itemlist = pm.getMissing()
     shuffle(itemlist)
 
-    for i in range(100):
+    for i in range(len(itemlist)):
         # take first item
         item = itemlist[i] 
 
