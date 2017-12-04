@@ -11,16 +11,35 @@ from copy import deepcopy
 
 """
 " General Algorithm:
-"   Generate a list of all unique Items
-"   Cluster items into groups based on levenshtein distance of description
-"   For each group of size > 1
-"       if at least 1 item has been found
-"           create image for all unfound items in group
+"   Get list of found and missing images.
+"
+"   For each missing items:
+"       For each found item
+            missing 
 """
 
-_ADD_RATIO = 85
+_ADD_RATIO = 90
 _IMAGES = os.listdir(_IMAGES_PATH)
 _SAVE_PATH = os.path.join(os.getenv('HOME'), 'Images')
+
+def isSimilar(item1, item2, addratio):
+    return fuzzy.UQRatio(item1.description, item2.description) >= addratio
+
+def findSimilarItems(item, **kwargs):
+    searchlist, addratio, similarlist = pm.getItemList(), _ADD_RATIO, []
+    if 'searchlist' in kwargs.keys():
+        searchlist = kwargs['searchlist']
+    if 'addratio' in kwargs.keys():
+        addratio = kwargs['addratio']
+    if 'addself' in kwargs.keys() and kwargs['addself']:
+        similarlist.append(item)
+
+    for searchitem in searchlist:
+        if isSimilar(item, searchitem, addratio):
+            similarlist.append(searchitem)
+        
+    return similarlist 
+    
 
 def copyImage(base, cpy):
     _, ext = os.path.splitext(base.imagename)
@@ -28,11 +47,12 @@ def copyImage(base, cpy):
              os.path.join(_SAVE_PATH, str(cpy.itemnum)+ext))
 
 if __name__ == '__main__':
-
     # Generate Set of all items and place in linkedlist
     itemlist = ItemLinkedList()
     gs = pm.getItemList()
     random.shuffle(gs)
+
+    
 
     # Add all images to the linked list
     for item in gs:
@@ -50,7 +70,7 @@ if __name__ == '__main__':
         print(cmpitem)
 
         # Compare item with all other items
-        # if the qratio of the descriptions is >= _ADD_RATIO (85%) 
+        # if the qratio of the descriptions is >= _ADD_RATIO (90%) 
         # we remove that item and add it to the similar group of the
         # item we are looking at
         while ival != None:

@@ -5,8 +5,8 @@ import json
 import os
 import urllib
 
-#_KEY = 'd18843648d3147dc9f6dc021e4a85a97'
-_KEY = '796faf0051e14fba9809d5fbe013c7a5'
+_KEY = '1add42212e1346e781d30675d602fbaf'
+#_KEY = '12883057d1d94dffbf827542c88c31dc'
 _ADDR = 'https://api.cognitive.microsoft.com/bing/v7.0/images/search'
 
 class bingValueResult(object):
@@ -29,7 +29,7 @@ class bingValueResult(object):
         HEADERS = {'User-agent': 'Mozilla/5.0'}
         with rq.get(self.contentLink(), stream=True, headers=HEADERS) as imgreq:
             if imgreq.status_code != 200:
-                raise Exception('Something is wrong')
+                raise Exception('Something is wrong. {} {}'.format(imgreq.status_code, self.contentLink()))
             imgreq.raw.decode_content = True
             img = Image.open(imgreq.raw)
 

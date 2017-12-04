@@ -34,7 +34,7 @@ class Item(object):
         return "{} {} {}".format(self.itemnum, self.description, self.found)
 
     def query(self):
-        return "{} {}".format(self.itemnum, self.description)
+        return "costco {} {}".format(self.itemnum, self.description)
 
     @staticmethod
     def toJSON(item):

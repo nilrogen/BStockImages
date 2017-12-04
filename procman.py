@@ -44,15 +44,16 @@ def getMissing():
 
 def findCols(csvin):
     # Take first item, return col of item # and description
-    num, des, extret = 0, 0, 0
+    num, des, extret = -1, -1, -1
     value = next(csvin)
 
     for i in range(len(value)):
-        if value[i].find('Costco Item #') != -1:
+        elem = value[i].lower()
+        if elem.find('item #') != -1 or elem == 'item':
             num = i
-        elif value[i].find('Description') != -1:
+        elif elem.find('description') != -1 or elem.find('item description') != -1:
             des = i
-        elif value[i].find('Ext. Retail') != -1:
+        elif elem.find('ext. retail') != -1 or elem.find('extended price') != -1:
             extret = i
     return num, des, extret
 
@@ -62,7 +63,11 @@ def parseCSV(itemset, fin):
     num, des, extret = findCols(csvin)
     found, length = 0, 0
 
-    if extret == 0:
+    if num == -1:
+        raise Exception('Issue finding item number')
+    elif des == -1:
+        raise Exception('Issue finding item description')
+    elif extret == -1:
         raise Exception('Issue finding Ext. Retail')
 
     itemsmanifest = []
@@ -142,7 +147,6 @@ if __name__ == '__main__':
 
             imagelist = sorted(itemlist, key=lambda i: i.itemnum)
             for image in os.listdir(_IMAGES_PATH):
-                print(image)
                 basename, ext = os.path.splitext(image)
                 for item in imagelist:
                     if int(basename) == item.itemnum:
@@ -156,5 +160,5 @@ if __name__ == '__main__':
                 jsn['items'] =  list(map(lambda itm: Item.toJSON(itm), itemlist))
 
                 json.dump(jsn, allitems, indent=4)
-        except Exception as  e:
+        except Exception as e:
             print(e)

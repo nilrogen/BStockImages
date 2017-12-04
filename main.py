@@ -16,15 +16,25 @@ _SAVE_PATH = os.path.join(os.getenv('HOME'), 'Images')
 
 blacklist = [ 'www.cochaser.com', \
               'www.frugalhotspot.com' ]
+
 whitelist = [ ('www.costco.com', 1.5), \
               ('www.costcobusinessdelivery.com', 1.4), \
+              ('www.costco.co.uk', 1.4), \
+              ('www.costco.ca', 1.4), \
               ('www.amazon.com', 1.25), \
+              ('amazon.com', 1.25), \
+              ('amazon.co.uk', 1.25), \
               ('www.homedepo.com', 1), \
-              ('www.ebay.com', .75), \
               ('www.walmart.com', 1), \
               ('www.samsclub.com', 1), \
-              ('www.costco.co.uk', 1.4), \
-              ('www.kohls.com', 1) ]
+              ('www.target.com', 1), \
+              ('www.kohls.com', 1), \
+              ('www.instacart.com', 1), \
+              ('www.bjs.com', .9), \
+              ('www.walgreens.com', .9), \
+              ('www.sears.com', .9), \
+              ('www.overstock.com', .9), \
+              ('www.ebay.com', .5) ]
 
 def getPriority(item, value):
     retv = fuzz.UQRatio(item.description, value.name())
@@ -49,21 +59,25 @@ def getPriority(item, value):
     except:
         pass
 
+    if retv < 25:
+        return -1
+
     if not wl:  
         return -1
     return retv
 
-def formatQuery(itm):
-    return "Costco %d %s" % (itm.itemnum, item.description)
+def formatQueries(itm):
+    return ["Costco %d %s" % (itm.itemnum, item.description), \
+            "%d %s" % (itm.itemnum, item.description), \
+            item.description ]
 
 def findBestPicture(item, bingres):
-    if bingres.valueCount() == 0:
-        return None
-    
     topres = (-1, None)
 
-    for i in range(bingres.valueCount()):
-        if i == 20:
+    if bingres.valueCount() == 0:
+        return topres
+    for i in rang(bingres.valueCount()):
+        if i == 40:
             break
         imageresult = bingres.getValue(i)
         pri = getPriority(item, imageresult)
@@ -73,7 +87,7 @@ def findBestPicture(item, bingres):
 
     if topres[1] is not None:
         print('*********\nBest: {} {}\n*********'.format(topres[0], topres[1].hostLocation()))
-    return topres[1]
+    return topres
 
 def getExt(s):
     if s == None:
@@ -97,14 +111,19 @@ if __name__ == '__main__':
         # take first item
         item = itemlist[i] 
 
+        best = (-1, None)
         # Get search data 
         try:
-            searchreq = bi.imageSearch(formatQuery(item))
+            for query in formatQueries(item):
+                searchreq = bi.imageSearch(query)
+                # Find best image among results
+                pri, image = findBestPicture(item, searchreq)
 
-            # Find best image among results
-            image = findBestPicture(item, searchreq)
-            if image == None:
-                continue
+                if pri > best[0]:
+                    best = (pri, image)
+
+            if best[1] == None:
+               continue
         except KeyError as e:
             print(e)
             continue
@@ -113,7 +132,7 @@ if __name__ == '__main__':
             continue
 
         # Retreive results
-        with requests.get(image.contentLink(), stream=True, headers=HEADERS) as imgreq:
+        with requests.get(best[1].contentLink(), stream=True, headers=HEADERS) as imgreq:
             if imgreq.status_code != 200:
                 continue
             imgreq.raw.decode_content = True
@@ -125,4 +144,4 @@ if __name__ == '__main__':
 
             with open(os.path.join(_SAVE_PATH, 'output.txt'), 'a') as fout:
                 fout.write(str(item)+' {} {}\r\n'.format( \
-                        image.name(), image.hostLocation()))
+                        best[1].name(), best[1].hostLocation()))
