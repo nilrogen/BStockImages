@@ -53,31 +53,34 @@ if __name__ == '__main__':
     u = 'https://www.costco.com/.product.%d.html'
     header = {'User-agent': 'Mozilla/5.0'}
 
-    start=100351170
+    start=100385935
     for i in range(0, 50000, 1):
         print('Trying %d'% (i+start))
         sys.stdout.flush()        
 
-        with requests.get(u % (i+start), headers=header) as req:
-            if req.status_code == 200:
-                p = CostcoParser()
-                p.feed(req.text)
+        req = requests.get(u % (i+start), headers=header)
+        if req.status_code == 200:
+            p = CostcoParser()
+            p.feed(req.text)
 
-                print('%d %s'%(p.itemnum, p.pictureurl), p.found)
-                sys.stdout.flush()        
-                if not p.found:
-                    time.sleep(.2)
-                    continue
+            print('%d %s'%(p.itemnum, p.pictureurl), p.found)
+            sys.stdout.flush()        
+            if not p.found:
+                time.sleep(.2)
+                continue
 
-                print('Downloading Image')
-                sys.stdout.flush()        
-                with requests.get(p.pictureurl, stream=True, headers=header) as imgreq:
-                    if imgreq.status_code != 200:
-                        continue
-                    imgreq.raw.decode_content = True
-                    img = Image.open(imgreq.raw)
+            print('Downloading Image')
+            sys.stdout.flush()        
+            imgreq = requests.get(p.pictureurl, stream=True, headers=header)
+            if imgreq.status_code != 200:
+                print('========STATUS CODE: %d========'%(imgreq.status_code))
+                continue
+            imgreq.raw.decode_content = True
+            img = Image.open(imgreq.raw)
 
-                    p = os.path.join(_SAVE_PATH, str(p.itemnum)+getExt(img.format))
-                    with open(p, 'wb') as fout:
-                        img.save(fout)
-        sys.stdout.flush()        
+            p = os.path.join(_SAVE_PATH, str(p.itemnum)+getExt(img.format))
+            with open(p, 'wb') as fout:
+                img.save(fout)
+            imgreq.close()
+        req.close()
+    sys.stdout.flush()        
