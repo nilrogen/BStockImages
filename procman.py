@@ -12,6 +12,7 @@ from config import _FNAME, _MANIFEST_PATH, _IMAGES_PATH
 import json
 import os
 import csv
+import sys
 
 itemjson = None
 itemlist = None
@@ -49,7 +50,7 @@ def findCols(csvin):
 
     for i in range(len(value)):
         elem = value[i].lower()
-        if elem.find('item #') != -1 or elem == 'item':
+        if elem.find('item #') != -1 or elem == 'item' or elem == 'Costco ITEM':
             num = i
         elif elem.find('description') != -1 or elem.find('item description') != -1:
             des = i
@@ -64,13 +65,15 @@ def parseCSV(itemset, fin):
     found, length = 0, 0
 
     if num == -1:
-        raise Exception('Issue finding item number')
+        raise Exception('Issue finding item number' + str(fin))
     elif des == -1:
         raise Exception('Issue finding item description')
     elif extret == -1:
         raise Exception('Issue finding Ext. Retail')
 
     itemsmanifest = []
+    print(fin.name)
+    sys.stdout.flush()
 
     for value in csvin:
         length += 1
@@ -79,12 +82,15 @@ def parseCSV(itemset, fin):
             item = Item(ival, value[des])
             item.extretail = value[extret]
 
+            print(item)
+
             itemsmanifest.append(item)
         except Exception as e:
             print('Issue in: {} {}'.format(fin, e))
     itemsmanifest.sort(key=lambda x: x.extretail, reverse=True)
 
-    assert itemsmanifest[0].extretail >= itemsmanifest[1].extretail
+    if (len(itemsmanifest) > 1):
+        assert itemsmanifest[0].extretail >= itemsmanifest[1].extretail
     manset = set(itemsmanifest[0:round(1*length)])
     itemset = itemset.update(manset)
 
@@ -118,6 +124,7 @@ def generateList(listpct):
         jsn['items'] =  list(map(lambda itm: Item.toJSON(itm), itemlist))
 
         json.dump(jsn, allitems, indent=4)
+
 #def update():
     #global itemlist, itemjson
     #missing = getMissing()
@@ -154,11 +161,12 @@ if __name__ == '__main__':
                         item.imagename = '{}{}'.format(basename, ext)
                         jsn['found'] += 1
                         break
+
             with open(_FNAME, 'w') as allitems:
                 jsn['count'] = len(itemlist)
                 jsn['processed'] = True
                 jsn['items'] =  list(map(lambda itm: Item.toJSON(itm), itemlist))
 
                 json.dump(jsn, allitems, indent=4)
-        except Exception as e:
-            print(e)
+        except IOError as e:
+            print(type(e), e.args)

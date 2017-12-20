@@ -10,13 +10,16 @@ from random import shuffle
 import procman as pm
 from fuzzywuzzy import fuzz
 
-whitelist = [ ('www.costco.com', 1.5), \
-              ('www.costcobusinessdelivery.com', 1.4), \
-              ('www.costco.co.uk', 1.4), \
-              ('www.costco.ca', 1.4), \
-              ('www.amazon.com', 1.25), \
-              ('amazon.com', 1.25), \
-              ('amazon.co.uk', 1.25), \
+blacklist = [ 'www.cochaser.com', \
+              'www.frugalhotspot.com' ]
+
+whitelist = [ ('www.costco.com', 1.2), \
+              ('www.costcobusinessdelivery.com', 1.2), \
+              ('www.costco.co.uk', 1.15), \
+              ('www.costco.ca', 1.15), \
+              ('www.amazon.com', 1.1), \
+              ('amazon.com', 1.1), \
+              ('amazon.co.uk', 1.1), \
               ('www.homedepo.com', 1), \
               ('www.walmart.com', 1), \
               ('www.samsclub.com', 1), \
@@ -27,22 +30,34 @@ whitelist = [ ('www.costco.com', 1.5), \
               ('www.walgreens.com', .9), \
               ('www.sears.com', .9), \
               ('www.overstock.com', .9), \
-              ('www.lyst.com', .9), \
-              ('www.ebay.com', .5) ]
+              ('www.ebay.com', .4) ]
 
 def getPriority(item, value):
     retv = fuzz.UQRatio(item.description, value.name())
     wl = False
 
     host = value.hostLocation()
+    print(host, retv)
+
+    if host in blacklist:
+        return -1
 
     # Loop through whitelist and if host matches multiply return value by priority factor
     for i in range(len(whitelist)):
         if host == whitelist[i][0]:
             retv = round(whitelist[i][1] * retv)
             wl = True
-    if retv < 20:
+
+    try:
+        print("\nDescription: {}\nValue: {}\nQRatio: {}\nWRatio: {}\n".format( \
+            item.description, value.name(), retv, \
+            fuzz.UWRatio(item.description, value.name())))
+    except:
+        pass
+
+    if retv < 40:
         return -1
+
     if not wl:  
         return -1
     return retv

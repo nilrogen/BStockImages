@@ -1,8 +1,10 @@
 
 class Item(object):
-    def __init__(self, itemnum, description, found=False, imagename=''):
+    def __init__(self, itemnum, description, brnd, cata, found=False, imagename=''):
         self.itemnum = int(itemnum)
         self.description = description
+        self.brand
+        self.category
         self.extretail = -1.0
         self.found = found
         self.imagename = imagename

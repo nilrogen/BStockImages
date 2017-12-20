@@ -1,6 +1,7 @@
 import os
 import requests 
 import json
+import sys
 
 import PIL as pil
 import PIL.Image as Image
@@ -17,13 +18,13 @@ _SAVE_PATH = os.path.join(os.getenv('HOME'), 'Images')
 blacklist = [ 'www.cochaser.com', \
               'www.frugalhotspot.com' ]
 
-whitelist = [ ('www.costco.com', 1.5), \
-              ('www.costcobusinessdelivery.com', 1.4), \
-              ('www.costco.co.uk', 1.4), \
-              ('www.costco.ca', 1.4), \
-              ('www.amazon.com', 1.25), \
-              ('amazon.com', 1.25), \
-              ('amazon.co.uk', 1.25), \
+whitelist = [ ('www.costco.com', 1.2), \
+              ('www.costcobusinessdelivery.com', 1.2), \
+              ('www.costco.co.uk', 1.15), \
+              ('www.costco.ca', 1.15), \
+              ('www.amazon.com', 1.1), \
+              ('amazon.com', 1.1), \
+              ('amazon.co.uk', 1.1), \
               ('www.homedepo.com', 1), \
               ('www.walmart.com', 1), \
               ('www.samsclub.com', 1), \
@@ -34,14 +35,13 @@ whitelist = [ ('www.costco.com', 1.5), \
               ('www.walgreens.com', .9), \
               ('www.sears.com', .9), \
               ('www.overstock.com', .9), \
-              ('www.ebay.com', .5) ]
+              ('www.ebay.com', .4) ]
 
 def getPriority(item, value):
     retv = fuzz.UQRatio(item.description, value.name())
     wl = False
 
     host = value.hostLocation()
-    print(host, retv)
 
     if host in blacklist:
         return -1
@@ -52,14 +52,15 @@ def getPriority(item, value):
             retv = round(whitelist[i][1] * retv)
             wl = True
 
+    """
     try:
         print("\nDescription: {}\nValue: {}\nQRatio: {}\nWRatio: {}\n".format( \
             item.description, value.name(), retv, \
             fuzz.UWRatio(item.description, value.name())))
     except:
         pass
-
-    if retv < 25:
+"""
+    if retv < 50:
         return -1
 
     if not wl:  
@@ -76,17 +77,14 @@ def findBestPicture(item, bingres):
 
     if bingres.valueCount() == 0:
         return topres
-    for i in rang(bingres.valueCount()):
-        if i == 40:
+    for i in range(bingres.valueCount()):
+        if i == 60:
             break
         imageresult = bingres.getValue(i)
         pri = getPriority(item, imageresult)
         if topres[0] < pri:
             topres = (pri, imageresult)
 
-
-    if topres[1] is not None:
-        print('*********\nBest: {} {}\n*********'.format(topres[0], topres[1].hostLocation()))
     return topres
 
 def getExt(s):
@@ -98,6 +96,13 @@ def getExt(s):
         return '.png'
     else:
         return '.jpg'
+
+def outputString(item, topres):
+    """
+    " Format of output:
+    " description, result name, uqratio, hostlocation, 
+    """
+    items = "{} {}"
 
 if __name__ == '__main__':
     # Need to change user agent in order for costco cdn to accept requests 
@@ -132,7 +137,7 @@ if __name__ == '__main__':
             continue
 
         # Retreive results
-        with requests.get(best[1].contentLink(), stream=True, headers=HEADERS) as imgreq:
+        with requests.get(best[1].contentLink(), stream=True, headers=HEADERS, verify=False) as imgreq:
             if imgreq.status_code != 200:
                 continue
             imgreq.raw.decode_content = True
@@ -140,8 +145,17 @@ if __name__ == '__main__':
 
             p = os.path.join(_SAVE_PATH, str(item.itemnum)+getExt(img.format))
             with open(p, 'wb') as fout:
-                img.save(fout)
+                try:
+                    img.save(fout)
+                except OSError as e:
+                    print(e, fout)
+                    continue
+
+            fmt = '{:<10} {}  |  {}  |  {}  |  {}\n'.format( \
+                    item.itemnum, best[0], item.description, \
+                    best[1].name(), best[1].hostLocation())
+            print(fmt)
+            sys.stdout.flush()
 
             with open(os.path.join(_SAVE_PATH, 'output.txt'), 'a') as fout:
-                fout.write(str(item)+' {} {}\r\n'.format( \
-                        best[1].name(), best[1].hostLocation()))
+                fout.write(fmt)

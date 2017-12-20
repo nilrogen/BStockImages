@@ -53,7 +53,7 @@ if __name__ == '__main__':
     u = 'https://www.costco.com/.product.%d.html'
     header = {'User-agent': 'Mozilla/5.0'}
 
-    start=100385935
+    start=100026225
     for i in range(0, 50000, 1):
         print('Trying %d'% (i+start))
         sys.stdout.flush()        
@@ -66,7 +66,7 @@ if __name__ == '__main__':
             print('%d %s'%(p.itemnum, p.pictureurl), p.found)
             sys.stdout.flush()        
             if not p.found:
-                time.sleep(.2)
+                #time.sleep(.2)
                 continue
 
             print('Downloading Image')
