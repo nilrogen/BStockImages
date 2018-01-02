@@ -1,10 +1,9 @@
 
 class Item(object):
-    def __init__(self, itemnum, description, brnd, cata, found=False, imagename=''):
+    def __init__(self, itemnum, description, found=False, category=None, imagename=''):
         self.itemnum = int(itemnum)
         self.description = description
-        self.brand
-        self.category
+        self.category = category
         self.extretail = -1.0
         self.found = found
         self.imagename = imagename
@@ -46,6 +45,8 @@ class Item(object):
                  'image-name' : item.imagename }
         if item.extretail != -1:
             retv['ext-retail'] = item.extretail
+        if item.category != None:
+            retv['category'] = item.category
         return retv
 
 
@@ -57,15 +58,17 @@ class Item(object):
             found = jsn['found']
             imn = jsn['image-name']
                 
-            retv = Item(itn, des, found, imn)
+            retv = Item(itn, des, found, None, imn)
 
             if 'ext-retail' in jsn.keys():
                 retv.extretail = jsn['ext-retail']
+            if 'category' in jsn.keys():
+                retv.category = jsn['category']
             return retv
         except:
             raise ValueError('Value is not correctly formatted')
             
-
+"""
 class ItemContainer(object):
     def __init__(self):
         self.list = None
@@ -140,4 +143,4 @@ class ItemListIterator:
     def next(self):
         self.current = next(self.iterator)
         return self.current
-        
+"""        

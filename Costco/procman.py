@@ -8,7 +8,6 @@
 from items import *
 from config import _FNAME, _MANIFEST_PATH, _IMAGES_PATH
 
-
 import json
 import os
 import csv
@@ -45,7 +44,7 @@ def getMissing():
 
 def findCols(csvin):
     # Take first item, return col of item # and description
-    num, des, extret = -1, -1, -1
+    num, des, extret, cat = -1, -1, -1, -1
     value = next(csvin)
 
     for i in range(len(value)):
@@ -56,12 +55,15 @@ def findCols(csvin):
             des = i
         elif elem.find('ext. retail') != -1 or elem.find('extended price') != -1:
             extret = i
-    return num, des, extret
+        elif elem == 'category' != -1:
+            cat = i
+
+    return num, des, extret, cat
 
 def parseCSV(itemset, fin):
     #Find item number column
     csvin = csv.reader(fin)
-    num, des, extret = findCols(csvin)
+    num, des, extret, cat = findCols(csvin)
     found, length = 0, 0
 
     if num == -1:
@@ -81,6 +83,9 @@ def parseCSV(itemset, fin):
             ival = int(value[num])
             item = Item(ival, value[des])
             item.extretail = value[extret]
+
+            if cat != -1:
+                item.category = value[cat]
 
             print(item)
 

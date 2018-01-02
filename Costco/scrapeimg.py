@@ -53,7 +53,7 @@ if __name__ == '__main__':
     u = 'https://www.costco.com/.product.%d.html'
     header = {'User-agent': 'Mozilla/5.0'}
 
-    start=100026225
+    start=12000000
     for i in range(0, 50000, 1):
         print('Trying %d'% (i+start))
         sys.stdout.flush()        
