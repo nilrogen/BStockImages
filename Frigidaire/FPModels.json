@@ -1,0 +1,3462 @@
+{
+    "total-items": 448,
+    "found-items": 169,
+    "model-list": [
+        {
+            "model-number": "PHT189WHKM",
+            "brand": "Frigidaire",
+            "found": true,
+            "searched": true,
+            "description": "Frigidaire Professional 18.3 Cu. Ft. Top Freezer Refrigerator",
+            "img-src": "https://na.electroluxmedia.com/Assets/medias/images/137/$v2/PHT189WHKM_p_of_511x473.png"
+        },
+        {
+            "model-number": "FEB398WEC",
+            "brand": "Frigidaire",
+            "found": false,
+            "searched": true
+        },
+        {
+            "model-number": "PLGFZ397GC",
+            "brand": "Frigidaire",
+            "found": true,
+            "searched": true,
+            "description": "Frigidaire Professional 30'' Freestanding Gas Range",
+            "img-src": "https://na.electroluxmedia.com/Assets/medias/images/81/PLGFZ397GC_p_sd_511x473.png"
+        },
+        {
+            "model-number": "FPHD2491KB",
+            "brand": "Frigidaire",
+            "found": false,
+            "searched": true
+        },
+        {
+            "model-number": "PHSC39EHSS",
+            "brand": "Frigidaire",
+            "found": true,
+            "searched": true,
+            "description": "Frigidaire Professional 22.6 Cu. Ft. Side-by-Side Refrigerator",
+            "img-src": "https://na.electroluxmedia.com/Assets/medias/images/137/$v2/PHSC39EHSS_w_ho_511x473.png"
+        },
+        {
+            "model-number": "PLEW30S3CC",
+            "brand": "Frigidaire",
+            "found": false,
+            "searched": true
+        },
+        {
+            "model-number": "PLGC36S9AC",
+            "brand": "Frigidaire",
+            "found": false,
+            "searched": true
+        },
+        {
+            "model-number": "FPCC3685KS",
+            "brand": "Frigidaire",
+            "found": true,
+            "searched": true,
+            "description": "Frigidaire Professional 36'' Induction Hybrid Cooktop",
+            "msrp": 1449.0,
+            "section": "Owner-Center",
+            "category": "Product-Support--Manuals",
+            "weight": "Product Weight (lbs): 60",
+            "img-src": "https://na.electroluxmedia.com/Assets/medias/images/76/FPCC3685KS_p_ho_511x473.png"
+        },
+        {
+            "model-number": "PL36WC45EC",
+            "brand": "Frigidaire",
+            "found": false,
+            "searched": true
+        },
+        {
+            "model-number": "PHT189HSM",
+            "brand": "Frigidaire",
+            "found": true,
+            "searched": true,
+            "description": "Frigidaire Professional 18.3 Cu. Ft. Top Freezer Refrigerator",
+            "img-src": "https://na.electroluxmedia.com/Assets/medias/images/137/$v2/PHT189HS_p_of_511x473.png"
+        },
+        {
+            "model-number": "MUFD17V8FW",
+            "brand": "Frigidaire",
+            "found": false,
+            "searched": true
+        },
+        {
+            "model-number": "PLEB30T8CC",
+            "brand": "Frigidaire",
+            "found": true,
+            "searched": true,
+            "description": "Frigidaire Professional 30'' Double Electric Wall Oven",
+            "img-src": "https://na.electroluxmedia.com/Assets/medias/images/76/PLEB30T8CC_p_tq_511x473.png"
+        },
+        {
+            "model-number": "PHS6KR5JSB",
+            "brand": "Frigidaire",
+            "found": false,
+            "searched": true
+        },
+        {
+            "model-number": "PLGC36S9EC",
+            "brand": "Frigidaire",
+            "found": false,
+            "searched": true
+        },
+        {
+            "model-number": "PLT219WJKM",
+            "brand": "Frigidaire",
+            "found": false,
+            "searched": true
+        },
+        {
+            "model-number": "FPGF3081KF",
+            "brand": "Frigidaire",
+            "found": true,
+            "searched": true,
+            "description": "Frigidaire Professional 30'' Freestanding Gas Range",
+            "msrp": 1699.0,
+            "section": "Owner-Center",
+            "category": "Product-Support--Manuals",
+            "weight": "Product Weight (lbs): 200",
+            "img-src": "https://na.electroluxmedia.com/Assets/medias/images/52/FPGF3081KF_p_ho_511x473.png"
+        },
+        {
+            "model-number": "FDBB2865FC",
+            "brand": "Frigidaire",
+            "found": false,
+            "searched": true
+        },
+        {
+            "model-number": "FPHS2699PF",
+            "brand": "Frigidaire",
+            "found": true,
+            "searched": true,
+            "description": "Frigidaire Professional 25.6 Cu. Ft. Side-by-Side Refrigerator",
+            "msrp": 1699.0,
+            "section": "Owner-Center",
+            "category": "Product-Support--Manuals",
+            "weight": "Product Weight (lbs): 287",
+            "ship-weight": "Shipping Weight (lbs): 300",
+            "img-src": "https://na.electroluxmedia.com/Assets/medias/images/64/FPHS2699PF_p_ho_511x473.png"
+        },
+        {
+            "model-number": "PLEFZ398GC",
+            "brand": "Frigidaire",
+            "found": true,
+            "searched": true,
+            "description": "Frigidaire Professional 30'' Freestanding Electric Range",
+            "img-src": "https://na.electroluxmedia.com/Assets/medias/images/81/PLEFZ398GC_p_sd_511x473.png"
+        },
+        {
+            "model-number": "FDB4315LFS",
+            "brand": "Frigidaire",
+            "found": false,
+            "searched": true
+        },
+        {
+            "model-number": "PLRU1788DS",
+            "brand": "Frigidaire",
+            "found": false,
+            "searched": true
+        },
+        {
+            "model-number": "FPUI1888LR",
+            "brand": "Frigidaire",
+            "found": false,
+            "searched": true,
+            "description": "Frigidaire Professional 18 Cu. Ft. Top Freezer Refrigerator",
+            "msrp": 1099.0,
+            "section": "Owner-Center",
+            "category": "Product-Support--Manuals",
+            "ship-weight": "Shipping Weight (lbs): 205"
+        },
+        {
+            "model-number": "PLMV178HC",
+            "brand": "Frigidaire",
+            "found": false,
+            "searched": true
+        },
+        {
+            "model-number": "LFEV30FE",
+            "brand": "Frigidaire",
+            "found": false,
+            "searched": true
+        },
+        {
+            "model-number": "FPCF3091LF",
+            "brand": "Frigidaire",
+            "found": true,
+            "searched": true,
+            "description": "Frigidaire Professional 30'' Freestanding Induction Hybrid Range",
+            "msrp": 1849.0,
+            "section": "Owner-Center",
+            "category": "Product-Support--Manuals",
+            "weight": "Product Weight (lbs): 200",
+            "img-src": "https://na.electroluxmedia.com/Assets/medias/images/81/FPCF3091LF_p_ho_511x473.png"
+        },
+        {
+            "model-number": "PLD2850RDC",
+            "brand": "Frigidaire",
+            "found": false,
+            "searched": true
+        },
+        {
+            "model-number": "PLHT219TCK",
+            "brand": "Frigidaire",
+            "found": true,
+            "searched": true,
+            "description": "Frigidaire Professional 20.6 Cu. Ft. Top Freezer Refrigerator",
+            "img-src": "https://na.electroluxmedia.com/Assets/medias/images/137/$v2/PLHT219TCK_p_of_511x473.png"
+        },
+        {
+            "model-number": "FRS20ZSHB",
+            "brand": "Frigidaire",
+            "found": false,
+            "searched": true
+        },
+        {
+            "model-number": "PLD2850RES",
+            "brand": "Frigidaire",
+            "found": false,
+            "searched": true
+        },
+        {
+            "model-number": "PLCS389AC",
+            "brand": "Frigidaire",
+            "found": false,
+            "searched": true
+        },
+        {
+            "model-number": "FPET2785PF",
+            "brand": "Frigidaire",
+            "found": true,
+            "searched": true,
+            "description": "Frigidaire Professional 27'' Double Electric Wall Oven",
+            "msrp": 3499.0,
+            "section": "Kitchen-Appliances",
+            "category": "Wall-Ovens",
+            "ship-weight": "Shipping Weight (lbs): 235",
+            "img-src": "https://na.electroluxmedia.com/Assets/medias/images/78/FPET2785PF_p_ho_511x473.png"
+        },
+        {
+            "model-number": "PLT219WJSM",
+            "brand": "Frigidaire",
+            "found": false,
+            "searched": true
+        },
+        {
+            "model-number": "PLHS237ZAB",
+            "brand": "Frigidaire",
+            "found": false,
+            "searched": true
+        },
+        {
+            "model-number": "LPHS2687KF",
+            "brand": "Frigidaire",
+            "found": false,
+            "searched": true
+        },
+        {
+            "model-number": "PLD2560LCC",
+            "brand": "Frigidaire",
+            "found": true,
+            "searched": true,
+            "description": "Frigidaire Professional 24'' Built-In Dishwasher",
+            "img-src": "https://na.electroluxmedia.com/Assets/medias/images/137/$v2/PLD2560LCC_p_cp_511x473.png"
+        },
+        {
+            "model-number": "FDB989GFC",
+            "brand": "Frigidaire",
+            "found": false,
+            "searched": true
+        },
+        {
+            "model-number": "FPIF3093LF",
+            "brand": "Frigidaire",
+            "found": true,
+            "searched": true,
+            "description": "Frigidaire Professional 30'' Freestanding Induction Range",
+            "msrp": 2199.0,
+            "section": "Owner-Center",
+            "category": "Product-Support--Manuals",
+            "weight": "Product Weight (lbs): 200",
+            "img-src": "https://na.electroluxmedia.com/Assets/medias/images/81/FPIF3093LF_p_ho_511x473.png"
+        },
+        {
+            "model-number": "PLES389EC",
+            "brand": "Frigidaire",
+            "found": true,
+            "searched": true,
+            "description": "Frigidaire Professional 30'' Electric Built-In Range",
+            "weight": "Product Weight (lbs): 189",
+            "img-src": "https://na.electroluxmedia.com/Assets/medias/images/81/PLES389EC_p_is1_669x463.png"
+        },
+        {
+            "model-number": "FPWD3085KF",
+            "brand": "Frigidaire",
+            "found": true,
+            "searched": true,
+            "description": "Frigidaire Professional 30'' Warmer Drawer",
+            "msrp": 1149.0,
+            "section": "Owner-Center",
+            "category": "Product-Support--Manuals",
+            "img-src": "https://na.electroluxmedia.com/Assets/medias/images/54/FPWD3085KF_p_ho_511x473.png"
+        },
+        {
+            "model-number": "PHSC39EJSS",
+            "brand": "Frigidaire",
+            "found": true,
+            "searched": true,
+            "description": "Frigidaire Professional 22.6 Cu. Ft. Counter-Depth Side-by-Side Refrigerator",
+            "img-src": "https://na.electroluxmedia.com/Assets/medias/images/137/$v2/PHSC39EJSS_p_ho_511x473.png"
+        },
+        {
+            "model-number": "FPHD2485NF",
+            "brand": "Frigidaire",
+            "found": true,
+            "searched": true,
+            "description": "Frigidaire Professional 24'' Built-In Dishwasher",
+            "msrp": 749.0,
+            "section": "Owner-Center",
+            "category": "Product-Support--Manuals",
+            "weight": "Product Weight (lbs): 78",
+            "img-src": "https://na.electroluxmedia.com/Assets/medias/images/65/FPHD2485NF_p_ho_511x473.png"
+        },
+        {
+            "model-number": "FPHC2399PF",
+            "brand": "Frigidaire",
+            "found": true,
+            "searched": true,
+            "description": "Frigidaire Professional 22.2 Cu. Ft. Counter-Depth Side-by-Side Refrigerator",
+            "msrp": 1899.0,
+            "section": "Owner-Center",
+            "category": "Product-Support--Manuals",
+            "weight": "Product Weight (lbs): 312",
+            "ship-weight": "Shipping Weight (lbs): 325",
+            "img-src": "https://na.electroluxmedia.com/Assets/medias/images/79/FPHC2399PF_p_ho_511x473.png"
+        },
+        {
+            "model-number": "FPGC3087MS",
+            "brand": "Frigidaire",
+            "found": true,
+            "searched": true,
+            "description": "Frigidaire Professional 30'' Gas Cooktop",
+            "msrp": 1699.0,
+            "section": "Owner-Center",
+            "category": "Product-Support--Manuals",
+            "weight": "Product Weight (lbs): 50",
+            "img-src": "https://na.electroluxmedia.com/Assets/medias/images/148/$v3/FPGC3087MS_p_ho_511x473.png"
+        },
+        {
+            "model-number": "PL36WC41EC",
+            "brand": "Frigidaire",
+            "found": true,
+            "searched": true,
+            "description": "Frigidaire 36'' Overhead Range Hood",
+            "msrp": 589.0,
+            "section": "Owner-Center",
+            "category": "Product-Support--Manuals",
+            "img-src": "https://na.electroluxmedia.com/Assets/medias/images/66/PL36WC41EC_p_tq_511x473.png"
+        },
+        {
+            "model-number": "FPHI1888PF",
+            "brand": "Frigidaire",
+            "found": true,
+            "searched": true,
+            "description": "Frigidaire Professional 18 Cu. Ft. Top Freezer Refrigerator",
+            "msrp": 1079.0,
+            "section": "Owner-Center",
+            "category": "Product-Support--Manuals",
+            "weight": "Product Weight (lbs): 199",
+            "ship-weight": "Shipping Weight (lbs): 205",
+            "img-src": "https://na.electroluxmedia.com/Assets/medias/images/64/FPHI1888PF_p_ho_511x473.png"
+        },
+        {
+            "model-number": "PL30WC41EC",
+            "brand": "Frigidaire",
+            "found": true,
+            "searched": true,
+            "description": "Frigidaire 30'' Overhead Range Hood",
+            "msrp": 529.0,
+            "section": "Owner-Center",
+            "category": "Product-Support--Manuals",
+            "img-src": "https://na.electroluxmedia.com/Assets/medias/images/66/PL30WC41EC_p_tq_511x473.png"
+        },
+        {
+            "model-number": "PLEW27S3FC",
+            "brand": "Frigidaire",
+            "found": false,
+            "searched": true
+        },
+        {
+            "model-number": "FPHI1887KR",
+            "brand": "Frigidaire",
+            "found": false,
+            "searched": true,
+            "description": "Frigidaire Professional 18.28 Cu. Ft. Top Freezer Refrigerator",
+            "msrp": 1049.0,
+            "section": "Owner-Center",
+            "category": "Product-Support--Manuals",
+            "weight": "Product Weight (lbs): 185",
+            "ship-weight": "Shipping Weight (lbs): 205"
+        },
+        {
+            "model-number": "PLD4350RFS",
+            "brand": "Frigidaire",
+            "found": false,
+            "searched": true
+        },
+        {
+            "model-number": "FPES3085KF",
+            "brand": "Frigidaire",
+            "found": true,
+            "searched": true,
+            "description": "Frigidaire Professional 30'' Slide-In Electric Range",
+            "msrp": 2199.0,
+            "section": "Owner-Center",
+            "category": "Product-Support--Manuals",
+            "weight": "Product Weight (lbs): 220",
+            "img-src": "https://na.electroluxmedia.com/Assets/medias/images/79/FPES3085KF_p_ho_511x473.png"
+        },
+        {
+            "model-number": "FPGF368LS",
+            "brand": "Frigidaire",
+            "found": false,
+            "searched": true
+        },
+        {
+            "model-number": "PL36PC50EC",
+            "brand": "Frigidaire",
+            "found": false,
+            "searched": true
+        },
+        {
+            "model-number": "PLWC486GS",
+            "brand": "Frigidaire",
+            "found": false,
+            "searched": true
+        },
+        {
+            "model-number": "PLEB27T9DC",
+            "brand": "Frigidaire",
+            "found": true,
+            "searched": true,
+            "description": "Frigidaire Professional 27'' Double Electric Wall Oven",
+            "ship-weight": "Shipping Weight (lbs): 235",
+            "img-src": "https://na.electroluxmedia.com/Assets/medias/images/76/PLEB27T9DC_p_tq_511x473.png"
+        },
+        {
+            "model-number": "PLGC30S8AC",
+            "brand": "Frigidaire",
+            "found": false,
+            "searched": true
+        },
+        {
+            "model-number": "PLHS69EGSS",
+            "brand": "Frigidaire",
+            "found": true,
+            "searched": true,
+            "description": "Frigidaire Professional 26 Cu. Ft. Side-by-Side Refrigerator",
+            "img-src": "https://na.electroluxmedia.com/Assets/medias/images/137/$v2/PLHS69EGSS_p_is1_669x463.png"
+        },
+        {
+            "model-number": "FPEW3085PF",
+            "brand": "Frigidaire",
+            "found": true,
+            "searched": true,
+            "description": "Frigidaire Professional 30'' Single Electric Wall Oven",
+            "msrp": 2299.0,
+            "section": "Owner-Center",
+            "category": "Product-Support--Manuals",
+            "weight": "Product Weight (lbs): 127",
+            "ship-weight": "Shipping Weight (lbs): 146",
+            "img-src": "https://na.electroluxmedia.com/Assets/medias/images/78/FPEW3085PF_p_ho_511x473.png"
+        },
+        {
+            "model-number": "FP2I2086NK",
+            "brand": "Frigidaire",
+            "found": false,
+            "searched": true
+        },
+        {
+            "model-number": "PLRB183HCK",
+            "brand": "Frigidaire",
+            "found": false,
+            "searched": true
+        },
+        {
+            "model-number": "PLHV36W7KC",
+            "brand": "Frigidaire",
+            "found": false,
+            "searched": true
+        },
+        {
+            "model-number": "FPHG2399PF",
+            "brand": "Frigidaire",
+            "found": true,
+            "searched": true,
+            "description": "Frigidaire Professional 22.4 Cu. Ft. Counter-Depth French Door Refrigerator",
+            "msrp": 3199.0,
+            "section": "Owner-Center",
+            "category": "Product-Support--Manuals",
+            "weight": "Product Weight (lbs): 332",
+            "ship-weight": "Shipping Weight (lbs): 345",
+            "img-src": "https://na.electroluxmedia.com/Assets/medias/images/64/FPHG2399PF_p_ho_511x473.png"
+        },
+        {
+            "model-number": "PLGS389EC",
+            "brand": "Frigidaire",
+            "found": true,
+            "searched": true,
+            "description": "Frigidaire Professional 30'' Gas Built-In Range",
+            "weight": "Product Weight (lbs): 190",
+            "img-src": "https://na.electroluxmedia.com/Assets/medias/images/81/PLGS389EC_p_is1_669x463.png"
+        },
+        {
+            "model-number": "FPDS3085KF",
+            "brand": "Frigidaire",
+            "found": true,
+            "searched": true,
+            "description": "Frigidaire Professional 30'' Slide-In Dual-Fuel Range",
+            "msrp": 2499.0,
+            "section": "Owner-Center",
+            "category": "Product-Support--Manuals",
+            "weight": "Product Weight (lbs): 240",
+            "img-src": "https://na.electroluxmedia.com/Assets/medias/images/52/FPDS3085KF_p_ho_511x473.png"
+        },
+        {
+            "model-number": "PLHS67EHSB",
+            "brand": "Frigidaire",
+            "found": false,
+            "searched": true
+        },
+        {
+            "model-number": "PLHT189SSK",
+            "brand": "Frigidaire",
+            "found": false,
+            "searched": true
+        },
+        {
+            "model-number": "MRAD17V8EW",
+            "brand": "Frigidaire",
+            "found": false,
+            "searched": true
+        },
+        {
+            "model-number": "FPIF3085NF",
+            "brand": "Frigidaire",
+            "found": false,
+            "searched": true,
+            "description": "Frigidaire Professional 30'' Freestanding Induction Range",
+            "msrp": 1949.0,
+            "section": "Owner-Center",
+            "category": "Product-Support--Manuals"
+        },
+        {
+            "model-number": "FRT22IRSHB",
+            "brand": "Frigidaire",
+            "found": false,
+            "searched": true
+        },
+        {
+            "model-number": "FPRU19F8QF",
+            "brand": "Frigidaire",
+            "found": true,
+            "searched": true,
+            "description": "Frigidaire Professional 19 Cu. Ft. All Refrigerator",
+            "msrp": 2099.0,
+            "section": "Owner-Center",
+            "category": "Product-Support--Manuals",
+            "weight": "Product Weight (lbs): 230",
+            "ship-weight": "Shipping Weight (lbs): 240",
+            "img-src": "https://na.electroluxmedia.com/Assets/medias/images/151/FPRU19F8QF_g_ho_511x473.png"
+        },
+        {
+            "model-number": "FPMC1233KS",
+            "brand": "Frigidaire",
+            "found": false,
+            "searched": true
+        },
+        {
+            "model-number": "PHSB67EJSB",
+            "brand": "Frigidaire",
+            "found": false,
+            "searched": true
+        },
+        {
+            "model-number": "PLMB209DC",
+            "brand": "Frigidaire",
+            "found": false,
+            "searched": true,
+            "description": "Frigidaire Professional 2.0 Cu. Ft. Built-In Microwave"
+        },
+        {
+            "model-number": "FCS388WHC",
+            "brand": "Frigidaire",
+            "found": false,
+            "searched": true
+        },
+        {
+            "model-number": "PLCS389DC",
+            "brand": "Frigidaire",
+            "found": true,
+            "searched": true,
+            "description": "Frigidaire Professional 30'' Slide-In Dual-Fuel Range",
+            "img-src": "https://na.electroluxmedia.com/Assets/medias/images/81/PLCS389DC_p_tq_511x473.png"
+        },
+        {
+            "model-number": "PLD2875RFC",
+            "brand": "Frigidaire",
+            "found": false,
+            "searched": true
+        },
+        {
+            "model-number": "PLMV168KC",
+            "brand": "Frigidaire",
+            "found": false,
+            "searched": true
+        },
+        {
+            "model-number": "PLCS388EC",
+            "brand": "Frigidaire",
+            "found": false,
+            "searched": true
+        },
+        {
+            "model-number": "FDB998GJC",
+            "brand": "Frigidaire",
+            "found": false,
+            "searched": true
+        },
+        {
+            "model-number": "PLES389DC",
+            "brand": "Frigidaire",
+            "found": true,
+            "searched": true,
+            "description": "Frigidaire Professional 30'' Slide-In Electric Range",
+            "img-src": "https://na.electroluxmedia.com/Assets/medias/images/81/PLES389DC_p_tq_511x473.png"
+        },
+        {
+            "model-number": "PLD4350RFC",
+            "brand": "Frigidaire",
+            "found": false,
+            "searched": true
+        },
+        {
+            "model-number": "FPEW3085KF",
+            "brand": "Frigidaire",
+            "found": false,
+            "searched": true
+        },
+        {
+            "model-number": "PLCS389EC",
+            "brand": "Frigidaire",
+            "found": true,
+            "searched": true,
+            "description": "Frigidaire Professional 30'' Dual Fuel Built-In Range",
+            "weight": "Product Weight (lbs): 190",
+            "img-src": "https://na.electroluxmedia.com/Assets/medias/images/81/PLCS389EC_p_ho_511x473.png"
+        },
+        {
+            "model-number": "MUFD17V9FS",
+            "brand": "Frigidaire",
+            "found": false,
+            "searched": true
+        },
+        {
+            "model-number": "PHSC39EFSS",
+            "brand": "Frigidaire",
+            "found": false,
+            "searched": true
+        },
+        {
+            "model-number": "PLGFMZ98GC",
+            "brand": "Frigidaire",
+            "found": false,
+            "searched": true,
+            "description": "Frigidaire Professional 30'' Freestanding Gas Range"
+        },
+        {
+            "model-number": "PLEB27S9FC",
+            "brand": "Frigidaire",
+            "found": false,
+            "searched": true
+        },
+        {
+            "model-number": "PLBMV188HC",
+            "brand": "Frigidaire",
+            "found": false,
+            "searched": true
+        },
+        {
+            "model-number": "GLD4350RFS",
+            "brand": "Frigidaire",
+            "found": false,
+            "searched": true
+        },
+        {
+            "model-number": "PLEB27S8AC",
+            "brand": "Frigidaire",
+            "found": false,
+            "searched": true
+        },
+        {
+            "model-number": "PLHT189CSB",
+            "brand": "Frigidaire",
+            "found": true,
+            "searched": true,
+            "description": "Frigidaire Professional 18.3 Cu. Ft. Top Freezer Refrigerator",
+            "img-src": "https://na.electroluxmedia.com/Assets/medias/images/137/$v2/PLHT189CSB_p_of_511x473.png"
+        },
+        {
+            "model-number": "FPUI2188LF",
+            "brand": "Frigidaire",
+            "found": false,
+            "searched": true,
+            "description": "Frigidaire Professional 21 Cu. Ft. Top Freezer Refrigerator",
+            "msrp": 1199.0,
+            "section": "Owner-Center",
+            "category": "Product-Support--Manuals",
+            "ship-weight": "Shipping Weight (lbs): 220"
+        },
+        {
+            "model-number": "FPUI1888PF",
+            "brand": "Frigidaire",
+            "found": true,
+            "searched": true,
+            "description": "Frigidaire Professional 18 Cu. Ft. Top Freezer Refrigerator",
+            "msrp": 1149.0,
+            "section": "Owner-Center",
+            "category": "Product-Support--Manuals",
+            "weight": "Product Weight (lbs): 199",
+            "ship-weight": "Shipping Weight (lbs): 205",
+            "img-src": "https://na.electroluxmedia.com/Assets/medias/images/64/FPUI1888PF_p_ho_511x473.png"
+        },
+        {
+            "model-number": "FPFU19F8Q",
+            "brand": "Frigidaire",
+            "found": false,
+            "searched": true
+        },
+        {
+            "model-number": "FPUI1888LF",
+            "brand": "Frigidaire",
+            "found": false,
+            "searched": true,
+            "description": "Frigidaire Professional 18 Cu. Ft. Top Freezer Refrigerator",
+            "msrp": 1099.0,
+            "section": "Owner-Center",
+            "category": "Product-Support--Manuals",
+            "ship-weight": "Shipping Weight (lbs): 205"
+        },
+        {
+            "model-number": "PHS38EJSB",
+            "brand": "Frigidaire",
+            "found": false,
+            "searched": true,
+            "description": "Frigidaire Professional 23 Cu. Ft. Side-by-Side Refrigerator"
+        },
+        {
+            "model-number": "PLHT219TDK",
+            "brand": "Frigidaire",
+            "found": false,
+            "searched": true
+        },
+        {
+            "model-number": "PLHS69EESS",
+            "brand": "Frigidaire",
+            "found": true,
+            "searched": true,
+            "description": "Frigidaire Professional 26 Cu. Ft. Side-by-Side Refrigerator",
+            "img-src": "https://na.electroluxmedia.com/Assets/medias/images/137/$v2/PLHS69EESS_p_of_511x473.png"
+        },
+        {
+            "model-number": "PLMVZ169GC",
+            "brand": "Frigidaire",
+            "found": false,
+            "searched": true,
+            "description": "Frigidaire Professional 1.6 Cu. Ft. Over-The-Range Microwave"
+        },
+        {
+            "model-number": "PLDS999CC",
+            "brand": "Frigidaire",
+            "found": false,
+            "searched": true
+        },
+        {
+            "model-number": "FPEH307DRF",
+            "brand": "Frigidaire",
+            "found": false,
+            "searched": true
+        },
+        {
+            "model-number": "PLEFZ384GC",
+            "brand": "Frigidaire",
+            "found": false,
+            "searched": true
+        },
+        {
+            "model-number": "FPHT18D3RS",
+            "brand": "Frigidaire",
+            "found": true,
+            "searched": true,
+            "description": "Frigidaire Professional 18 Cu. Ft. Top Freezer Refrigerator",
+            "ship-weight": "Shipping Weight (lbs): 205",
+            "img-src": "https://na.electroluxmedia.com/Assets/medias/images/168/FPHT18D3RS_b_ho_511x473.png"
+        },
+        {
+            "model-number": "FRS26ZSHB",
+            "brand": "Frigidaire",
+            "found": false,
+            "searched": true
+        },
+        {
+            "model-number": "PHS37EHSB",
+            "brand": "Frigidaire",
+            "found": false,
+            "searched": true
+        },
+        {
+            "model-number": "GLD2870RFS",
+            "brand": "Frigidaire",
+            "found": false,
+            "searched": true
+        },
+        {
+            "model-number": "F42WC50EC",
+            "brand": "Frigidaire",
+            "found": false,
+            "searched": true
+        },
+        {
+            "model-number": "PLRT184RBK",
+            "brand": "Frigidaire",
+            "found": false,
+            "searched": true
+        },
+        {
+            "model-number": "FPUI2188LR",
+            "brand": "Frigidaire",
+            "found": false,
+            "searched": true,
+            "description": "Frigidaire Professional 21 Cu. Ft. Top Freezer Refrigerator",
+            "msrp": 1199.0,
+            "section": "Owner-Center",
+            "category": "Product-Support--Manuals",
+            "ship-weight": "Shipping Weight (lbs): 220"
+        },
+        {
+            "model-number": "PLHS68EFSB",
+            "brand": "Frigidaire",
+            "found": false,
+            "searched": true
+        },
+        {
+            "model-number": "FP2I2086NS",
+            "brand": "Frigidaire",
+            "found": false,
+            "searched": true
+        },
+        {
+            "model-number": "PLRU1779GS",
+            "brand": "Frigidaire",
+            "found": false,
+            "searched": true
+        },
+        {
+            "model-number": "FRIGHYBRID",
+            "brand": "Frigidaire",
+            "found": false,
+            "searched": true
+        },
+        {
+            "model-number": "FEF389WFC",
+            "brand": "Frigidaire",
+            "found": false,
+            "searched": true
+        },
+        {
+            "model-number": "FPEF3081KF",
+            "brand": "Frigidaire",
+            "found": true,
+            "searched": true,
+            "description": "Frigidaire Professional 30'' Freestanding Electric Range",
+            "msrp": 1349.0,
+            "section": "Owner-Center",
+            "category": "Product-Support--Manuals",
+            "weight": "Product Weight (lbs): 190",
+            "img-src": "https://na.electroluxmedia.com/Assets/medias/images/81/FPEF3081KF_p_ho_511x473.png"
+        },
+        {
+            "model-number": "FPFU18F7RF",
+            "brand": "Frigidaire",
+            "found": false,
+            "searched": true
+        },
+        {
+            "model-number": "PLHT219TDB",
+            "brand": "Frigidaire",
+            "found": false,
+            "searched": true
+        },
+        {
+            "model-number": "PLHS239ZCB",
+            "brand": "Frigidaire",
+            "found": true,
+            "searched": true,
+            "description": "Frigidaire Professional 23.6 Cu. Ft. Side-by-Side Refrigerator",
+            "img-src": "https://na.electroluxmedia.com/Assets/medias/images/137/$v2/PLHS239ZCB_p_tq_511x473.png"
+        },
+        {
+            "model-number": "FDBB4365FS",
+            "brand": "Frigidaire",
+            "found": false,
+            "searched": true
+        },
+        {
+            "model-number": "PL42WC51EC",
+            "brand": "Frigidaire",
+            "found": true,
+            "searched": true,
+            "description": "Frigidaire Professional 42'' Wall Mount Chimney Range Hood",
+            "img-src": "https://na.electroluxmedia.com/Assets/medias/images/94/PL42WC51EC_p_bv_511x473.png"
+        },
+        {
+            "model-number": "FEB30XPFC",
+            "brand": "Frigidaire",
+            "found": false,
+            "searched": true
+        },
+        {
+            "model-number": "PLEB27T9FC",
+            "brand": "Frigidaire",
+            "found": true,
+            "searched": true,
+            "description": "Frigidaire Professional 27'' Double Electric Wall Oven",
+            "ship-weight": "Shipping Weight (lbs): 263",
+            "img-src": "https://na.electroluxmedia.com/Assets/medias/images/76/PLEB27T9FC_p_tq_511x473.png"
+        },
+        {
+            "model-number": "PLD4350RFB",
+            "brand": "Frigidaire",
+            "found": false,
+            "searched": true
+        },
+        {
+            "model-number": "942120918",
+            "brand": "Frigidaire",
+            "found": false,
+            "searched": true
+        },
+        {
+            "model-number": "GPMV168KC",
+            "brand": "Frigidaire",
+            "found": false,
+            "searched": true
+        },
+        {
+            "model-number": "GLD4350RFC",
+            "brand": "Frigidaire",
+            "found": false,
+            "searched": true
+        },
+        {
+            "model-number": "PLHS280ZAB",
+            "brand": "Frigidaire",
+            "found": false,
+            "searched": true
+        },
+        {
+            "model-number": "FPHS2687KF",
+            "brand": "Frigidaire",
+            "found": false,
+            "searched": true,
+            "description": "Frigidaire Professional 26 Cu. Ft. Side-by-Side Refrigerator",
+            "msrp": 1899.0,
+            "section": "Owner-Center",
+            "category": "Product-Support--Manuals",
+            "weight": "Product Weight (lbs): 280",
+            "ship-weight": "Shipping Weight (lbs): 300"
+        },
+        {
+            "model-number": "FPHS2399KF",
+            "brand": "Frigidaire",
+            "found": false,
+            "searched": true,
+            "description": "Frigidaire Professional 22.6 Cu. Ft. Side-by-Side Refrigerator",
+            "msrp": 2099.0,
+            "section": "Owner-Center",
+            "category": "Product-Support--Manuals",
+            "weight": "Product Weight (lbs): 290",
+            "ship-weight": "Shipping Weight (lbs): 285"
+        },
+        {
+            "model-number": "PLHS67EGSB",
+            "brand": "Frigidaire",
+            "found": true,
+            "searched": true,
+            "description": "Frigidaire Professional 26.0 Cu. Ft. Top Freezer Refrigerator",
+            "img-src": "https://na.electroluxmedia.com/Assets/medias/images/137/$v2/PLHS67EGSB_p_of_511x473.png"
+        },
+        {
+            "model-number": "FPEW2785PF",
+            "brand": "Frigidaire",
+            "found": true,
+            "searched": true,
+            "description": "Frigidaire Professional 27'' Single Electric Wall Oven",
+            "msrp": 2299.0,
+            "section": "Owner-Center",
+            "category": "Product-Support--Manuals",
+            "ship-weight": "Shipping Weight (lbs): 130",
+            "img-src": "https://na.electroluxmedia.com/Assets/medias/images/78/FPEW2785PF_p_ho_511x473.png"
+        },
+        {
+            "model-number": "PHT189HKM",
+            "brand": "Frigidaire",
+            "found": true,
+            "searched": true,
+            "description": "Frigidaire Professional 18.3 Cu. Ft. Top Freezer Refrigerator",
+            "img-src": "https://na.electroluxmedia.com/Assets/medias/images/137/$v2/PHT189HKM_p_of_511x473.png"
+        },
+        {
+            "model-number": "PLHV36W6KC",
+            "brand": "Frigidaire",
+            "found": false,
+            "searched": true
+        },
+        {
+            "model-number": "FPET3085KF",
+            "brand": "Frigidaire",
+            "found": true,
+            "searched": true,
+            "description": "Frigidaire Professional 30'' Double Electric Wall Oven",
+            "msrp": 2899.0,
+            "section": "Owner-Center",
+            "category": "Product-Support--Manuals",
+            "weight": "Product Weight (lbs): 275",
+            "ship-weight": "Shipping Weight (lbs): 300",
+            "img-src": "https://na.electroluxmedia.com/Assets/medias/images/54/FPET3085KF_p_ho_511x473.png"
+        },
+        {
+            "model-number": "FPEW2785KF",
+            "brand": "Frigidaire",
+            "found": false,
+            "searched": true
+        },
+        {
+            "model-number": "FCS388WEC",
+            "brand": "Frigidaire",
+            "found": false,
+            "searched": true
+        },
+        {
+            "model-number": "PLMBZ209GC",
+            "brand": "Frigidaire",
+            "found": false,
+            "searched": true,
+            "description": "Frigidaire Professional 2.0 Cu. Ft. Built-In Microwave"
+        },
+        {
+            "model-number": "MRAD17V8FW",
+            "brand": "Frigidaire",
+            "found": false,
+            "searched": true
+        },
+        {
+            "model-number": "FPCC3085KS",
+            "brand": "Frigidaire",
+            "found": true,
+            "searched": true,
+            "description": "Frigidaire Professional 30'' Induction Hybrid Cooktop",
+            "msrp": 1349.0,
+            "section": "Owner-Center",
+            "category": "Product-Support--Manuals",
+            "weight": "Product Weight (lbs): 55",
+            "img-src": "https://na.electroluxmedia.com/Assets/medias/images/76/FPCC3085KS_p_ho_511x473.png"
+        },
+        {
+            "model-number": "PLRB183CCK",
+            "brand": "Frigidaire",
+            "found": false,
+            "searched": true
+        },
+        {
+            "model-number": "PLHS269ZJB",
+            "brand": "Frigidaire",
+            "found": false,
+            "searched": true
+        },
+        {
+            "model-number": "FDB2830CES",
+            "brand": "Frigidaire",
+            "found": false,
+            "searched": true
+        },
+        {
+            "model-number": "PHSB67EHSB",
+            "brand": "Frigidaire",
+            "found": false,
+            "searched": true
+        },
+        {
+            "model-number": "PLEFMZ99EC",
+            "brand": "Frigidaire",
+            "found": true,
+            "searched": true,
+            "description": "Frigidaire Professional 30'' Freestanding Electric Range",
+            "img-src": "https://na.electroluxmedia.com/Assets/medias/images/81/PLEFMZ99EC_p_is1_669x463.png"
+        },
+        {
+            "model-number": "MWTKP30KF",
+            "brand": "Frigidaire",
+            "found": true,
+            "searched": true,
+            "description": "Frigidaire Grey/Stainless 30'' Microwave Trim Kit",
+            "msrp": 129.99,
+            "section": "Filters--Accessories",
+            "category": "Cooking-Accessories",
+            "img-src": "https://na.electroluxmedia.com/Assets/medias/images/83/$v2/MWTKP30KF_HOV_511x473.png"
+        },
+        {
+            "model-number": "PLHS267ZCB",
+            "brand": "Frigidaire",
+            "found": true,
+            "searched": true,
+            "description": "Frigidaire Professional 25.8 Cu. Ft. Side-by-Side Refrigerator",
+            "img-src": "https://na.electroluxmedia.com/Assets/medias/images/137/$v2/PLHS267ZCB_p_of_511x473.png"
+        },
+        {
+            "model-number": "FPRH17D7KF",
+            "brand": "Frigidaire",
+            "found": false,
+            "searched": true,
+            "description": "Frigidaire Professional 17 Cu. Ft. All Refrigerator",
+            "msrp": 1199.0,
+            "section": "Owner-Center",
+            "category": "Product-Support--Manuals",
+            "weight": "Product Weight (lbs): 205",
+            "ship-weight": "Shipping Weight (lbs): 227"
+        },
+        {
+            "model-number": "PHSB37EHSB",
+            "brand": "Frigidaire",
+            "found": false,
+            "searched": true
+        },
+        {
+            "model-number": "FFU21F7HW",
+            "brand": "Frigidaire",
+            "found": false,
+            "searched": true
+        },
+        {
+            "model-number": "PLHS67EFSB",
+            "brand": "Frigidaire",
+            "found": false,
+            "searched": true
+        },
+        {
+            "model-number": "PLEF398DC",
+            "brand": "Frigidaire",
+            "found": true,
+            "searched": true,
+            "description": "Frigidaire Professional 30'' Freestanding Electric Range",
+            "img-src": "https://na.electroluxmedia.com/Assets/medias/images/81/PLEF398DC_p_tq_511x473.png"
+        },
+        {
+            "model-number": "PLRS237ZAB",
+            "brand": "Frigidaire",
+            "found": false,
+            "searched": true
+        },
+        {
+            "model-number": "PLRB183HCB",
+            "brand": "Frigidaire",
+            "found": false,
+            "searched": true
+        },
+        {
+            "model-number": "PLEF489GC",
+            "brand": "Frigidaire",
+            "found": true,
+            "searched": true,
+            "description": "Frigidaire Professional 40'' Freestanding Electric Range",
+            "img-src": "https://na.electroluxmedia.com/Assets/medias/images/81/PLEF489GC_p_ho_511x473.png"
+        },
+        {
+            "model-number": "PHSC239DSB",
+            "brand": "Frigidaire",
+            "found": true,
+            "searched": true,
+            "description": "Frigidaire Professional 22.6 Cu. Ft. Side-by-Side Refrigerator",
+            "img-src": "https://na.electroluxmedia.com/Assets/medias/images/137/$v2/PHSC239DS_p_ho_511x473.png"
+        },
+        {
+            "model-number": "FPHS269ZCB",
+            "brand": "Frigidaire",
+            "found": false,
+            "searched": true
+        },
+        {
+            "model-number": "GPDB998JC",
+            "brand": "Frigidaire",
+            "found": false,
+            "searched": true
+        },
+        {
+            "model-number": "PHSC39EESS",
+            "brand": "Frigidaire",
+            "found": true,
+            "searched": true,
+            "description": "Frigidaire Professional 22.6 Cu. Ft. Side-by-Side Refrigerator",
+            "img-src": "https://na.electroluxmedia.com/Assets/medias/images/137/$v2/PHSC39EESS_p_of_511x473.png"
+        },
+        {
+            "model-number": "PLEF489AC",
+            "brand": "Frigidaire",
+            "found": false,
+            "searched": true
+        },
+        {
+            "model-number": "FPMC1334KS",
+            "brand": "Frigidaire",
+            "found": false,
+            "searched": true
+        },
+        {
+            "model-number": "PHT219HKM",
+            "brand": "Frigidaire",
+            "found": true,
+            "searched": true,
+            "description": "Frigidaire Professional 20.6 Cu. Ft. Top Freezer Refrigerator",
+            "img-src": "https://na.electroluxmedia.com/Assets/medias/images/137/$v2/PHT219HKM_p_of_511x473.png"
+        },
+        {
+            "model-number": "FEB789WCC",
+            "brand": "Frigidaire",
+            "found": false,
+            "searched": true
+        },
+        {
+            "model-number": "FPMC1832KS",
+            "brand": "Frigidaire",
+            "found": false,
+            "searched": true
+        },
+        {
+            "model-number": "FES388WEC",
+            "brand": "Frigidaire",
+            "found": false,
+            "searched": true
+        },
+        {
+            "model-number": "FPDS3085PF",
+            "brand": "Frigidaire",
+            "found": true,
+            "searched": true,
+            "description": "Frigidaire Professional 30'' Slide-In Dual-Fuel Range",
+            "msrp": 2699.0,
+            "section": "Owner-Center",
+            "category": "Product-Support--Manuals",
+            "weight": "Product Weight (lbs): 240",
+            "img-src": "https://na.electroluxmedia.com/Assets/medias/images/78/FPDS3085PF_p_ho_511x473.png"
+        },
+        {
+            "model-number": "PLEC36S9EC",
+            "brand": "Frigidaire",
+            "found": true,
+            "searched": true,
+            "description": "Frigidaire Professional 36'' Electric Cooktop",
+            "img-src": "https://na.electroluxmedia.com/Assets/medias/images/76/PLEC36S9EC_p_tqr_511x473.png"
+        },
+        {
+            "model-number": "FPMC1632KS",
+            "brand": "Frigidaire",
+            "found": false,
+            "searched": true
+        },
+        {
+            "model-number": "PHT219HSM",
+            "brand": "Frigidaire",
+            "found": true,
+            "searched": true,
+            "description": "Frigidaire Professional 20.6 Cu. Ft. Top Freezer Refrigerator",
+            "img-src": "https://na.electroluxmedia.com/Assets/medias/images/137/$v2/PHT219HSM_p_of_511x473.png"
+        },
+        {
+            "model-number": "PLEFM399DC",
+            "brand": "Frigidaire",
+            "found": true,
+            "searched": true,
+            "description": "Frigidaire Professional 30'' Freestanding Electric Range",
+            "img-src": "https://na.electroluxmedia.com/Assets/medias/images/81/PLEFM399DC_p_tq_511x473.png"
+        },
+        {
+            "model-number": "PLEF398AC",
+            "brand": "Frigidaire",
+            "found": false,
+            "searched": true
+        },
+        {
+            "model-number": "PLFU1779GW",
+            "brand": "Frigidaire",
+            "found": false,
+            "searched": true
+        },
+        {
+            "model-number": "FPHI2187KF",
+            "brand": "Frigidaire",
+            "found": false,
+            "searched": true,
+            "description": "Frigidaire Professional 20.61 Cu. Ft. Top Freezer Refrigerator",
+            "msrp": 1199.0,
+            "section": "Owner-Center",
+            "category": "Product-Support--Manuals",
+            "weight": "Product Weight (lbs): 200",
+            "ship-weight": "Shipping Weight (lbs): 220"
+        },
+        {
+            "model-number": "PLHV42P8CC",
+            "brand": "Frigidaire",
+            "found": true,
+            "searched": true,
+            "description": "Frigidaire Professional 42'' Wall Mount Chimney Range Hood",
+            "img-src": "https://na.electroluxmedia.com/Assets/medias/images/95/PLHV42P8CC_p_is1_669x463.png"
+        },
+        {
+            "model-number": "PLEFZ388GC",
+            "brand": "Frigidaire",
+            "found": false,
+            "searched": true
+        },
+        {
+            "model-number": "FPCS3085LF",
+            "brand": "Frigidaire",
+            "found": true,
+            "searched": true,
+            "description": "Frigidaire Professional 30'' Slide-In Induction Hybrid Range",
+            "msrp": 2849.0,
+            "section": "Owner-Center",
+            "category": "Product-Support--Manuals",
+            "weight": "Product Weight (lbs): 220",
+            "img-src": "https://na.electroluxmedia.com/Assets/medias/images/52/FPCS3085LF_p_ho_511x473.png"
+        },
+        {
+            "model-number": "PLRU1778ES",
+            "brand": "Frigidaire",
+            "found": true,
+            "searched": true,
+            "description": "Frigidaire Professional 16.7 Cu. Ft. All Refrigerator",
+            "ship-weight": "Shipping Weight (lbs): 229",
+            "img-src": "https://na.electroluxmedia.com/Assets/medias/images/137/$v2/PLRU1778ES_p_oe_511x473.png"
+        },
+        {
+            "model-number": "FDB657RJC",
+            "brand": "Frigidaire",
+            "found": false,
+            "searched": true
+        },
+        {
+            "model-number": "PLGF389CC",
+            "brand": "Frigidaire",
+            "found": true,
+            "searched": true,
+            "description": "Frigidaire Professional 30'' Freestanding Gas Range",
+            "img-src": "https://na.electroluxmedia.com/Assets/medias/images/81/PLGF389CC_p_tq_511x473.png"
+        },
+        {
+            "model-number": "PLEB30T9DC",
+            "brand": "Frigidaire",
+            "found": true,
+            "searched": true,
+            "description": "Frigidaire Professional 30'' Double Electric Wall Oven",
+            "ship-weight": "Shipping Weight (lbs): 257",
+            "img-src": "https://na.electroluxmedia.com/Assets/medias/images/76/PLEB30T9DC_p_ho_511x473.png"
+        },
+        {
+            "model-number": "FPHS2699KF",
+            "brand": "Frigidaire",
+            "found": false,
+            "searched": true,
+            "description": "Frigidaire Professional 26 Cu. Ft. Side-by-Side Refrigerator",
+            "msrp": 2099.0,
+            "section": "Owner-Center",
+            "category": "Product-Support--Manuals",
+            "weight": "Product Weight (lbs): 280",
+            "ship-weight": "Shipping Weight (lbs): 300"
+        },
+        {
+            "model-number": "F36WC40EC",
+            "brand": "Frigidaire",
+            "found": false,
+            "searched": true
+        },
+        {
+            "model-number": "PHS6LE6HSB",
+            "brand": "Frigidaire",
+            "found": true,
+            "searched": true,
+            "description": "Frigidaire Professional 26 Cu. Ft. Side-by-Side Refrigerator",
+            "img-src": "https://na.electroluxmedia.com/Assets/medias/images/95/PHS6LE6HSB_p_of_511x473.png"
+        },
+        {
+            "model-number": "FPRH19D7LF",
+            "brand": "Frigidaire",
+            "found": true,
+            "searched": true,
+            "description": "Frigidaire Professional 19 Cu. Ft. All Refrigerator",
+            "msrp": 1649.0,
+            "section": "Owner-Center",
+            "category": "Product-Support--Manuals",
+            "weight": "Product Weight (lbs): 230",
+            "ship-weight": "Shipping Weight (lbs): 240",
+            "img-src": "https://na.electroluxmedia.com/Assets/medias/images/141/$v2/FPRH19D7LF_p_ho_511x473.png"
+        },
+        {
+            "model-number": "PLRT217TAB",
+            "brand": "Frigidaire",
+            "found": false,
+            "searched": true
+        },
+        {
+            "model-number": "PLEFZ398EC",
+            "brand": "Frigidaire",
+            "found": true,
+            "searched": true,
+            "description": "Frigidaire Professional 30'' Freestanding Electric Range",
+            "img-src": "https://na.electroluxmedia.com/Assets/medias/images/81/PLEFZ398EC_p_is1_669x463.png"
+        },
+        {
+            "model-number": "PLGFMZ96EC",
+            "brand": "Frigidaire",
+            "found": true,
+            "searched": true,
+            "description": "Frigidaire Professional 30'' Freestanding Gas Range",
+            "img-src": "https://na.electroluxmedia.com/Assets/medias/images/81/PLGFMZ96EC_p_ho_511x473.png"
+        },
+        {
+            "model-number": "PL30DD50EC",
+            "brand": "Frigidaire",
+            "found": false,
+            "searched": true,
+            "description": "Frigidaire 30'' Downdraft Ventilator",
+            "msrp": 729.0,
+            "section": "Owner-Center",
+            "category": "Product-Support--Manuals"
+        },
+        {
+            "model-number": "FEF387WJC",
+            "brand": "Frigidaire",
+            "found": false,
+            "searched": true
+        },
+        {
+            "model-number": "PLHS269ZDB",
+            "brand": "Frigidaire",
+            "found": true,
+            "searched": true,
+            "description": "Frigidaire Professional 26 Cu. Ft. Side-by-Side Refrigerator",
+            "img-src": "https://na.electroluxmedia.com/Assets/medias/images/137/$v2/PLHS269ZDB_p_is1_669x463.png"
+        },
+        {
+            "model-number": "PLHT217TAB",
+            "brand": "Frigidaire",
+            "found": false,
+            "searched": true
+        },
+        {
+            "model-number": "FPHI2188PF",
+            "brand": "Frigidaire",
+            "found": true,
+            "searched": true,
+            "description": "Frigidaire Professional 21 Cu. Ft. Top Freezer Refrigerator",
+            "msrp": 1149.0,
+            "section": "Owner-Center",
+            "category": "Product-Support--Manuals",
+            "weight": "Product Weight (lbs): 214",
+            "ship-weight": "Shipping Weight (lbs): 220",
+            "img-src": "https://na.electroluxmedia.com/Assets/medias/images/64/FPHI2188PF_p_ho_511x473.png"
+        },
+        {
+            "model-number": "FPHT21X2MF",
+            "brand": "Frigidaire",
+            "found": false,
+            "searched": true
+        },
+        {
+            "model-number": "PLEB30S8AC",
+            "brand": "Frigidaire",
+            "found": false,
+            "searched": true
+        },
+        {
+            "model-number": "FRT22IRSHK",
+            "brand": "Frigidaire",
+            "found": false,
+            "searched": true
+        },
+        {
+            "model-number": "PLES389AC",
+            "brand": "Frigidaire",
+            "found": false,
+            "searched": true
+        },
+        {
+            "model-number": "FPEC3085KS",
+            "brand": "Frigidaire",
+            "found": true,
+            "searched": true,
+            "description": "Frigidaire Professional 30'' Electric Cooktop",
+            "msrp": 1599.0,
+            "section": "Owner-Center",
+            "category": "Product-Support--Manuals",
+            "weight": "Product Weight (lbs): 55",
+            "img-src": "https://na.electroluxmedia.com/Assets/medias/images/148/$v3/FPEC3085KS_p_ho_511x473.png"
+        },
+        {
+            "model-number": "PLEB27S8CC",
+            "brand": "Frigidaire",
+            "found": false,
+            "searched": true
+        },
+        {
+            "model-number": "PLD2885RFC",
+            "brand": "Frigidaire",
+            "found": true,
+            "searched": true,
+            "description": "Frigidaire Professional 24'' Built-In Dishwasher",
+            "img-src": "https://na.electroluxmedia.com/Assets/medias/images/137/$v2/PLD2885RFC_p_oe_511x473.png"
+        },
+        {
+            "model-number": "PL30WC51EC",
+            "brand": "Frigidaire",
+            "found": true,
+            "searched": true,
+            "description": "Frigidaire Professional 30'' Wall Mount Chimney Range Hood",
+            "img-src": "https://na.electroluxmedia.com/Assets/medias/images/94/PL30WC51EC_p_bv_511x473.png"
+        },
+        {
+            "model-number": "PLGFZ390GC",
+            "brand": "Frigidaire",
+            "found": false,
+            "searched": true
+        },
+        {
+            "model-number": "FP2I2386NR",
+            "brand": "Frigidaire",
+            "found": false,
+            "searched": true
+        },
+        {
+            "model-number": "PLEC30S9EC",
+            "brand": "Frigidaire",
+            "found": false,
+            "searched": true
+        },
+        {
+            "model-number": "FPES3085PF",
+            "brand": "Frigidaire",
+            "found": true,
+            "searched": true,
+            "description": "Frigidaire Professional 30'' Slide-In Electric Range",
+            "msrp": 2499.0,
+            "section": "Owner-Center",
+            "category": "Product-Support--Manuals",
+            "weight": "Product Weight (lbs): 220",
+            "img-src": "https://na.electroluxmedia.com/Assets/medias/images/78/FPES3085PF_p_ho_511x473.png"
+        },
+        {
+            "model-number": "FRIGINDUCT",
+            "brand": "Frigidaire",
+            "found": false,
+            "searched": true
+        },
+        {
+            "model-number": "PHT219WHKM",
+            "brand": "Frigidaire",
+            "found": true,
+            "searched": true,
+            "description": "Frigidaire Professional 20.6 Cu. Ft. Top Freezer Refrigerator",
+            "img-src": "https://na.electroluxmedia.com/Assets/medias/images/137/$v2/PHT219WHKM_p_f1_511x473.png"
+        },
+        {
+            "model-number": "PCMV174KF",
+            "brand": "Frigidaire",
+            "found": false,
+            "searched": true
+        },
+        {
+            "model-number": "PLEB30S8CC",
+            "brand": "Frigidaire",
+            "found": false,
+            "searched": true
+        },
+        {
+            "model-number": "GLD2875FPW",
+            "brand": "Frigidaire",
+            "found": true,
+            "searched": true,
+            "description": "Frigidaire Gallery 24'' Built-In Dishwasher",
+            "img-src": "https://na.electroluxmedia.com/Assets/medias/images/137/$v2/GLD2875FPW_g_is1_669x463.png"
+        },
+        {
+            "model-number": "PLEF398CC",
+            "brand": "Frigidaire",
+            "found": true,
+            "searched": true,
+            "description": "Frigidaire Professional 30'' Freestanding Electric Range",
+            "img-src": "https://na.electroluxmedia.com/Assets/medias/images/81/PLEF398CC_p_tq_511x473.png"
+        },
+        {
+            "model-number": "PLD2855RFC",
+            "brand": "Frigidaire",
+            "found": true,
+            "searched": true,
+            "description": "Frigidaire Professional 24'' Built-In Dishwasher",
+            "img-src": "https://na.electroluxmedia.com/Assets/medias/images/137/$v2/PLD2855RFC_p_ho_511x473.png"
+        },
+        {
+            "model-number": "FGF379WEC",
+            "brand": "Frigidaire",
+            "found": false,
+            "searched": true
+        },
+        {
+            "model-number": "PLFU2067DS",
+            "brand": "Frigidaire",
+            "found": false,
+            "searched": true
+        },
+        {
+            "model-number": "PLHS39EESS",
+            "brand": "Frigidaire",
+            "found": true,
+            "searched": true,
+            "description": "Frigidaire Professional 22.6 Cu. Ft. Side-by-Side Refrigerator",
+            "img-src": "https://na.electroluxmedia.com/Assets/medias/images/137/$v2/PLHS39EESS_p_of_511x473.png"
+        },
+        {
+            "model-number": "PLHT189CSK",
+            "brand": "Frigidaire",
+            "found": true,
+            "searched": true,
+            "description": "Frigidaire Professional 18.3 Cu. Ft. Top Freezer Refrigerator",
+            "img-src": "https://na.electroluxmedia.com/Assets/medias/images/137/$v2/PLHT189CSK_p_of_511x473.png"
+        },
+        {
+            "model-number": "FPHN2899PF",
+            "brand": "Frigidaire",
+            "found": false,
+            "searched": true
+        },
+        {
+            "model-number": "PLHS68EESB",
+            "brand": "Frigidaire",
+            "found": true,
+            "searched": true,
+            "description": "Frigidaire Professional 26 Cu. Ft. Side-by-Side Refrigerator",
+            "img-src": "https://na.electroluxmedia.com/Assets/medias/images/137/$v2/PLHS68EESB_p_of_511x473.png"
+        },
+        {
+            "model-number": "MRAD17V9FS",
+            "brand": "Frigidaire",
+            "found": false,
+            "searched": true
+        },
+        {
+            "model-number": "PLHS269ZCB",
+            "brand": "Frigidaire",
+            "found": true,
+            "searched": true,
+            "description": "Frigidaire Professional 25.8 Cu. Ft. Side-by-Side Refrigerator",
+            "img-src": "https://na.electroluxmedia.com/Assets/medias/images/137/$v2/PLHS269ZCB_p_of_511x473.png"
+        },
+        {
+            "model-number": "PHSC39EGSS",
+            "brand": "Frigidaire",
+            "found": true,
+            "searched": true,
+            "description": "Frigidaire Professional 22.6 Cu. Ft. Side-by-Side Refrigerator",
+            "img-src": "https://na.electroluxmedia.com/Assets/medias/images/137/$v2/PHSC39EGSS_p_is1_669x463.png"
+        },
+        {
+            "model-number": "FPHR17D7KF",
+            "brand": "Frigidaire",
+            "found": false,
+            "searched": true
+        },
+        {
+            "model-number": "FGF379WJC",
+            "brand": "Frigidaire",
+            "found": false,
+            "searched": true
+        },
+        {
+            "model-number": "PLDB998AC",
+            "brand": "Frigidaire",
+            "found": false,
+            "searched": true
+        },
+        {
+            "model-number": "SCFSRADE8S",
+            "brand": "Frigidaire",
+            "found": false,
+            "searched": true
+        },
+        {
+            "model-number": "GPMB186KC",
+            "brand": "Frigidaire",
+            "found": false,
+            "searched": true
+        },
+        {
+            "model-number": "FKCH19F7PW",
+            "brand": "Frigidaire",
+            "found": false,
+            "searched": true
+        },
+        {
+            "model-number": "PLD4460REC",
+            "brand": "Frigidaire",
+            "found": true,
+            "searched": true,
+            "description": "Frigidaire Professional 24'' Built-In Dishwasher",
+            "img-src": "https://na.electroluxmedia.com/Assets/medias/images/137/$v2/PLD4460REC_p_oe_511x473.png"
+        },
+        {
+            "model-number": "PLHT19WEB",
+            "brand": "Frigidaire",
+            "found": true,
+            "searched": true,
+            "description": "Frigidaire Professional 20.6 Cu. Ft. Top Freezer Refrigerator",
+            "img-src": "https://na.electroluxmedia.com/Assets/medias/images/137/$v2/PLHT19WEB_p_of_511x473.png"
+        },
+        {
+            "model-number": "FPMC2785PF",
+            "brand": "Frigidaire",
+            "found": true,
+            "searched": true,
+            "description": "Frigidaire Professional 27'' Electric Wall Oven/Microwave Combination",
+            "msrp": 3199.0,
+            "section": "Owner-Center",
+            "category": "Product-Support--Manuals",
+            "weight": "Product Weight (lbs): 200",
+            "img-src": "https://na.electroluxmedia.com/Assets/medias/images/80/FPMC2785PF_p_ho_511x473.png"
+        },
+        {
+            "model-number": "PHS66EJSB",
+            "brand": "Frigidaire",
+            "found": false,
+            "searched": true,
+            "description": "Frigidaire Professional 26 Cu. Ft. Side-by-Side Refrigerator"
+        },
+        {
+            "model-number": "FPHN2399LF",
+            "brand": "Frigidaire",
+            "found": false,
+            "searched": true
+        },
+        {
+            "model-number": "FPRH19D7KF",
+            "brand": "Frigidaire",
+            "found": false,
+            "searched": true
+        },
+        {
+            "model-number": "PLMV169DC",
+            "brand": "Frigidaire",
+            "found": false,
+            "searched": true,
+            "description": "Frigidaire Professional 1.6 Cu. Ft. Over-The-Range Microwave"
+        },
+        {
+            "model-number": "PL36WC3GHC",
+            "brand": "Frigidaire",
+            "found": false,
+            "searched": true
+        },
+        {
+            "model-number": "PLD4375RFC",
+            "brand": "Frigidaire",
+            "found": true,
+            "searched": true,
+            "description": "Frigidaire Professional 24'' Built-In Dishwasher",
+            "img-src": "https://na.electroluxmedia.com/Assets/medias/images/137/$v2/PLD4375RFC_p_ho_511x473.png"
+        },
+        {
+            "model-number": "FPHS2399PF",
+            "brand": "Frigidaire",
+            "found": true,
+            "searched": true,
+            "description": "Frigidaire Professional 22.2 Cu. Ft. Side-by-Side Refrigerator",
+            "msrp": 2099.0,
+            "section": "Owner-Center",
+            "category": "Product-Support--Manuals",
+            "weight": "Product Weight (lbs): 272",
+            "ship-weight": "Shipping Weight (lbs): 285",
+            "img-src": "https://na.electroluxmedia.com/Assets/medias/images/64/FPHS2399PF_p_ho_511x473.png"
+        },
+        {
+            "model-number": "FPHT219TCB",
+            "brand": "Frigidaire",
+            "found": false,
+            "searched": true
+        },
+        {
+            "model-number": "FEB798WCC",
+            "brand": "Frigidaire",
+            "found": false,
+            "searched": true
+        },
+        {
+            "model-number": "PLHS237ZCB",
+            "brand": "Frigidaire",
+            "found": false,
+            "searched": true,
+            "description": "Frigidaire Professional 23.6 Cu. Ft. Side-by-Side Refrigerator"
+        },
+        {
+            "model-number": "FPHI1887KF",
+            "brand": "Frigidaire",
+            "found": false,
+            "searched": true,
+            "description": "Frigidaire Professional 18.28 Cu. Ft. Top Freezer Refrigerator",
+            "msrp": 1049.0,
+            "section": "Owner-Center",
+            "category": "Product-Support--Manuals",
+            "weight": "Product Weight (lbs): 185",
+            "ship-weight": "Shipping Weight (lbs): 205"
+        },
+        {
+            "model-number": "SCFSRADE4S",
+            "brand": "Frigidaire",
+            "found": false,
+            "searched": true
+        },
+        {
+            "model-number": "FPHB2899LF",
+            "brand": "Frigidaire",
+            "found": true,
+            "searched": true,
+            "description": "Frigidaire Professional 28 Cu. Ft. French Door Refrigerator",
+            "msrp": 2699.0,
+            "section": "Owner-Center",
+            "category": "Product-Support--Manuals",
+            "weight": "Product Weight (lbs): 370",
+            "ship-weight": "Shipping Weight (lbs): 370",
+            "img-src": "https://na.electroluxmedia.com/Assets/medias/images/64/FPHB2899LF_p_ho_511x473.png"
+        },
+        {
+            "model-number": "PLRS267ZAB",
+            "brand": "Frigidaire",
+            "found": false,
+            "searched": true
+        },
+        {
+            "model-number": "LFEV36FE",
+            "brand": "Frigidaire",
+            "found": false,
+            "searched": true
+        },
+        {
+            "model-number": "PLFU1788DS",
+            "brand": "Frigidaire",
+            "found": false,
+            "searched": true
+        },
+        {
+            "model-number": "PLHT219TCB",
+            "brand": "Frigidaire",
+            "found": true,
+            "searched": true,
+            "description": "Frigidaire Professional 20.6 Cu. Ft. Top Freezer Refrigerator",
+            "img-src": "https://na.electroluxmedia.com/Assets/medias/images/137/$v2/PLHT219TCB_p_of_511x473.png"
+        },
+        {
+            "model-number": "FPEC3685KS",
+            "brand": "Frigidaire",
+            "found": true,
+            "searched": true,
+            "description": "Frigidaire Professional 36'' Electric Cooktop",
+            "msrp": 1699.0,
+            "section": "Owner-Center",
+            "category": "Product-Support--Manuals",
+            "weight": "Product Weight (lbs): 60",
+            "img-src": "https://na.electroluxmedia.com/Assets/medias/images/148/$v3/FPEC3685KS_p_ho_511x473.png"
+        },
+        {
+            "model-number": "FPHS237ZCB",
+            "brand": "Frigidaire",
+            "found": false,
+            "searched": true
+        },
+        {
+            "model-number": "PLHS37EGSB",
+            "brand": "Frigidaire",
+            "found": false,
+            "searched": true
+        },
+        {
+            "model-number": "PLHT219SCK",
+            "brand": "Frigidaire",
+            "found": false,
+            "searched": true
+        },
+        {
+            "model-number": "PL36WC51EC",
+            "brand": "Frigidaire",
+            "found": true,
+            "searched": true,
+            "description": "Frigidaire Professional 36'' Wall Mount Chimney Range Hood",
+            "img-src": "https://na.electroluxmedia.com/Assets/medias/images/95/PL36WC51EC_p_bv_511x473.png"
+        },
+        {
+            "model-number": "PLGF659GC",
+            "brand": "Frigidaire",
+            "found": true,
+            "searched": true,
+            "description": "Frigidaire Professional 36'' Freestanding Gas Range",
+            "weight": "Product Weight (lbs): 220",
+            "img-src": "https://na.electroluxmedia.com/Assets/medias/images/81/PLGF659GC_p_oe_511x473.png"
+        },
+        {
+            "model-number": "FPCF3091KF",
+            "brand": "Frigidaire",
+            "found": false,
+            "searched": true
+        },
+        {
+            "model-number": "FPUS2698LF",
+            "brand": "Frigidaire",
+            "found": true,
+            "searched": true,
+            "description": "Frigidaire Professional 26 Cu. Ft. Side-by-Side Refrigerator",
+            "msrp": 2099.0,
+            "section": "Owner-Center",
+            "category": "Product-Support--Manuals",
+            "ship-weight": "Shipping Weight (lbs): 300",
+            "img-src": "https://na.electroluxmedia.com/Assets/medias/images/64/FPUS2698LF_p_ho_511x473.png"
+        },
+        {
+            "model-number": "PL36PC40EC",
+            "brand": "Frigidaire",
+            "found": false,
+            "searched": true
+        },
+        {
+            "model-number": "FPHD2491KF",
+            "brand": "Frigidaire",
+            "found": true,
+            "searched": true,
+            "description": "Frigidaire Professional 24'' Built-In Dishwasher",
+            "msrp": 849.0,
+            "section": "Owner-Center",
+            "category": "Product-Support--Manuals",
+            "weight": "Product Weight (lbs): 78",
+            "img-src": "https://na.electroluxmedia.com/Assets/medias/images/65/FPHD2491KF_p_ho_511x473.png"
+        },
+        {
+            "model-number": "FGFLZ87GC",
+            "brand": "Frigidaire",
+            "found": false,
+            "searched": true
+        },
+        {
+            "model-number": "FPWD2785KF",
+            "brand": "Frigidaire",
+            "found": false,
+            "searched": true
+        },
+        {
+            "model-number": "FPIH307DRF",
+            "brand": "Frigidaire",
+            "found": false,
+            "searched": true
+        },
+        {
+            "model-number": "FPHF2399MF",
+            "brand": "Frigidaire",
+            "found": true,
+            "searched": true,
+            "description": "Frigidaire Professional 23 Cu. Ft. French Door Counter-Depth Refrigerator",
+            "msrp": 3099.0,
+            "section": "Owner-Center",
+            "category": "Product-Support--Manuals",
+            "weight": "Product Weight (lbs): 370",
+            "ship-weight": "Shipping Weight (lbs): 370",
+            "img-src": "https://na.electroluxmedia.com/Assets/medias/images/64/FPHF2399MF_p_ho_511x473.png"
+        },
+        {
+            "model-number": "FPHI21X7LF",
+            "brand": "Frigidaire",
+            "found": false,
+            "searched": true
+        },
+        {
+            "model-number": "PL36DD50EC",
+            "brand": "Frigidaire",
+            "found": true,
+            "searched": true,
+            "description": "Frigidaire 36'' Downdraft Ventilator",
+            "msrp": 729.0,
+            "section": "Owner-Center",
+            "category": "Product-Support--Manuals",
+            "img-src": "https://na.electroluxmedia.com/Assets/medias/images/137/$v2/PL36DD50EC_p_ho_511x473.png"
+        },
+        {
+            "model-number": "FPHD2491LW",
+            "brand": "Frigidaire",
+            "found": false,
+            "searched": true
+        },
+        {
+            "model-number": "FPGC3077RF",
+            "brand": "Frigidaire",
+            "found": false,
+            "searched": true
+        },
+        {
+            "model-number": "FPET2785KF",
+            "brand": "Frigidaire",
+            "found": true,
+            "searched": true,
+            "description": "Frigidaire Professional 27'' Double Electric Wall Oven",
+            "msrp": 2899.0,
+            "section": "Owner-Center",
+            "category": "Product-Support--Manuals",
+            "weight": "Product Weight (lbs): 240",
+            "ship-weight": "Shipping Weight (lbs): 265",
+            "img-src": "https://na.electroluxmedia.com/Assets/medias/images/54/FPET2785KF_p_ho_511x473.png"
+        },
+        {
+            "model-number": "FDB768GCC",
+            "brand": "Frigidaire",
+            "found": false,
+            "searched": true
+        },
+        {
+            "model-number": "FES388WGC",
+            "brand": "Frigidaire",
+            "found": false,
+            "searched": true
+        },
+        {
+            "model-number": "FDB979GFW",
+            "brand": "Frigidaire",
+            "found": false,
+            "searched": true
+        },
+        {
+            "model-number": "PLMB186KC",
+            "brand": "Frigidaire",
+            "found": false,
+            "searched": true
+        },
+        {
+            "model-number": "FGC36S9HB",
+            "brand": "Frigidaire",
+            "found": false,
+            "searched": true
+        },
+        {
+            "model-number": "FP2H1974RF",
+            "brand": "Frigidaire",
+            "found": false,
+            "searched": true
+        },
+        {
+            "model-number": "FGFU19F8QF",
+            "brand": "Frigidaire",
+            "found": false,
+            "searched": true
+        },
+        {
+            "model-number": "FPHI2187KR",
+            "brand": "Frigidaire",
+            "found": false,
+            "searched": true,
+            "description": "Frigidaire Professional 20.61 Cu. Ft. Top Freezer Refrigerator",
+            "msrp": 1199.0,
+            "section": "Owner-Center",
+            "category": "Product-Support--Manuals",
+            "weight": "Product Weight (lbs): 200",
+            "ship-weight": "Shipping Weight (lbs): 220"
+        },
+        {
+            "model-number": "MWTKP27KF",
+            "brand": "Frigidaire",
+            "found": true,
+            "searched": true,
+            "description": "Frigidaire Grey/Stainless 27'' Microwave Trim Kit",
+            "msrp": 129.99,
+            "section": "Filters--Accessories",
+            "category": "Cooking-Accessories",
+            "ship-weight": "Shipping Weight (lbs): 11",
+            "img-src": "https://na.electroluxmedia.com/Assets/medias/images/83/$v2/MWTKP27KF_HOV_511x473.png"
+        },
+        {
+            "model-number": "LPUS2686LF",
+            "brand": "Frigidaire",
+            "found": false,
+            "searched": true,
+            "description": "Frigidaire Professional 26 Cu. Ft. Side-by-Side Refrigerator",
+            "msrp": 1899.0,
+            "section": "Owner-Center",
+            "category": "Product-Support--Manuals",
+            "ship-weight": "Shipping Weight (lbs): 300"
+        },
+        {
+            "model-number": "FDB989GFW",
+            "brand": "Frigidaire",
+            "found": false,
+            "searched": true
+        },
+        {
+            "model-number": "PLEFZ389GC",
+            "brand": "Frigidaire",
+            "found": false,
+            "searched": true
+        },
+        {
+            "model-number": "FPGS3085KF",
+            "brand": "Frigidaire",
+            "found": true,
+            "searched": true,
+            "description": "Frigidaire Professional 30'' Slide-In Gas Range",
+            "msrp": 2199.0,
+            "section": "Owner-Center",
+            "category": "Product-Support--Manuals",
+            "weight": "Product Weight (lbs): 230",
+            "img-src": "https://na.electroluxmedia.com/Assets/medias/images/52/FPGS3085KF_p_ho_511x473.png"
+        },
+        {
+            "model-number": "PLEB27T8CC",
+            "brand": "Frigidaire",
+            "found": true,
+            "searched": true,
+            "description": "Frigidaire Professional 27'' Double Electric Wall Oven",
+            "img-src": "https://na.electroluxmedia.com/Assets/medias/images/76/PLEB27T8CC_p_tq_511x473.png"
+        },
+        {
+            "model-number": "PLEF489CC",
+            "brand": "Frigidaire",
+            "found": true,
+            "searched": true,
+            "description": "Frigidaire Professional 40'' Freestanding Electric Range",
+            "img-src": "https://na.electroluxmedia.com/Assets/medias/images/81/PLEF489CC_p_tq_511x473.png"
+        },
+        {
+            "model-number": "FDBB2840EC",
+            "brand": "Frigidaire",
+            "found": false,
+            "searched": true
+        },
+        {
+            "model-number": "MUFD17V9ES",
+            "brand": "Frigidaire",
+            "found": false,
+            "searched": true
+        },
+        {
+            "model-number": "FPHG2399MF",
+            "brand": "Frigidaire",
+            "found": true,
+            "searched": true,
+            "description": "Frigidaire Professional 22.6 Cu. Ft. French Door Counter-Depth Refrigerator",
+            "msrp": 2599.0,
+            "section": "Owner-Center",
+            "category": "Product-Support--Manuals",
+            "weight": "Product Weight (lbs): 360",
+            "ship-weight": "Shipping Weight (lbs): 365",
+            "img-src": "https://na.electroluxmedia.com/Assets/medias/images/64/FPHG2399MF_p_ho_511x473.png"
+        },
+        {
+            "model-number": "FEF388WGC",
+            "brand": "Frigidaire",
+            "found": false,
+            "searched": true
+        },
+        {
+            "model-number": "FPHD2481KF",
+            "brand": "Frigidaire",
+            "found": true,
+            "searched": true,
+            "description": "Frigidaire Professional 24'' Built-In Dishwasher",
+            "msrp": 749.0,
+            "section": "Owner-Center",
+            "category": "Product-Support--Manuals",
+            "weight": "Product Weight (lbs): 78",
+            "img-src": "https://na.electroluxmedia.com/Assets/medias/images/137/$v2/FPHD2481KF_p_ho_511x473.png"
+        },
+        {
+            "model-number": "FPHN2899LF",
+            "brand": "Frigidaire",
+            "found": true,
+            "searched": true,
+            "description": "Frigidaire Professional 27.8 Cu. Ft. French Door Refrigerator",
+            "msrp": 2299.0,
+            "section": "Owner-Center",
+            "category": "Product-Support--Manuals",
+            "weight": "Product Weight (lbs): 370",
+            "ship-weight": "Shipping Weight (lbs): 370",
+            "img-src": "https://na.electroluxmedia.com/Assets/medias/images/64/FPHN2899LF_p_ho_511x473.png"
+        },
+        {
+            "model-number": "FMT148GPB",
+            "brand": "Frigidaire",
+            "found": false,
+            "searched": true
+        },
+        {
+            "model-number": "PHT219JKM",
+            "brand": "Frigidaire",
+            "found": false,
+            "searched": true,
+            "description": "Frigidaire Professional"
+        },
+        {
+            "model-number": "GLDB998JC",
+            "brand": "Frigidaire",
+            "found": false,
+            "searched": true
+        },
+        {
+            "model-number": "PLEB30S9DC",
+            "brand": "Frigidaire",
+            "found": false,
+            "searched": true
+        },
+        {
+            "model-number": "PLHT19WEK",
+            "brand": "Frigidaire",
+            "found": true,
+            "searched": true,
+            "description": "Frigidaire Professional 20.6 Cu. Ft. Top Freezer Refrigerator",
+            "img-src": "https://na.electroluxmedia.com/Assets/medias/images/137/$v2/PLHT19WEK_p_of_511x473.png"
+        },
+        {
+            "model-number": "GLD4350RFB",
+            "brand": "Frigidaire",
+            "found": false,
+            "searched": true
+        },
+        {
+            "model-number": "PLGC30S8CC",
+            "brand": "Frigidaire",
+            "found": false,
+            "searched": true
+        },
+        {
+            "model-number": "PLRT184RBB",
+            "brand": "Frigidaire",
+            "found": false,
+            "searched": true
+        },
+        {
+            "model-number": "PLFU1778ES",
+            "brand": "Frigidaire",
+            "found": true,
+            "searched": true,
+            "description": "Frigidaire Professional 17 Cu. Ft. All Freezer",
+            "ship-weight": "Shipping Weight (lbs): 207",
+            "img-src": "https://na.electroluxmedia.com/Assets/medias/images/137/$v2/PLFU1778ES_p_oe_511x473.png"
+        },
+        {
+            "model-number": "GLD2870RFB",
+            "brand": "Frigidaire",
+            "found": false,
+            "searched": true
+        },
+        {
+            "model-number": "PLD2850REB",
+            "brand": "Frigidaire",
+            "found": false,
+            "searched": true
+        },
+        {
+            "model-number": "FPGC3085KS",
+            "brand": "Frigidaire",
+            "found": true,
+            "searched": true,
+            "description": "Frigidaire Professional 30'' Gas Cooktop",
+            "msrp": 1599.0,
+            "section": "Owner-Center",
+            "category": "Product-Support--Manuals",
+            "weight": "Product Weight (lbs): 50",
+            "img-src": "https://na.electroluxmedia.com/Assets/medias/images/148/$v3/FPGC3085KS_p_ho_511x473.png"
+        },
+        {
+            "model-number": "PLHS67EESB",
+            "brand": "Frigidaire",
+            "found": true,
+            "searched": true,
+            "description": "Frigidaire Professional 26 Cu. Ft. Side-by-Side Refrigerator",
+            "img-src": "https://na.electroluxmedia.com/Assets/medias/images/137/$v2/PLHS67EESB_p_of_511x473.png"
+        },
+        {
+            "model-number": "FPIC3695MS",
+            "brand": "Frigidaire",
+            "found": true,
+            "searched": true,
+            "description": "Frigidaire Professional 36'' Induction Cooktop",
+            "msrp": 1999.0,
+            "section": "Kitchen-Appliances",
+            "category": "Cooktops",
+            "weight": "Product Weight (lbs): 51",
+            "ship-weight": "Shipping Weight (lbs): 58",
+            "img-src": "https://na.electroluxmedia.com/Assets/medias/images/148/$v3/FPIC3695MS_p_ho_511x473.png"
+        },
+        {
+            "model-number": "PL36WC50EC",
+            "brand": "Frigidaire",
+            "found": true,
+            "searched": true,
+            "description": "Frigidaire Professional 36'' Wall Mount Chimney Range Hood",
+            "img-src": "https://na.electroluxmedia.com/Assets/medias/images/94/PL36WC50EC_p_ho_511x473.png"
+        },
+        {
+            "model-number": "FDB2830CEC",
+            "brand": "Frigidaire",
+            "found": false,
+            "searched": true
+        },
+        {
+            "model-number": "PLES399EC",
+            "brand": "Frigidaire",
+            "found": true,
+            "searched": true,
+            "description": "Frigidaire Professional 30'' Electric Built-In Range",
+            "weight": "Product Weight (lbs): 189",
+            "img-src": "https://na.electroluxmedia.com/Assets/medias/images/81/PLES399EC_p_is1_669x463.png"
+        },
+        {
+            "model-number": "FPDH307DRF",
+            "brand": "Frigidaire",
+            "found": false,
+            "searched": true
+        },
+        {
+            "model-number": "PLFU1777DS",
+            "brand": "Frigidaire",
+            "found": false,
+            "searched": true
+        },
+        {
+            "model-number": "PLCF489GC",
+            "brand": "Frigidaire",
+            "found": true,
+            "searched": true,
+            "description": "Frigidaire Professional 40'' Freestanding Dual Fuel Range",
+            "img-src": "https://na.electroluxmedia.com/Assets/medias/images/81/PLCF489GC_p_ho_511x473.png"
+        },
+        {
+            "model-number": "FPMC3085KF",
+            "brand": "Frigidaire",
+            "found": true,
+            "searched": true,
+            "description": "Frigidaire Professional 30'' Electric Wall Oven/Microwave Combination",
+            "msrp": 2899.0,
+            "section": "Owner-Center",
+            "category": "Product-Support--Manuals",
+            "weight": "Product Weight (lbs): 230",
+            "img-src": "https://na.electroluxmedia.com/Assets/medias/images/54/FPMC3085KF_p_ho_511x473.png"
+        },
+        {
+            "model-number": "PLMB186CC",
+            "brand": "Frigidaire",
+            "found": false,
+            "searched": true
+        },
+        {
+            "model-number": "PL36WC3SHC",
+            "brand": "Frigidaire",
+            "found": false,
+            "searched": true
+        },
+        {
+            "model-number": "PLD3461RDC",
+            "brand": "Frigidaire",
+            "found": false,
+            "searched": true
+        },
+        {
+            "model-number": "FDB979GFC",
+            "brand": "Frigidaire",
+            "found": false,
+            "searched": true
+        },
+        {
+            "model-number": "PLHT217TAK",
+            "brand": "Frigidaire",
+            "found": false,
+            "searched": true
+        },
+        {
+            "model-number": "FPMC1131KS",
+            "brand": "Frigidaire",
+            "found": false,
+            "searched": true
+        },
+        {
+            "model-number": "FDB2830CEB",
+            "brand": "Frigidaire",
+            "found": false,
+            "searched": true
+        },
+        {
+            "model-number": "MRAD17V9ES",
+            "brand": "Frigidaire",
+            "found": false,
+            "searched": true
+        },
+        {
+            "model-number": "FPIC3095MS",
+            "brand": "Frigidaire",
+            "found": true,
+            "searched": true,
+            "description": "Frigidaire Professional 30'' Induction Cooktop",
+            "msrp": 1899.0,
+            "section": "Kitchen-Appliances",
+            "category": "Cooktops",
+            "weight": "Product Weight (lbs): 41",
+            "ship-weight": "Shipping Weight (lbs): 48",
+            "img-src": "https://na.electroluxmedia.com/Assets/medias/images/148/$v3/FPIC3095MS_p_ho_511x473.png"
+        },
+        {
+            "model-number": "FPBM189KF",
+            "brand": "Frigidaire",
+            "found": true,
+            "searched": true,
+            "description": "Frigidaire Professional 2.0 Cu. Ft. Over-The-Range Microwave",
+            "msrp": 799.0,
+            "section": "Owner-Center",
+            "category": "Product-Support--Manuals",
+            "weight": "Product Weight (lbs): 61.6",
+            "ship-weight": "Shipping Weight (lbs): 69.3",
+            "img-src": "https://na.electroluxmedia.com/Assets/medias/images/66/FPBM189KF_p_ho_511x473.png"
+        },
+        {
+            "model-number": "FPHF2399PF",
+            "brand": "Frigidaire",
+            "found": true,
+            "searched": true,
+            "description": "Frigidaire Professional 21.9 Cu. Ft. Counter-Depth French Door Refrigerator",
+            "msrp": 3499.0,
+            "section": "Owner-Center",
+            "category": "Product-Support--Manuals",
+            "weight": "Product Weight (lbs): 332",
+            "ship-weight": "Shipping Weight (lbs): 345",
+            "img-src": "https://na.electroluxmedia.com/Assets/medias/images/79/FPHF2399PF_p_ho_511x473.png"
+        },
+        {
+            "model-number": "FPUI2188PF",
+            "brand": "Frigidaire",
+            "found": true,
+            "searched": true,
+            "description": "Frigidaire Professional 21 Cu. Ft. Top Freezer Refrigerator",
+            "msrp": 1199.0,
+            "section": "Owner-Center",
+            "category": "Product-Support--Manuals",
+            "weight": "Product Weight (lbs): 214",
+            "ship-weight": "Shipping Weight (lbs): 220",
+            "img-src": "https://na.electroluxmedia.com/Assets/medias/images/64/FPUI2188PF_p_ho_511x473.png"
+        },
+        {
+            "model-number": "PLD5500RGC",
+            "brand": "Frigidaire",
+            "found": false,
+            "searched": true
+        },
+        {
+            "model-number": "PLT189WJKM",
+            "brand": "Frigidaire",
+            "found": false,
+            "searched": true,
+            "description": "Frigidaire Professional"
+        },
+        {
+            "model-number": "PLD3460RDC",
+            "brand": "Frigidaire",
+            "found": true,
+            "searched": true,
+            "description": "Frigidaire Professional 24'' Built-In Dishwasher",
+            "img-src": "https://na.electroluxmedia.com/Assets/medias/images/137/$v2/PLD3460RDC_p_oe_511x473.png"
+        },
+        {
+            "model-number": "FPUH17D7KF",
+            "brand": "Frigidaire",
+            "found": true,
+            "searched": true,
+            "description": "Frigidaire Professional 16.7 Cu. Ft. Upright Freezer",
+            "weight": "Product Weight (lbs): 207",
+            "ship-weight": "Shipping Weight (lbs): 229",
+            "img-src": "https://na.electroluxmedia.com/Assets/medias/images/91/FPUH17D7KF_p_ho_511x473.png"
+        },
+        {
+            "model-number": "PHT219JSM",
+            "brand": "Frigidaire",
+            "found": true,
+            "searched": true,
+            "description": "Frigidaire Professional 20.6 Cu. Ft. Top Freezer Refrigerator",
+            "img-src": "https://na.electroluxmedia.com/Assets/medias/images/137/$v2/PHT219JSM_p_of_511x473.png"
+        },
+        {
+            "model-number": "PLMV168CC",
+            "brand": "Frigidaire",
+            "found": false,
+            "searched": true,
+            "description": "Frigidaire Professional 1.6 Cu. Ft. Over-The-Range Microwave"
+        },
+        {
+            "model-number": "FEF388WCC",
+            "brand": "Frigidaire",
+            "found": false,
+            "searched": true
+        },
+        {
+            "model-number": "FPMO209KF",
+            "brand": "Frigidaire",
+            "found": true,
+            "searched": true,
+            "description": "Frigidaire Professional 2.0 Cu. Ft. Built-In Microwave",
+            "msrp": 549.0,
+            "section": "Owner-Center",
+            "category": "Product-Support--Manuals",
+            "weight": "Product Weight (lbs): 41",
+            "img-src": "https://na.electroluxmedia.com/Assets/medias/images/54/FPMO209KF_p_ho_511x473.png"
+        },
+        {
+            "model-number": "PLDB998CC",
+            "brand": "Frigidaire",
+            "found": true,
+            "searched": true,
+            "description": "Frigidaire Professional 24'' Built-In Dishwasher",
+            "img-src": "https://na.electroluxmedia.com/Assets/medias/images/137/$v2/PLDB998CC_p_cp_511x473.png"
+        },
+        {
+            "model-number": "PHT189JSM",
+            "brand": "Frigidaire",
+            "found": true,
+            "searched": true,
+            "description": "Frigidaire Professional 18 Cu. Ft. Top Freezer Refrigerator",
+            "img-src": "https://na.electroluxmedia.com/Assets/medias/images/137/$v2/PHT189JSM_p_of_511x473.png"
+        },
+        {
+            "model-number": "FDB4315LFC",
+            "brand": "Frigidaire",
+            "found": false,
+            "searched": true,
+            "description": "Frigidaire"
+        },
+        {
+            "model-number": "PLHV36W6CC",
+            "brand": "Frigidaire",
+            "found": true,
+            "searched": true,
+            "description": "Frigidaire Professional 36'' Wall Mount Chimney Range Hood",
+            "img-src": "https://na.electroluxmedia.com/Assets/medias/images/95/PLHV36W6CC_p_f1_511x473.png"
+        },
+        {
+            "model-number": "PLCS389CC",
+            "brand": "Frigidaire",
+            "found": false,
+            "searched": true
+        },
+        {
+            "model-number": "PLES389CC",
+            "brand": "Frigidaire",
+            "found": false,
+            "searched": true
+        },
+        {
+            "model-number": "F36WC50EC",
+            "brand": "Frigidaire",
+            "found": false,
+            "searched": true
+        },
+        {
+            "model-number": "FGF378WCC",
+            "brand": "Frigidaire",
+            "found": false,
+            "searched": true
+        },
+        {
+            "model-number": "PLEB30S9FC",
+            "brand": "Frigidaire",
+            "found": false,
+            "searched": true
+        },
+        {
+            "model-number": "FPHB2899PF",
+            "brand": "Frigidaire",
+            "found": true,
+            "searched": true,
+            "description": "Frigidaire Professional 27.2 Cu. Ft. French Door Refrigerator",
+            "msrp": 3199.0,
+            "section": "Owner-Center",
+            "category": "Product-Support--Manuals",
+            "weight": "Product Weight (lbs): 352",
+            "ship-weight": "Shipping Weight (lbs): 365",
+            "img-src": "https://na.electroluxmedia.com/Assets/medias/images/79/FPHB2899PF_p_ho_511x473.png"
+        },
+        {
+            "model-number": "PLHV36W7CC",
+            "brand": "Frigidaire",
+            "found": true,
+            "searched": true,
+            "description": "Frigidaire Professional 36'' Wall Mount Chimney Range Hood",
+            "img-src": "https://na.electroluxmedia.com/Assets/medias/images/95/PLHV36W7CC_p_f1_511x473.png"
+        },
+        {
+            "model-number": "PLCF489AC",
+            "brand": "Frigidaire",
+            "found": false,
+            "searched": true
+        },
+        {
+            "model-number": "FP2I2086NR",
+            "brand": "Frigidaire",
+            "found": false,
+            "searched": true
+        },
+        {
+            "model-number": "FFWD3085PF",
+            "brand": "Frigidaire",
+            "found": false,
+            "searched": true
+        },
+        {
+            "model-number": "PLEB27M9EC",
+            "brand": "Frigidaire",
+            "found": true,
+            "searched": true,
+            "description": "Frigidaire Professional 27'' Electric Wall Oven/Microwave Combination",
+            "weight": "Product Weight (lbs): 214",
+            "img-src": "https://na.electroluxmedia.com/Assets/medias/images/137/$v2/PLEB27M9EC_p_tq_511x473.png"
+        },
+        {
+            "model-number": "PHS69EJSS",
+            "brand": "Frigidaire",
+            "found": false,
+            "searched": true,
+            "description": "Frigidaire Professional 26 Cu. Ft. Side-by-Side Refrigerator"
+        },
+        {
+            "model-number": "FPHB2399LF",
+            "brand": "Frigidaire",
+            "found": false,
+            "searched": true
+        },
+        {
+            "model-number": "FEF389WEC",
+            "brand": "Frigidaire",
+            "found": false,
+            "searched": true
+        },
+        {
+            "model-number": "PLEB30T9FC",
+            "brand": "Frigidaire",
+            "found": true,
+            "searched": true,
+            "description": "Frigidaire Professional 30'' Double Electric Wall Oven",
+            "ship-weight": "Shipping Weight (lbs): 298",
+            "img-src": "https://na.electroluxmedia.com/Assets/medias/images/76/PLEB30T9FC_p_is1_669x463.png"
+        },
+        {
+            "model-number": "FPGF3091KF",
+            "brand": "Frigidaire",
+            "found": false,
+            "searched": true
+        },
+        {
+            "model-number": "PLGF659EC",
+            "brand": "Frigidaire",
+            "found": true,
+            "searched": true,
+            "description": "Frigidaire Professional 36'' Freestanding Gas Range",
+            "img-src": "https://na.electroluxmedia.com/Assets/medias/images/81/PLGF659EC_p_oe_511x473.png"
+        },
+        {
+            "model-number": "FPUS2686LF",
+            "brand": "Frigidaire",
+            "found": true,
+            "searched": true,
+            "description": "Frigidaire Professional 26 Cu. Ft. Side-by-Side Refrigerator",
+            "msrp": 1899.0,
+            "section": "Owner-Center",
+            "category": "Product-Support--Manuals",
+            "weight": "Product Weight (lbs): 295",
+            "ship-weight": "Shipping Weight (lbs): 300",
+            "img-src": "https://na.electroluxmedia.com/Assets/medias/images/64/FPUS2686LF_p_ho_511x473.png"
+        },
+        {
+            "model-number": "PLHT219SCB",
+            "brand": "Frigidaire",
+            "found": false,
+            "searched": true
+        },
+        {
+            "model-number": "PLEW30S3AC",
+            "brand": "Frigidaire",
+            "found": false,
+            "searched": true
+        },
+        {
+            "model-number": "FPEF4085KF",
+            "brand": "Frigidaire",
+            "found": true,
+            "searched": true,
+            "description": "Frigidaire Professional 40'' Freestanding Electric Range",
+            "msrp": 3049.0,
+            "section": "Owner-Center",
+            "category": "Product-Support--Manuals",
+            "weight": "Product Weight (lbs): 216",
+            "img-src": "https://na.electroluxmedia.com/Assets/medias/images/52/FPEF4085KF_p_ho_511x473.png"
+        },
+        {
+            "model-number": "FP2I2086NF",
+            "brand": "Frigidaire",
+            "found": false,
+            "searched": true
+        },
+        {
+            "model-number": "PLHS267ZAB",
+            "brand": "Frigidaire",
+            "found": false,
+            "searched": true
+        },
+        {
+            "model-number": "PLHS268ZCB",
+            "brand": "Frigidaire",
+            "found": false,
+            "searched": true
+        },
+        {
+            "model-number": "FPUH19D7LF",
+            "brand": "Frigidaire",
+            "found": true,
+            "searched": true,
+            "description": "Frigidaire Professional 19 Cu. Ft. All Freezer",
+            "msrp": 1649.0,
+            "section": "Owner-Center",
+            "category": "Product-Support--Manuals",
+            "weight": "Product Weight (lbs): 245",
+            "ship-weight": "Shipping Weight (lbs): 255",
+            "img-src": "https://na.electroluxmedia.com/Assets/medias/images/155/FPUH19D7LF_p_ho_511x473_1.png"
+        },
+        {
+            "model-number": "FPMC2785KF",
+            "brand": "Frigidaire",
+            "found": true,
+            "searched": true,
+            "description": "Frigidaire Professional 27'' Electric Wall Oven/Microwave Combination",
+            "msrp": 2899.0,
+            "section": "Owner-Center",
+            "category": "Product-Support--Manuals",
+            "weight": "Product Weight (lbs): 200",
+            "img-src": "https://na.electroluxmedia.com/Assets/medias/images/54/FPMC2785KF_p_ho_511x473.png"
+        },
+        {
+            "model-number": "PL36WC40EC",
+            "brand": "Frigidaire",
+            "found": true,
+            "searched": true,
+            "description": "Frigidaire Professional 36'' Wall Mount Chimney Range Hood",
+            "img-src": "https://na.electroluxmedia.com/Assets/medias/images/94/PL36WC40EC_p_is1_669x463.png"
+        },
+        {
+            "model-number": "FPGC3685KS",
+            "brand": "Frigidaire",
+            "found": true,
+            "searched": true,
+            "description": "Frigidaire Professional 36'' Gas Cooktop",
+            "msrp": 1799.0,
+            "section": "Owner-Center",
+            "category": "Product-Support--Manuals",
+            "weight": "Product Weight (lbs): 50",
+            "img-src": "https://na.electroluxmedia.com/Assets/medias/images/148/$v3/FPGC3685KS_p_ho_511x473.png"
+        },
+        {
+            "model-number": "PLGC30S9EC",
+            "brand": "Frigidaire",
+            "found": false,
+            "searched": true
+        },
+        {
+            "model-number": "PLGFZ390EC",
+            "brand": "Frigidaire",
+            "found": true,
+            "searched": true,
+            "description": "Frigidaire Professional 30'' Freestanding Gas Range",
+            "img-src": "https://na.electroluxmedia.com/Assets/medias/images/81/PLGFZ390EC_p_sd_511x473.png"
+        },
+        {
+            "model-number": "FPMV189KF",
+            "brand": "Frigidaire",
+            "found": true,
+            "searched": true,
+            "description": "Frigidaire Professional 2.0 Cu. Ft. Over-The-Range Microwave",
+            "msrp": 579.0,
+            "section": "Owner-Center",
+            "category": "Product-Support--Manuals",
+            "weight": "Product Weight (lbs): 61.6",
+            "ship-weight": "Shipping Weight (lbs): 69.3",
+            "img-src": "https://na.electroluxmedia.com/Assets/medias/images/66/FPMV189KF_p_ho_511x473.png"
+        },
+        {
+            "model-number": "PLGF389AC",
+            "brand": "Frigidaire",
+            "found": false,
+            "searched": true
+        },
+        {
+            "model-number": "PLHS267ZDB",
+            "brand": "Frigidaire",
+            "found": true,
+            "searched": true,
+            "description": "Frigidaire Professional 26 Cu. Ft. Side-by-Side Refrigerator",
+            "img-src": "https://na.electroluxmedia.com/Assets/medias/images/137/$v2/PLHS267ZDB_p_of_511x473.png"
+        },
+        {
+            "model-number": "FGRU19F8QF",
+            "brand": "Frigidaire",
+            "found": false,
+            "searched": true
+        },
+        {
+            "model-number": "PLD4555RFC",
+            "brand": "Frigidaire",
+            "found": true,
+            "searched": true,
+            "description": "Frigidaire Professional 24'' Built-In Dishwasher",
+            "img-src": "https://na.electroluxmedia.com/Assets/medias/images/137/$v2/PLD4555RFC_p_ho_511x473.png"
+        },
+        {
+            "model-number": "PLEB27T8AC",
+            "brand": "Frigidaire",
+            "found": false,
+            "searched": true
+        },
+        {
+            "model-number": "FGGF305MKF",
+            "brand": "Frigidaire",
+            "found": true,
+            "searched": true,
+            "description": "Frigidaire Gallery 30'' Freestanding Gas Range",
+            "msrp": 1749.0,
+            "section": "Owner-Center",
+            "category": "Product-Support--Manuals",
+            "weight": "Product Weight (lbs): 200",
+            "img-src": "https://na.electroluxmedia.com/Assets/medias/images/81/FGGF305MKF_g_ho_511x473.png"
+        },
+        {
+            "model-number": "FPHS239ZCB",
+            "brand": "Frigidaire",
+            "found": false,
+            "searched": true
+        },
+        {
+            "model-number": "FP2I2386NS",
+            "brand": "Frigidaire",
+            "found": false,
+            "searched": true
+        },
+        {
+            "model-number": "FPGH307DRF",
+            "brand": "Frigidaire",
+            "found": false,
+            "searched": true
+        },
+        {
+            "model-number": "PLD2851RDC",
+            "brand": "Frigidaire",
+            "found": false,
+            "searched": true
+        },
+        {
+            "model-number": "FEF389WJC",
+            "brand": "Frigidaire",
+            "found": false,
+            "searched": true
+        },
+        {
+            "model-number": "GPDB698JC",
+            "brand": "Frigidaire",
+            "found": false,
+            "searched": true
+        },
+        {
+            "model-number": "FPGC3677RF",
+            "brand": "Frigidaire",
+            "found": false,
+            "searched": true
+        },
+        {
+            "model-number": "FP2I2386NK",
+            "brand": "Frigidaire",
+            "found": false,
+            "searched": true
+        },
+        {
+            "model-number": "FPTR18D3RS",
+            "brand": "Frigidaire",
+            "found": true,
+            "searched": true,
+            "description": "Frigidaire Professional 18 Cu. Ft. Top Freezer Refrigerator",
+            "weight": "Product Weight (lbs): 205",
+            "ship-weight": "Shipping Weight (lbs): 205",
+            "img-src": "https://na.electroluxmedia.com/Assets/medias/images/169/FPTR18D3RS_p_ho_511x473.png"
+        },
+        {
+            "model-number": "FPHS2387KF",
+            "brand": "Frigidaire",
+            "found": false,
+            "searched": true,
+            "description": "Frigidaire Professional 22.6 Cu. Ft. Side-by-Side Refrigerator",
+            "msrp": 1899.0,
+            "section": "Owner-Center",
+            "category": "Product-Support--Manuals",
+            "weight": "Product Weight (lbs): 290",
+            "ship-weight": "Shipping Weight (lbs): 285"
+        },
+        {
+            "model-number": "FPGS3085PF",
+            "brand": "Frigidaire",
+            "found": true,
+            "searched": true,
+            "description": "Frigidaire Professional 30'' Slide-In Gas Range",
+            "msrp": 2699.0,
+            "section": "Owner-Center",
+            "category": "Product-Support--Manuals",
+            "img-src": "https://na.electroluxmedia.com/Assets/medias/images/78/FPGS3085PF_p_ho_511x473.png"
+        },
+        {
+            "model-number": "PLFU1779GS",
+            "brand": "Frigidaire",
+            "found": false,
+            "searched": true
+        },
+        {
+            "model-number": "PLEB27S9DC",
+            "brand": "Frigidaire",
+            "found": false,
+            "searched": true
+        },
+        {
+            "model-number": "PLRB183CCB",
+            "brand": "Frigidaire",
+            "found": false,
+            "searched": true
+        },
+        {
+            "model-number": "FPDF4085KF",
+            "brand": "Frigidaire",
+            "found": true,
+            "searched": true,
+            "description": "Frigidaire Professional 40'' Freestanding Dual Fuel Range",
+            "msrp": 3149.0,
+            "section": "Owner-Center",
+            "category": "Product-Support--Manuals",
+            "weight": "Product Weight (lbs): 247",
+            "img-src": "https://na.electroluxmedia.com/Assets/medias/images/52/FPDF4085KF_p_ho_511x473.png"
+        },
+        {
+            "model-number": "PLHS239ZDB",
+            "brand": "Frigidaire",
+            "found": true,
+            "searched": true,
+            "description": "Frigidaire Professional 22.6 Cu. Ft. Side-by-Side Refrigerator",
+            "img-src": "https://na.electroluxmedia.com/Assets/medias/images/137/$v2/PLHS239ZDB_p_tq_511x473.png"
+        },
+        {
+            "model-number": "FGFLMC55GC",
+            "brand": "Frigidaire",
+            "found": false,
+            "searched": true
+        },
+        {
+            "model-number": "FDBB4365FC",
+            "brand": "Frigidaire",
+            "found": false,
+            "searched": true
+        },
+        {
+            "model-number": "FPHC2398LF",
+            "brand": "Frigidaire",
+            "found": true,
+            "searched": true,
+            "description": "Frigidaire Professional 23 Cu. Ft. Counter-Depth Side-by-Side Refrigerator",
+            "msrp": 2599.0,
+            "section": "Owner-Center",
+            "category": "Product-Support--Manuals",
+            "weight": "Product Weight (lbs): 325",
+            "ship-weight": "Shipping Weight (lbs): 325",
+            "img-src": "https://na.electroluxmedia.com/Assets/medias/images/64/FPHC2398LF_p_ho_511x473.png"
+        },
+        {
+            "model-number": "PLEB30T8AC",
+            "brand": "Frigidaire",
+            "found": false,
+            "searched": true
+        },
+        {
+            "model-number": "PLRH1779GS",
+            "brand": "Frigidaire",
+            "found": false,
+            "searched": true
+        },
+        {
+            "model-number": "FPFU19F8QF",
+            "brand": "Frigidaire",
+            "found": true,
+            "searched": true,
+            "description": "Frigidaire Professional 19 Cu. Ft. All Freezer",
+            "msrp": 2099.0,
+            "section": "Owner-Center",
+            "category": "Product-Support--Manuals",
+            "weight": "Product Weight (lbs): 245",
+            "ship-weight": "Shipping Weight (lbs): 255",
+            "img-src": "https://na.electroluxmedia.com/Assets/medias/images/151/FPFU19F8QF_g_ho_511x473.png"
+        },
+        {
+            "model-number": "FPMC3085PF",
+            "brand": "Frigidaire",
+            "found": true,
+            "searched": true,
+            "description": "Frigidaire Professional 30'' Electric Wall Oven/Microwave Combination",
+            "msrp": 3199.0,
+            "section": "Owner-Center",
+            "category": "Product-Support--Manuals",
+            "weight": "Product Weight (lbs): 230",
+            "img-src": "https://na.electroluxmedia.com/Assets/medias/images/80/FPMC3085PF_p_ho_511x473.png"
+        },
+        {
+            "model-number": "PHS67EHSB",
+            "brand": "Frigidaire",
+            "found": true,
+            "searched": true,
+            "description": "Frigidaire Professional 26 Cu. Ft. Side-by-Side Refrigerator",
+            "img-src": "https://na.electroluxmedia.com/Assets/medias/images/137/$v2/PHS67EHSB_p_is1_669x463.png"
+        },
+        {
+            "model-number": "FPID2495QF",
+            "brand": "Frigidaire",
+            "found": true,
+            "searched": true,
+            "description": "Frigidaire Professional 24'' Built-In Dishwasher",
+            "msrp": 1099.0,
+            "section": "Owner-Center",
+            "category": "Product-Support--Manuals",
+            "weight": "Product Weight (lbs): 98",
+            "img-src": "https://na.electroluxmedia.com/Assets/medias/images/78/FPID2495QF_p_ho_511x473.png"
+        },
+        {
+            "model-number": "PLT189WJSM",
+            "brand": "Frigidaire",
+            "found": false,
+            "searched": true,
+            "description": "Frigidaire Professional"
+        },
+        {
+            "model-number": "PLGC36S9CC",
+            "brand": "Frigidaire",
+            "found": false,
+            "searched": true
+        },
+        {
+            "model-number": "PLEW30S3DC",
+            "brand": "Frigidaire",
+            "found": false,
+            "searched": true
+        },
+        {
+            "model-number": "PLEB27M9GC",
+            "brand": "Frigidaire",
+            "found": false,
+            "searched": true
+        },
+        {
+            "model-number": "PLD4050RHC",
+            "brand": "Frigidaire",
+            "found": true,
+            "searched": true,
+            "description": "Frigidaire Professional 24'' Built-In Dishwasher",
+            "img-src": "https://na.electroluxmedia.com/Assets/medias/images/137/$v2/PLD4050RHC_p_is1_669x463.png"
+        },
+        {
+            "model-number": "PHT219WHSM",
+            "brand": "Frigidaire",
+            "found": true,
+            "searched": true,
+            "description": "Frigidaire Professional 20.6 Cu. Ft. Top Freezer Refrigerator",
+            "img-src": "https://na.electroluxmedia.com/Assets/medias/images/137/$v2/PHT219WHSM_p_f1_511x473.png"
+        },
+        {
+            "model-number": "PLDB999AC",
+            "brand": "Frigidaire",
+            "found": false,
+            "searched": true
+        },
+        {
+            "model-number": "PLHS69EHSS",
+            "brand": "Frigidaire",
+            "found": false,
+            "searched": true
+        },
+        {
+            "model-number": "PLHS69EFSS",
+            "brand": "Frigidaire",
+            "found": false,
+            "searched": true
+        },
+        {
+            "model-number": "PLHV42P8KC",
+            "brand": "Frigidaire",
+            "found": false,
+            "searched": true
+        },
+        {
+            "model-number": "FP2I2386NF",
+            "brand": "Frigidaire",
+            "found": false,
+            "searched": true
+        },
+        {
+            "model-number": "PLHS37EHSB",
+            "brand": "Frigidaire",
+            "found": false,
+            "searched": true
+        },
+        {
+            "model-number": "PHT189WHSM",
+            "brand": "Frigidaire",
+            "found": true,
+            "searched": true,
+            "description": "Frigidaire Professional 18.3 Cu. Ft. Top Freezer Refrigerator",
+            "img-src": "https://na.electroluxmedia.com/Assets/medias/images/137/$v2/PHT189WHSM_p_of_511x473.png"
+        },
+        {
+            "model-number": "PLGFZ386GC",
+            "brand": "Frigidaire",
+            "found": false,
+            "searched": true
+        },
+        {
+            "model-number": "PHT189JKM",
+            "brand": "Frigidaire",
+            "found": false,
+            "searched": true,
+            "description": "Frigidaire Professional"
+        },
+        {
+            "model-number": "GLFH1767GW",
+            "brand": "Frigidaire",
+            "found": false,
+            "searched": true
+        },
+        {
+            "model-number": "FPGF3685LS",
+            "brand": "Frigidaire",
+            "found": true,
+            "searched": true,
+            "description": "Frigidaire Professional 36'' Freestanding Gas Range",
+            "msrp": 2799.0,
+            "section": "Owner-Center",
+            "category": "Product-Support--Manuals",
+            "weight": "Product Weight (lbs): 200",
+            "img-src": "https://na.electroluxmedia.com/Assets/medias/images/52/FPGF3685LS_p_ho_511x473.png"
+        },
+        {
+            "model-number": "PLSC239ZDB",
+            "brand": "Frigidaire",
+            "found": false,
+            "searched": true
+        },
+        {
+            "model-number": "PLD3465REC",
+            "brand": "Frigidaire",
+            "found": true,
+            "searched": true,
+            "description": "Frigidaire Professional 24'' Built-In Dishwasher",
+            "img-src": "https://na.electroluxmedia.com/Assets/medias/images/137/$v2/PLD3465REC_p_is1_669x463.png"
+        },
+        {
+            "model-number": "PLRU1777DS",
+            "brand": "Frigidaire",
+            "found": true,
+            "searched": true,
+            "description": "Frigidaire Professional 16.7 Cu. Ft. All Refrigerator",
+            "img-src": "https://na.electroluxmedia.com/Assets/medias/images/137/$v2/PLRU1777DS_p_oe_511x473.png"
+        },
+        {
+            "model-number": "PLEFMZ99GC",
+            "brand": "Frigidaire",
+            "found": true,
+            "searched": true,
+            "description": "Frigidaire Professional 30'' Freestanding Electric Range",
+            "img-src": "https://na.electroluxmedia.com/Assets/medias/images/81/PLEFMZ99GC_p_sd_511x473.png"
+        },
+        {
+            "model-number": "PLEB30M9EC",
+            "brand": "Frigidaire",
+            "found": true,
+            "searched": true,
+            "description": "Frigidaire Professional 30'' Electric Wall Oven/Microwave Combination",
+            "img-src": "https://na.electroluxmedia.com/Assets/medias/images/86/$v2/PLEB30M9EC_p_tq_511x473.png"
+        },
+        {
+            "model-number": "PHS39EJSS",
+            "brand": "Frigidaire",
+            "found": false,
+            "searched": true,
+            "description": "Frigidaire Professional 23 Cu. Ft. Side-by-Side Refrigerator"
+        },
+        {
+            "model-number": "FCS388WGC",
+            "brand": "Frigidaire",
+            "found": false,
+            "searched": true
+        },
+        {
+            "model-number": "PLEW30S3FC",
+            "brand": "Frigidaire",
+            "found": false,
+            "searched": true
+        },
+        {
+            "model-number": "PLDB999CC",
+            "brand": "Frigidaire",
+            "found": true,
+            "searched": true,
+            "description": "Frigidaire Professional 24'' Built-In Dishwasher",
+            "img-src": "https://na.electroluxmedia.com/Assets/medias/images/137/$v2/PLDB999CC_p_cp_511x473.png"
+        },
+        {
+            "model-number": "PLHS238ZCB",
+            "brand": "Frigidaire",
+            "found": false,
+            "searched": true
+        },
+        {
+            "model-number": "PLHS37EESB",
+            "brand": "Frigidaire",
+            "found": true,
+            "searched": true,
+            "description": "Frigidaire Professional 22.6 Cu. Ft. Side-by-Side Refrigerator",
+            "img-src": "https://na.electroluxmedia.com/Assets/medias/images/137/$v2/PLHS37EESB_p_of_511x473.png"
+        },
+        {
+            "model-number": "PHS68EJSB",
+            "brand": "Frigidaire",
+            "found": false,
+            "searched": true,
+            "description": "Frigidaire Professional 26 Cu. Ft. Side-by-Side Refrigerator"
+        },
+        {
+            "model-number": "FPRU19F8Q",
+            "brand": "Frigidaire",
+            "found": false,
+            "searched": true
+        },
+        {
+            "model-number": "PLFH1779GS",
+            "brand": "Frigidaire",
+            "found": true,
+            "searched": true,
+            "description": "Frigidaire Professional 17 Cu. Ft. All Freezer",
+            "ship-weight": "Shipping Weight (lbs): 206",
+            "img-src": "https://na.electroluxmedia.com/Assets/medias/images/137/$v2/PLFH1779GS_p_ho_511x473.png"
+        },
+        {
+            "model-number": "DWOOP1",
+            "brand": "Frigidaire",
+            "found": false,
+            "searched": true
+        },
+        {
+            "model-number": "FEB386WEC",
+            "brand": "Frigidaire",
+            "found": false,
+            "searched": true
+        },
+        {
+            "model-number": "FGC36S9JB",
+            "brand": "Frigidaire",
+            "found": false,
+            "searched": true
+        },
+        {
+            "model-number": "PHS69EHSS",
+            "brand": "Frigidaire",
+            "found": true,
+            "searched": true,
+            "description": "Frigidaire Professional 26 Cu. Ft. Side-by-Side Refrigerator",
+            "img-src": "https://na.electroluxmedia.com/Assets/medias/images/137/$v2/PHS69EHSS_p_is1_669x463.png"
+        },
+        {
+            "model-number": "FPET3085PF",
+            "brand": "Frigidaire",
+            "found": true,
+            "searched": true,
+            "description": "Frigidaire Professional 30'' Double Electric Wall Oven",
+            "msrp": 3399.0,
+            "section": "Owner-Center",
+            "category": "Product-Support--Manuals",
+            "weight": "Product Weight (lbs): 255",
+            "ship-weight": "Shipping Weight (lbs): 280",
+            "img-src": "https://na.electroluxmedia.com/Assets/medias/images/78/FPET3085PF_p_ho_511x473.png"
+        },
+        {
+            "model-number": "FPEF3081MF",
+            "brand": "Frigidaire",
+            "found": true,
+            "searched": true,
+            "description": "Frigidaire Professional 30'' Freestanding Electric Range",
+            "msrp": 1599.0,
+            "section": "Owner-Center",
+            "category": "Product-Support--Manuals",
+            "weight": "Product Weight (lbs): 175",
+            "img-src": "https://na.electroluxmedia.com/Assets/medias/images/52/FPEF3081MF_p_ho_511x473.png"
+        },
+        {
+            "model-number": "PLRT217TAK",
+            "brand": "Frigidaire",
+            "found": false,
+            "searched": true
+        },
+        {
+            "model-number": "FPHD2491KW",
+            "brand": "Frigidaire",
+            "found": false,
+            "searched": true
+        },
+        {
+            "model-number": "PHS39EHSS",
+            "brand": "Frigidaire",
+            "found": true,
+            "searched": true,
+            "description": "Frigidaire 22.6 Cu. Ft. Side-by-Side Refrigerator",
+            "img-src": "https://na.electroluxmedia.com/Assets/medias/images/137/$v2/PHS39EHSS_p_tq_511x473.png"
+        },
+        {
+            "model-number": "PLEB30M9GC",
+            "brand": "Frigidaire",
+            "found": false,
+            "searched": true
+        },
+        {
+            "model-number": "FPHD2491LB",
+            "brand": "Frigidaire",
+            "found": false,
+            "searched": true
+        },
+        {
+            "model-number": "FDB4315LFB",
+            "brand": "Frigidaire",
+            "found": false,
+            "searched": true
+        },
+        {
+            "model-number": "SCFSRADE1S",
+            "brand": "Frigidaire",
+            "found": false,
+            "searched": true
+        },
+        {
+            "model-number": "GLD2875FPB",
+            "brand": "Frigidaire",
+            "found": true,
+            "searched": true,
+            "description": "Frigidaire Gallery 24'' Built-In Dishwasher",
+            "img-src": "https://na.electroluxmedia.com/Assets/medias/images/137/$v2/GLD2875FPB_g_is1_669x463.png"
+        },
+        {
+            "model-number": "FDBB4365FB",
+            "brand": "Frigidaire",
+            "found": false,
+            "searched": true
+        },
+        {
+            "model-number": "PLHS237ZDB",
+            "brand": "Frigidaire",
+            "found": false,
+            "searched": true,
+            "description": "Frigidaire Professional 22.6 Cu. Ft. Side-by-Side Refrigerator"
+        },
+        {
+            "model-number": "PLGF390DC",
+            "brand": "Frigidaire",
+            "found": true,
+            "searched": true,
+            "description": "Frigidaire Professional 30'' Freestanding Gas Range",
+            "img-src": "https://na.electroluxmedia.com/Assets/medias/images/81/PLGF390DC_p_tq_511x473.png"
+        },
+        {
+            "model-number": "PLHT189SSB",
+            "brand": "Frigidaire",
+            "found": false,
+            "searched": true
+        },
+        {
+            "model-number": "MUFD17V8EW",
+            "brand": "Frigidaire",
+            "found": false,
+            "searched": true
+        },
+        {
+            "model-number": "PLEW27S3EC",
+            "brand": "Frigidaire",
+            "found": false,
+            "searched": true
+        },
+        {
+            "model-number": "FPHC2399KF",
+            "brand": "Frigidaire",
+            "found": false,
+            "searched": true,
+            "description": "Frigidaire Professional 22.6 Cu. Ft. Counter-Depth Side-by-Side Refrigerator",
+            "weight": "Product Weight (lbs): 305",
+            "ship-weight": "Shipping Weight (lbs): 325"
+        },
+        {
+            "model-number": "FPMC2032KS",
+            "brand": "Frigidaire",
+            "found": false,
+            "searched": true
+        },
+        {
+            "model-number": "FPHS2386LF",
+            "brand": "Frigidaire",
+            "found": true,
+            "searched": true,
+            "description": "Frigidaire Professional 23 Cu. Ft. Side-by-Side Refrigerator",
+            "msrp": 1899.0,
+            "section": "Owner-Center",
+            "category": "Product-Support--Manuals",
+            "weight": "Product Weight (lbs): 280",
+            "ship-weight": "Shipping Weight (lbs): 285",
+            "img-src": "https://na.electroluxmedia.com/Assets/medias/images/64/FPHS2386LF_p_ho_511x473.png"
+        },
+        {
+            "model-number": "PLCF489CC",
+            "brand": "Frigidaire",
+            "found": true,
+            "searched": true,
+            "description": "Frigidaire Professional 40'' Freestanding Dual Fuel Range",
+            "img-src": "https://na.electroluxmedia.com/Assets/medias/images/81/PLCF489CC_p_tq_511x473.png"
+        },
+        {
+            "model-number": "PLRU1779GW",
+            "brand": "Frigidaire",
+            "found": false,
+            "searched": true
+        },
+        {
+            "model-number": "PLMVZ169HC",
+            "brand": "Frigidaire",
+            "found": false,
+            "searched": true,
+            "description": "Frigidaire Professional 1.6 Cu. Ft. Over-The-Range Microwave"
+        }
+    ]
+}
