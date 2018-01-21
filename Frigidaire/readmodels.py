@@ -1,7 +1,12 @@
+import sys
+import os
+sys.path.append(os.getenv('HOME'))
+
 from model import *
 from config import _FRIGIDAIRE_IMAGES
 
-import os
+from BStockImages.util.manifestparser import ManifestParser
+
 import time
 import csv
 import requests
@@ -55,12 +60,18 @@ def generateList():
     return list(modelset)
             
 if __name__ == '__main__':
-    lst = generateList()
-    linkstr = 'https://www.frigidaire.com/Kitchen-Appliances/Refrigerators/French-Door-Refrigerator/{}/'
+    CDICT = { 'model-number' : 'Model Number', 'cf' : 'BRAND_CD' }
+    with open('Elec-Frig Model DB.csv', 'r') as fin:
+        mp = ManifestParser(fin, CDICT)
+        for i in mp:
+            print(i)
+            break
 
-    for i in range(10):
-        webbrowser.open(linkstr.format(lst[random.randint(0, len(lst))]))      
-        time.sleep(.5)
+    #lst = generateList()
 
+    #linkstr = 'https://www.frigidaire.com/Kitchen-Appliances/Refrigerators/French-Door-Refrigerator/{}/'
 
+    #for i in range(10):
+    #    webbrowser.open(linkstr.format(lst[random.randint(0, len(lst))]))      
+    #    time.sleep(.5)
 

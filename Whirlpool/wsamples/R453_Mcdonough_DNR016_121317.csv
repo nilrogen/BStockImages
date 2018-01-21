@@ -1,0 +1,51 @@
+Model,Model Desc,Product Type,Product Sub-Type,Brand,Class,Qty,Price,Total Amt,MSRP,Ext. MSRP
+WRS322FDAM,REFRIGERATOR 22 CUFT NON IDI SXS        ,Free Standing Refrigerator Freezer,No Frost Side - Free Standing Refr Frez,WHR,B,5,360,1800,1199,5995
+WRV976FDEM,5 DOOR FULL DEPTH MULTI DOOR EXT. I&W BO,Free Standing Refrigerator Freezer,No Frost Multi Dr -FreeStandg Refr Frez,WHR,B,1,990,990,3299,3299
+WRX735SDBM,FRENCH DOOR PANTRY,Free Standing Refrigerator Freezer,No Frost Multi Dr -FreeStandg Refr Frez,WHR,B,1,690,690,2299,2299
+MFI2269FRZ,"33"" ICELAND EXT I&W",Free Standing Refrigerator Freezer,No Frost Multi Dr -FreeStandg Refr Frez,MAY,B,1,660,660,2199,2199
+MFI2570FEZ,BTM FRENCH DOOR - ICE2O STEALTH 25',Free Standing Refrigerator Freezer,No Frost Multi Dr -FreeStandg Refr Frez,MAY,B,1,660,660,2199,2199
+MZC31T15DW,"15' HORIZONTAL FREEZER, MAYTAG",Free Standing Freezer,Direct Cool Horizontal-FreeStanding Frez,MAY,B,4,187,748,549,2196
+WRF560SEYB,20' FRENCH DOOR BTM MOUNT EXT WATER DISP,Free Standing Refrigerator Freezer,No Frost Multi Dr -FreeStandg Refr Frez,WHR,B,1,540,540,1799,1799
+WRF560SEYW,20' FRENCH DOOR BTM MOUNT EXT WATER DISP,Free Standing Refrigerator Freezer,No Frost Multi Dr -FreeStandg Refr Frez,WHR,B,1,540,540,1799,1799
+WRS342FIAW,REFRIGERATOR 22 CUFT IDI SXS,Free Standing Refrigerator Freezer,No Frost Side - Free Standing Refr Frez,WHR,B,1,480,480,1599,1599
+WRB322DMBM,22' DRAWER BOTTOM MOUNT,Free Standing Refrigerator Freezer,No Frost Bottom-Free Standing Refr Frez,WHR,B,1,450,450,1499,1499
+MRT118FFFH,"18' TM WHITE ICE, FLAT, GLASS",Free Standing Refrigerator Freezer,No Frost Top - Free Standing Refr Frez,MAY,B,2,225,450,749,1498
+ART106TFDW,"16' TOP FREEZER, WHITE",Free Standing Refrigerator Freezer,No Frost Top - Free Standing Refr Frez,AMA,B,2,210,420,699,1398
+KDTM404EBL,RIF SS TALL TUB BUILT-IN DISHWASHER,Dishwashers,Built-in - Dishwasher,KAD,B,1,459,459,1349,1349
+KECC667BBL,"KAD 36"" RAD TT CKTP BLK","Built-in, Food Preparation",Cooktops,KAD,B,1,459,459,1349,1349
+WGD8500DW,"29"", AXIAL FLOW STEAM DRYER, GAS",Dryers,Air Vented - Dryer TL Matching,WHR,B,1,442,442,1299,1299
+KECC664BSS,"KAD 36"" RAD CKTP SS","Built-in, Food Preparation",Cooktops,KAD,B,1,425,425,1249,1249
+WTW8500DW,"VMAX, HE TOP LOAD WASHER",Washers,Vertical Axis Washer w/Impeller,WHR,B,1,408,408,1199,1199
+KDTE334GPS,FILTER SS TALL TUB BUILT-IN DISHWASHER,Dishwashers,Built-in - Dishwasher,KAD,B,1,391,391,1149,1149
+WRS322FNAM,REFRIGERATOR 22 CUFT NON IDI SXS,Free Standing Refrigerator Freezer,No Frost Side - Free Standing Refr Frez,WHR,B,1,330,330,1099,1099
+AZC31T15DW,"15' HORIZONTAL FREEZER, AMANA",Free Standing Freezer,Direct Cool Horizontal-FreeStanding Frez,AMA,B,2,187,374,549,1098
+WZC3115DW,"15' HORIZONTAL FREEZER, WHR, OPP+LOCK",Free Standing Freezer,Direct Cool Horizontal-FreeStanding Frez,WHR,B,2,187,374,549,1098
+WRT549SZDM,"19' GLASS TM, BL",Free Standing Refrigerator Freezer,No Frost Top - Free Standing Refr Frez,WHR,B,1,300,300,999,999
+KDTE104ESS,FILTER SS TALL TUB BUILT-IN DISHWASHER,Dishwashers,Built-in - Dishwasher,KAD,B,1,323,323,949,949
+KDPE234GPS,FILTER SS TALL TUB BUILT-IN DISHWASHER,Dishwashers,Built-in - Dishwasher,KAD,B,1,323,323,949,949
+WRT318FMDM,"18 FLAT GLASS FACT INST IM, SS",Free Standing Refrigerator Freezer,No Frost Top - Free Standing Refr Frez,WHR,B,1,270,270,899,899
+MVWB765FW,"VMAX, AGITATOR TOP LOAD WASHER",Washers,Vertical Axis - w/ Agitator,MAY,B,1,306,306,899,899
+WFE540H0EB,"30""FS ELEC CERAN CONV AQUALIFT","Freestanding, Food Preparation",Ranges,WHR,B,1,306,306,899,899
+MRT118FFFM,"18' TM MONO SS, FLAT, GLASS.",Free Standing Refrigerator Freezer,No Frost Top - Free Standing Refr Frez,MAY,B,1,255,255,849,849
+WZC3122DW,"22' HORIZONTAL FREEZER, WHR, OPP+LOCK+LI",Free Standing Freezer,Direct Cool Horizontal-FreeStanding Frez,WHR,B,1,289,289,849,849
+WFE520S0FS,"30"" ELEC FSR 4 TOP FAN CONVECT","Freestanding, Food Preparation",Ranges,WHR,B,1,289,289,849,849
+MDB8959SFZ,"16 MAYTAG SST TT 8959, GWS,PKT HAND-SST",Dishwashers,Built-in - Dishwasher,MAY,B,1,289,289,849,849
+WRT519SZDW,"19' GLASS TM, WH",Free Standing Refrigerator Freezer,No Frost Top - Free Standing Refr Frez,WHR,B,1,255,255,849,849
+WFG515S0ES,"30"" FS GAS SELF CLEAN","Freestanding, Food Preparation",Ranges,WHR,B,1,272,272,799,799
+WFE320M0ES,"30"" FS ELEC CERAN STD CLEAN","Freestanding, Food Preparation",Ranges,WHR,B,1,238,238,699,699
+W5CE3625AB,"WHR RADIANT CKTP 36"" BLK","Built-in, Food Preparation",Cooktops,WHR,B,1,238,238,699,699
+MZF34X16DW,"16' UPRIGHT FRZ FROST FREE,MAYTAG",Free Standing Freezer,No Frost Vert - Free Standing Frez,MAY,B,1,221,221,649,649
+WTW4816FW,TOP LOAD WASHER 3.5 PORCELAIN BSKT W/AGI,Washers,Vertical Axis - w/ Agitator,WHR,B,1,204,204,599,599
+WZC5415DW,"15' HORIZONTAL FREEZER, WHR",Free Standing Freezer,Direct Cool Horizontal-FreeStanding Frez,WHR,B,1,204,204,599,599
+WFE320M0EB,"30"" FS ELEC CERAN STD CLEAN","Freestanding, Food Preparation",Ranges,WHR,B,1,204,204,599,599
+WFC310S0ES,"30"" FS ELEC COIL SELF CLEAN","Freestanding, Food Preparation",Ranges,WHR,B,1,204,204,599,599
+W5CE3024XB,"30"" WHR RADIANT CKTP BLK","Built-in, Food Preparation",Cooktops,WHR,B,1,204,204,599,599
+MDB4949SDE,"CLASSIC, SS, GWS CHOPPER, BUILT-IN DISHW",Dishwashers,Built-in - Dishwasher,MAY,B,1,204,204,599,599
+AER6303MFB,"30""E FSR 4 TOP RADIANT STD CLN","Freestanding, Food Preparation",Ranges,AMA,B,1,187,187,549,549
+ACC6356KFB,"36"" COIL CKTP, BL","Built-in, Food Preparation",Cooktops,AMA,B,1,170,170,499,499
+NED4655EW,"AMANA 29"" ELECTRIC DRYER",Dryers,Air Vented - Dryer TL Matching,AMA,B,1,170,170,499,499
+RED4516FW,"ROPER 29"" ELECTRIC DRYER",Dryers,Air Vented - Dryer TL Matching,ROP,B,1,170,170,499,499
+WDT710PAHB,DISHWASHER-FID PLT TALL TUB FILTER,Dishwashers,Built-in - Dishwasher,WHR,B,1,170,170,499,499
+WFC150M0EW,"30"" FS ELEC COIL STD CLEAN","Freestanding, Food Preparation",Ranges,WHR,B,1,153,153,449,449
+WDF520PADB,DISHWASHER-CLASSIC PLT TALL TUB FILTER,Dishwashers,Built-in - Dishwasher,WHR,B,1,153,153,449,449
+ACC6340KFW,"30"" COIL CKTP, WH","Built-in, Food Preparation",Cooktops,AMA,B,1,102,102,299,299

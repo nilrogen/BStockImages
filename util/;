@@ -1,0 +1,56 @@
+
+class dbProperty(object):
+    def __init__(self, default, ptype, changed = False):
+        if type(defualt) is not ptype:
+            raise ValueError("Default does not match type provided")
+        self._value = default
+        self._changed = changed
+        self._ptype = ptype
+
+    @property
+    def value(self):
+        return self._value
+    @value.getter
+    def value(self):
+        return self._value
+    @value.setter
+    def value(self, val):
+        if type(val) is not self._ptype:
+            raise ValueError('Value does not match type')
+        self._value = val
+        self._changed = True
+
+    @property
+    def changed(self):
+        return self._changed
+    @changed.getter
+    def changed(self):
+        return self._changed
+
+    @property
+    def ptype(self):
+        return self._ptype
+    @ptype.getter
+    def ptype(self):
+        return self._ptype
+
+class Item(object):
+    def __init__(self):
+        self._modelnumber       = (None, False, str)
+        self._bstockcategory    = (None, False, str)
+        self._bstocksubcategory = (None, False, str)
+        self._brand             = (None, False, str)
+        self._msrp              = (None, False, float)
+        self._map               = (None, False, float)
+        self._weight            = (None, False, float)
+        self._shipweight        = (None, False, float)
+        self.imagelocation      = (None, False, str)
+        self.imagemime          = (None, False, str)
+
+
+if __name__ == '__main__':
+    v = dbProperty(12, int)
+    v.value = 23
+    print(v.changed)
+
+

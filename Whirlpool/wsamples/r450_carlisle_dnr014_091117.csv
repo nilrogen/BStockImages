@@ -1,0 +1,51 @@
+Model,Model Desc,Product Type,Product Sub-Type,Brand,Class,Qty,Price,Total Amt,MSRP,Ext. MSRP
+WFG505M0BS,"30"" GAS RANGE FW GRATE  GRIDDLE SS","Freestanding, Food Preparation",Ranges,WHR,B,5,255.0,1275.00,749.0,3745.0
+WFG515S0EW,"30"" FS GAS SELF CLEAN","Freestanding, Food Preparation",Ranges,WHR,B,5,238.0,1190.00,699.0,3495.0
+KSEG950ESS,"30"" SI RANGE DD ELEC CONV ALT CLN SS","Freestanding, Food Preparation","Slide-in, Range/Cooker",KAD,B,1,1071.0,1071.00,3149.0,3149.0
+KRSC503ESS,"REFRIGERATOR 23 CUFT CD DUAL EVAP 72""SXS",Free Standing Refrigerator Freezer,No Frost Side - Free Standing Refr Frez,KAD,B,1,900.0,900.00,2999.0,2999.0
+WOD93EC0AS,30 INCH CONV ELEC PYRO DOUBLE OVEN,"Built-in, Food Preparation",Ovens - Built-in - Food Prep,WHR,B,1,918.0,918.00,2699.0,2699.0
+WRT518SZFM,18' TM  P.STAINLESS CONTOUR GLASS,Free Standing Refrigerator Freezer,No Frost Top - Free Standing Refr Frez,WHR,B,3,255.0,765.00,849.0,2547.0
+WRX735SDBM,FRENCH DOOR PANTRY,Free Standing Refrigerator Freezer,No Frost Multi Dr -FreeStandg Refr Frez,WHR,B,1,690.0,690.00,2299.0,2299.0
+MFI2269FRZ,"33"" ICELAND EXT I&W",Free Standing Refrigerator Freezer,No Frost Multi Dr -FreeStandg Refr Frez,MAY,B,1,660.0,660.00,2199.0,2199.0
+MFI2570FEZ,BTM FRENCH DOOR - ICE2O STEALTH 25',Free Standing Refrigerator Freezer,No Frost Multi Dr -FreeStandg Refr Frez,MAY,B,1,660.0,660.00,2199.0,2199.0
+WRF560SEYM,20' FRENCH DOOR BTM MOUNT EXT WATER DISP,Free Standing Refrigerator Freezer,No Frost Multi Dr -FreeStandg Refr Frez,WHR,B,1,570.0,570.00,1899.0,1899.0
+WRF560SEYB,20' FRENCH DOOR BTM MOUNT EXT WATER DISP,Free Standing Refrigerator Freezer,No Frost Multi Dr -FreeStandg Refr Frez,WHR,B,1,540.0,540.00,1799.0,1799.0
+MBF1958FEZ,19' DRAWER BOTTOM MOUNT,Free Standing Refrigerator Freezer,No Frost Bottom-Free Standing Refr Frez,MAY,B,1,450.0,450.00,1499.0,1499.0
+WRS325FDAM,REFRIGERATOR 25 CUFT NON IDI SXS,Free Standing Refrigerator Freezer,No Frost Side - Free Standing Refr Frez,WHR,B,1,420.0,420.00,1399.0,1399.0
+WRS325FNAM,REFRIGERATOR 25 CUFT NON IDI SXS,Free Standing Refrigerator Freezer,No Frost Side - Free Standing Refr Frez,WHR,B,1,360.0,360.00,1199.0,1199.0
+WRB119WFBM,YMEDB725CGBOTTOM MOUNT,Free Standing Refrigerator Freezer,No Frost Bottom-Free Standing Refr Frez,WHR,B,1,360.0,360.00,1199.0,1199.0
+ASI2575FRS,REFRIGERATOR 25 CUFT DISP SXS,Free Standing Refrigerator Freezer,No Frost Side - Free Standing Refr Frez,AMA,B,1,360.0,360.00,1199.0,1199.0
+WFG320M0BB,"30"" GAS RANGE FW GRATE BLK","Freestanding, Food Preparation",Ranges,WHR,B,2,204.0,408.00,599.0,1198.0
+KDTE254ESS,FILTER SS TALL TUB BUILT-IN DISHWASHER,Dishwashers,Built-in - Dishwasher,KAD,B,1,391.0,391.00,1149.0,1149.0
+MER8800FZ,"30"" FS ELEC 5-BURNER TRUE CONVECT AFR SS","Freestanding, Food Preparation",Ranges,MAY,B,1,357.0,357.00,1049.0,1049.0
+WGD7300DW,"29"" WOD, LOOP FLOW STEAM DRYER, GAS",Dryers,Air Vented - Dryer TL Matching,WHR,B,1,357.0,357.00,1049.0,1049.0
+MEDB835DW,"29"", AXIAL FLOW DRYER, ELECTRIC",Dryers,Air Vented - Dryer TL Matching,MAY,B,1,340.0,340.00,999.0,999.0
+MVWB766FW,"VMAX, AGITATOR TOP LOAD WASHER",Washers,Vertical Axis - w/ Agitator,MAY,B,1,340.0,340.00,999.0,999.0
+WED85HEFW,"27"" ALPHA, ELECTRIC-DRYER",Dryers,Air Vented-Dryer FL Match,WHR,B,1,340.0,340.00,999.0,999.0
+WFE540H0ES,"30""FS ELEC CERAN CONV AQUALIFT","Freestanding, Food Preparation",Ranges,WHR,B,1,323.0,323.00,949.0,949.0
+WTW7300DW,"VMAX, HE TOP LOAD WASHER",Washers,Vertical Axis Washer w/Impeller,WHR,B,1,323.0,323.00,949.0,949.0
+CEM2745FQ,"27"" COMMERCIAL SINGLE-LOAD ELECTRIC DRYE",Dryers,"Commercial Dryer, Air Vented",WHR,B,1,306.0,306.00,899.0,899.0
+MGDX655DW,"29"" WOD, LOOP FLOW DRYER, GAS",Dryers,Air Vented - Dryer TL Matching,MAY,B,1,306.0,306.00,899.0,899.0
+MVWB765FW,"VMAX, AGITATOR TOP LOAD WASHER",Washers,Vertical Axis - w/ Agitator,MAY,B,1,306.0,306.00,899.0,899.0
+WMH32519FW,WHR MHC 1.9 CUFT SENSOR 3 SPD,MWO,"Microwave, Hood, Combination",WHR,B,3,98.0,294.00,289.0,867.0
+KDFE104DSS,FILTER SS TALL TUB BUILT-IN DISHWASHER,Dishwashers,Built-in - Dishwasher,KAD,B,1,289.0,289.00,849.0,849.0
+WRT318FZDM,"18'FLAT DR, GLASS TOP MOUNT, SS",Free Standing Refrigerator Freezer,No Frost Top - Free Standing Refr Frez,WHR,B,1,255.0,255.00,849.0,849.0
+WFG515S0ES,"30"" FS GAS SELF CLEAN","Freestanding, Food Preparation",Ranges,WHR,B,1,272.0,272.00,799.0,799.0
+AMV2307PFS,AMA MHC 1.6 CUFT 2 SPD 300 CFM,MWO,"Microwave, Hood, Combination",AMA,B,3,88.0,264.00,259.0,777.0
+MRT118FFFH,"18' TM WHITE ICE, FLAT, GLASS",Free Standing Refrigerator Freezer,No Frost Top - Free Standing Refr Frez,MAY,B,1,225.0,225.00,749.0,749.0
+WDTA50SAHZ,DISHWASHER-FID SS TALL TUB FILTER,Dishwashers,Built-in - Dishwasher,WHR,B,1,255.0,255.00,749.0,749.0
+WFE530C0EB,"30"" FS ELEC CONV SELF CLEAN","Freestanding, Food Preparation",Ranges,WHR,B,1,255.0,255.00,749.0,749.0
+WRT108FZDW,"18' FLAT DR, WIRE TM, WH",Free Standing Refrigerator Freezer,No Frost Top - Free Standing Refr Frez,WHR,B,1,225.0,225.00,749.0,749.0
+ART308FFDB,"18' FLAT DR, WIRE TM, BL",Free Standing Refrigerator Freezer,No Frost Top - Free Standing Refr Frez,AMA,B,1,210.0,210.00,699.0,699.0
+ART308FFDW,"18' FLAT DR, WIRE TM, WH",Free Standing Refrigerator Freezer,No Frost Top - Free Standing Refr Frez,AMA,B,1,210.0,210.00,699.0,699.0
+WFE515S0EB,"30"" FS ELEC SELF CLEAN","Freestanding, Food Preparation",Ranges,WHR,B,1,221.0,221.00,649.0,649.0
+MEDC215EW,"MAYTAG 29"" ELECTRIC DRYER",Dryers,Air Vented - Dryer TL Matching,MAY,B,1,221.0,221.00,649.0,649.0
+AGR6303MFS,"30"" GAS FSR 4 TOP STANDARD CLN","Freestanding, Food Preparation",Ranges,AMA,B,1,221.0,221.00,649.0,649.0
+WRT111SFDW,"11' STD, Glass RC, WH",Free Standing Refrigerator Freezer,No Frost Top - Free Standing Refr Frez,WHR,B,1,165.0,165.00,549.0,549.0
+WFC150M0EW,"30"" FS ELEC COIL STD CLEAN","Freestanding, Food Preparation",Ranges,WHR,B,1,153.0,153.00,449.0,449.0
+WDF520PADB,DISHWASHER-CLASSIC PLT TALL TUB FILTER,Dishwashers,Built-in - Dishwasher,WHR,B,1,153.0,153.00,449.0,449.0
+WMH53520CS,"CHECK SERIAL RANGE TR33500001 - TR34899999 2.0 CU. FT. MICROWAVE HOOD, SENSOR",MWO,"Microwave, Hood, Combination",WHR,B,1,1.0,1.00,419.0,419.0
+ACR4303MFW,"30"" ELEC FSR STD CLEAN COIL","Freestanding, Food Preparation",Ranges,AMA,B,1,136.0,136.00,399.0,399.0
+MMV4205FZ,2.0CU.FT. SENSOR MHC SS CAVITY,MWO,"Microwave, Hood, Combination",MAY,B,1,125.0,125.00,369.0,369.0
+WMH32519FS,HR MHC 1.9 CUFT SENSOR 3 SPD,MWO,"Microwave, Hood, Combination",WHR,B,1,115.0,115.00,339.0,339.0
+AMV2307PFW,AMA MHC 1.6 CUFT 2 SPD 300 CFM,MWO,"Microwave, Hood, Combination",AMA,B,1,68.0,68.00,199.0,199.0
