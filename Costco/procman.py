@@ -12,9 +12,26 @@ import json
 import os
 import csv
 import sys
+import threading
 
 itemjson = None
 itemlist = None
+
+def _t_run(item):
+    global itemjson
+    
+    for i in range(len(itemjson['items'])):
+        value = itemjson['items'][i]
+        if value['item-num'] == item.itemnum:
+            itemjson['items'][i] = Item.toJSON(item)
+            with open(_FNAME, 'w+') as fout:
+                json.dump(itemjson, fout, indent=4)
+            break
+
+
+def update(item):
+    pass
+    #t = threading.Thread(target=_t_run, args=(item,)).start()
 
 def setall():
     global itemjson, itemlist
@@ -40,7 +57,7 @@ def getFound():
     return applyFilter(lambda item: item.found)
 
 def getMissing():
-    return applyFilter(lambda item: not item.found)
+    return applyFilter(lambda item: not item.found and not item.searched)
 
 def findCols(csvin):
     # Take first item, return col of item # and description
@@ -129,16 +146,7 @@ def generateList(listpct):
         jsn['items'] =  list(map(lambda itm: Item.toJSON(itm), itemlist))
 
         json.dump(jsn, allitems, indent=4)
-
-#def update():
-    #global itemlist, itemjson
-    #missing = getMissing()
-    #imgs = list(map(lambda x: os.path.splitext(x)[0]), \
-                    #os.listdir(_IMAGES_PATH))
-
-    #for item in missing:
-        #if str(item.itemnum) in imgs:
-        
+    
 
 
 if __name__ == '__main__':

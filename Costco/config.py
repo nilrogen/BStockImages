@@ -20,8 +20,8 @@ def getDropboxPath():
 
 _DROPBOX_PATH = getDropboxPath()
 _COSTCO_PATH = os.path.join(_DROPBOX_PATH, 'Marketplace Images')
-#_MANIFEST_PATH = os.path.join(_DROPBOX_PATH, 'New Manifests')
-_MANIFEST_PATH = os.path.join(_COSTCO_PATH, 'Costco Manifest')
+_MANIFEST_PATH = os.path.join(_DROPBOX_PATH, 'New Manifests')
+#_MANIFEST_PATH = os.path.join(_COSTCO_PATH, 'Costco Manifest')
 _IMAGES_PATH = os.path.join(_DROPBOX_PATH, 'Local Images')
 _FNAME = os.path.join(_MANIFEST_PATH, 'AllFiles.json')
 

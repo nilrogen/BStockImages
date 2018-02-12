@@ -47,7 +47,6 @@ class bingResults(object):
         if self.matchCount() != 0:
             return self.jsn['value']
         return []
-    
     def valueCount(self):
         return len(self.values())
    
@@ -61,20 +60,3 @@ def imageSearch(query):
     with rq.get(_ADDR, fquery, headers=_headers) as request:
         #print(request.json())
         return bingResults(request.json())
-
-
-_SAVE_PATH = os.path.join(os.getenv('HOME'), 'Images')
-if __name__ == '__main__':
-    st = 'costco 922243 KS 159PC MECHANICS TOOL'
-
-    print('Querying Bing')
-    with imageSearch(st) as results:
-        print(results.ok)
-        print(results)
-        if results.ok:
-            print('Results returned')
-            with open(os.path.join(_SAVE_PATH, 'azureout.json'), 'w') as fout:
-                print('Saving JSON')
-                json.dump(results.json(), fout, indent=4)
-            
-

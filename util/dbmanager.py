@@ -3,6 +3,8 @@ from BStockImages.util.config import *
 
 import MySQLdb as sql
 
+fout = open('out.sql', 'w')
+
 class DBManager(object):
     def __init__(self, connection, mktpName):
         self.connection = connection
@@ -113,6 +115,7 @@ class DBManager(object):
 
         query = query % (cn, cv)
         self.cursor.execute(query)
+        fout.write(query + ';\n')
         self.connection.commit()
 
     def add_itemdes(self):
@@ -127,6 +130,7 @@ class DBManager(object):
         query = query % (cn, cv)
 
         self.cursor.execute(query)
+        fout.write(query + ';\n')
         self.connection.commit()
 
     def get_item(self):
@@ -184,8 +188,10 @@ class DBManager(object):
         if cc == '':
             return
         cc = cc[:-2] # get rid of ', ' at end
-        
-        self.cursor.execute(query % (cc, self.item.getSQLValue(ModelNumber)))
+
+        query = query % (cc, self.item.getSQLValue(ModelNumber))
+        fout.write(query + ';\n')
+        self.cursor.execute(query)
         self.connection.commit()
 
     def update_itemdes(self):
@@ -194,10 +200,8 @@ class DBManager(object):
         " in the table. Then add information to it that does not 
         " exist already.
         """
-        query = '''UPDATE ItemDescription
-                   SET %s
-                   WHERE ModelNumber LIKE %s
-                   AND idMarketplace = %s'''
+        query = 'UPDATE ItemDescription SET %s ' + \
+                'WHERE ModelNumber LIKE %s AND idMarketplace = %s'
 
         # Get ItemDescription from Table and add any values not present.
         # FIXME: Its possible that the way adding two items together
@@ -216,9 +220,8 @@ class DBManager(object):
             return
         cc = cc[:-2] # get rid of ', ' at end
         
-        print(query % (cc, self.item.getSQLValue(ModelNumber), self.idMarketplace))
-        self.cursor.execute(query % (cc, 
-                                     self.item.getSQLValue(ModelNumber),
-                                     self.idMarketplace))
+        query = query % (cc, self.item.getSQLValue(ModelNumber), self.idMarketplace)
+        fout.write(query + ';\n')
+        self.cursor.execute(query)
         self.connection.commit()
 

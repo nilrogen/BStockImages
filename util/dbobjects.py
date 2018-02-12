@@ -33,6 +33,8 @@ class dbProperty(object):
     def value(self, val):
         if val is not None and type(val) is not self._ptype:
             raise ValueError('Value does not match type')
+        if self._value is val:
+            return
         self._value = val
         self._changed = not self._pk
         if self._pk:

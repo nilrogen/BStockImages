@@ -63,6 +63,9 @@ class ManifestParser(object):
             for key in columns:
                 if columns[key] != -1:
                     value = row[columns[key]]
-                    retv[key] = value
+                    if value.strip() == '':
+                        retv[key] = None
+                    else:
+                        retv[key] = value
             yield retv
         raise StopIteration()
