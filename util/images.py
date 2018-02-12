@@ -3,7 +3,6 @@ import requests
 import PIL as pil
 import PIL.Image as image
 
-
 _HEADERS = {
     'User-agent' : 'Mozilla/5.0' 
 }
