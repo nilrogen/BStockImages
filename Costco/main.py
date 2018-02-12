@@ -11,7 +11,8 @@ from random import shuffle
 from urllib.parse import urlsplit
 from fuzzywuzzy import fuzz
 
-import bingimage as bi
+sys.path.append(os.getenv('HOME'))
+import BStockImages.util.bingimage as bi
 import procman as pm
 
 _SAVE_PATH = os.path.join(os.getenv('HOME'), 'Images')
@@ -53,9 +54,19 @@ def getPriority(item, value):
             retv = round(whitelist[i][1] * retv)
             wl = True
 
-    if retv < 50 or not wl:
+    """
+    try:
+        print("\nDescription: {}\nValue: {}\nQRatio: {}\nWRatio: {}\n".format( \
+            item.description, value.name(), retv, \
+            fuzz.UWRatio(item.description, value.name())))
+    except:
+        pass
+"""
+    if retv < 50:
         return -1
 
+    if not wl:  
+        return -1
     return retv
 
 def formatQueries(itm):
@@ -110,10 +121,9 @@ if __name__ == '__main__':
     vals = [ 0, 0 ] 
 
 
-    for i in range(len(itemlist)):
+    for i in range(ln):
         # take first item
         item = itemlist[i] 
-        item.searched = True
 
         best = (-1, None)
         fi, j = 0, 0
@@ -132,7 +142,6 @@ if __name__ == '__main__':
             if best[1] == None:
                 print('-', flush=True, end='')
                 sm += 1
-                pm.update(item)
                 continue
         except KeyError as e:
             print(e, type(e))
@@ -152,33 +161,25 @@ if __name__ == '__main__':
         print(' | {} - {} >'.format(fi, vals), flush=True)
 
         # Retreive results
-        try:
-            with requests.get(best[1].contentLink(), stream=True, headers=HEADERS, verify=False) as imgreq:
-                if imgreq.status_code != 200:
+        with requests.get(best[1].contentLink(), stream=True, headers=HEADERS, verify=False) as imgreq:
+            if imgreq.status_code != 200:
+                continue
+            imgreq.raw.decode_content = True
+            img = Image.open(imgreq.raw)
+
+            p = os.path.join(_SAVE_PATH, str(item.itemnum)+getExt(img.format))
+            with open(p, 'wb') as fout:
+                try:
+                    img.save(fout)
+                except OSError as e:
+                    print(e, fout)
                     continue
-                imgreq.raw.decode_content = True
-                img = Image.open(imgreq.raw)
 
-                p = os.path.join(_SAVE_PATH, str(item.itemnum)+getExt(img.format))
-                with open(p, 'wb') as fout:
-                    try:
-                        img.save(fout)
-                        item.found = True
-                        pm.update(item)
-                    except OSError as e:
-                        print(e, fout)
-                        continue
+            fmt = '{:<10} {}  |  {}  |  {}  |  {}'.format( \
+                    item.itemnum, best[0], item.description, \
+                    best[1].name(), best[1].hostLocation())
+            print(fmt)
+            sys.stdout.flush()
 
-
-                fmt = '{:<10} {}  |  {}  |  {}  |  {}'.format( \
-                        item.itemnum, best[0], item.description, \
-                        best[1].name(), best[1].hostLocation())
-                print(fmt, flush=True)
-
-                with open(os.path.join(_SAVE_PATH, 'output.txt'), 'a') as fout:
-                    fout.write(fmt)
-
-        except Exception as e:
-            print(type(e), e, item, flush=True)
-            continue
-            
+            with open(os.path.join(_SAVE_PATH, 'output.txt'), 'a') as fout:
+                fout.write(fmt)

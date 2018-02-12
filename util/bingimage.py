@@ -5,6 +5,20 @@ import json
 import os
 import urllib
 
+_KEY1 = None
+_KEY2 = None
+def getKeys():
+    import csv
+    global _KEY1, _KEY2
+    filedir = os.path.dirname(os.path.abspath(__file__))
+
+    if _KEY1 == None or _KEY2 == None:
+        with open(os.path.join(filedir,'keys.csv')) as fin:
+            reader = csv.reader(fin)
+            _KEY1 = str(next(reader)[1])
+            _KEY2 = str(next(reader)[1])
+getKeys()
+
 _ADDR = 'https://api.cognitive.microsoft.com/bing/v7.0/images/search'
 
 class bingValueResult(object):
@@ -53,7 +67,7 @@ class bingResults(object):
         return bingValueResult(self.values()[i])
 
 def imageSearch(query):
-    _headers = {'Ocp-Apim-Subscription-Key' : _KEY,
+    _headers = {'Ocp-Apim-Subscription-Key' : _KEY1,
                'User-agent' : 'Mozilla/5.0' }
     fquery = { 'q' : query } 
     with rq.get(_ADDR, fquery, headers=_headers) as request:
