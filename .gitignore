@@ -1,5 +1,7 @@
 *.pyc
 *.swp
 *.csv
+*.xlsx
+*.xls
 mainout
 __pycache__
