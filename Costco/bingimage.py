@@ -5,7 +5,6 @@ import json
 import os
 import urllib
 
-_KEY = '880be7aa25fe4978a6db1cb01a44cfb5'
 _ADDR = 'https://api.cognitive.microsoft.com/bing/v7.0/images/search'
 
 class bingValueResult(object):
