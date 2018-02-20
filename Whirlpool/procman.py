@@ -6,9 +6,9 @@ import MySQLdb as sql
 
 import BStockImages.util.manifestparser as mp
 
-from BStockImages.util.dbobjects import * 
-from BStockImages.util.dbmanager import *
-from BStockImages.util.config import *
+from BStockImages.util.db.dbobjects import * 
+from BStockImages.util.db.dbmanager import *
+from BStockImages.util.db.config import *
 
 _FILE = 'sample.csv'
 

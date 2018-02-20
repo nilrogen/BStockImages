@@ -7,7 +7,6 @@ _HEADERS = {
     'User-agent' : 'Mozilla/5.0' 
 }
 
-
 def getExt(location):
     mime = location.split('.')[-1]
     return mime

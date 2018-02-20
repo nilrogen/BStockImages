@@ -20,10 +20,12 @@ def getKeys():
 getKeys()
 
 _ADDR = 'https://api.cognitive.microsoft.com/bing/v7.0/images/search'
+_SESSION = None
 
 class bingValueResult(object):
     def __init__(self, jsn):
         self.jsn = jsn
+        self.img = None
 
     def name(self):
         return self.jsn['name']
@@ -39,13 +41,17 @@ class bingValueResult(object):
 
     def downloadImage(self):
         HEADERS = {'User-agent': 'Mozilla/5.0'}
+
+        if self.img is not None:
+            return self.img
+            
         with rq.get(self.contentLink(), stream=True, headers=HEADERS) as imgreq:
             if imgreq.status_code != 200:
                 raise Exception('Something is wrong. {} {}'.format(imgreq.status_code, self.contentLink()))
             imgreq.raw.decode_content = True
-            img = Image.open(imgreq.raw)
+            self.img = Image.open(imgreq.raw)
 
-        return img
+        return self.img
 
 class bingResults(object):
     def __init__(self, jsn):
@@ -68,8 +74,20 @@ class bingResults(object):
 
 def imageSearch(query):
     _headers = {'Ocp-Apim-Subscription-Key' : _KEY1,
-               'User-agent' : 'Mozilla/5.0' }
+                'User-agent' : 'Mozilla/5.0' }
+    global _SESSION
+
+    if not _SESSION:
+        _SESSION = rq.Session()
     fquery = { 'q' : query } 
-    with rq.get(_ADDR, fquery, headers=_headers) as request:
-        #print(request.json())
-        return bingResults(request.json())
+    retv = None
+    try:
+        with _SESSION.get(_ADDR, params=fquery, headers=_headers) as request:
+            if request.status_code == 200:
+            #print(request.json())
+                retv = bingResults(request.json())
+                return retv
+            return None
+    except Exception as e:
+        print(e, type(e), 'There was an issue with processing the json result!', flush=True)
+        raise

@@ -8,14 +8,17 @@
 from items import *
 from config import _FNAME, _MANIFEST_PATH, _IMAGES_PATH
 
+import pymongo
+
 import json
 import os
 import csv
 import sys
-import threading
 
 itemjson = None
 itemlist = None
+
+costco = None
 
 def _t_run(item):
     global itemjson
@@ -30,16 +33,20 @@ def _t_run(item):
 
 
 def update(item):
-    pass
-    #t = threading.Thread(target=_t_run, args=(item,)).start()
+    costco.find_one_and_update({ 'item-num' : item.itemnum }, \
+                               { '$set' : { 'searched' : True, \
+                                            'found' : item.found }})
 
 def setall():
-    global itemjson, itemlist
+    global itemjson, itemlist, costco
+
+    if costco == None:
+        client = pymongo.MongoClient('192.168.1.13')
+        costco = client.Items.costco
     if itemjson == None:
-        with open(_FNAME, 'r') as allitems:
-            itemjson = json.load(allitems)
+        itemjson = list(costco.find())
     if itemlist == None:
-        itemlist = list(map(Item.fromJSON, itemjson['items']))
+        itemlist = list(map(Item.fromJSON, itemjson))
     
 def getItemJson():
     setall()
