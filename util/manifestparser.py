@@ -20,15 +20,31 @@ class ManifestParser(object):
     "
     " This class works but could use some work possible.
     """ 
-    def __init__(self, fin, columndict):
+    def __init__(self, fin, columndict, default=None):
         self.reader = csv.reader(fin)
-        self.columndict = columndict
+        self.columndict = dict.fromkeys(columndict, None)
+        self.defaults = dict.fromkeys(self.columndict, default)
+        self._setColumnDefaults(columndict)
+
+
+    def _setColumnDefaults(self, columndict):
+        for key in columndict:
+            value = columndict[key]
+            if type(value) != list:
+                value = [value]
+            self.columndict[key] = []
+            for elm in value:
+                if type(elm) == tuple:
+                    self.columndict[key].append(elm[0])
+                    self.defaults[key] = elm[1]
+                else:
+                    self.columndict[key].append(elm)
 
     def getColumns(self):
         firstline = next(self.reader)
         retv = dict.fromkeys(self.columndict.keys(), -1)
 
-        for key in self.columndict.keys():
+        for key in self.columndict:
             for index in range(len(firstline)):
 
                 value = self.columndict[key]
@@ -38,11 +54,10 @@ class ManifestParser(object):
 
                 if type(value) == list:
                     for elem in value:
-                        if firstline[index] == elem.lower():
+                        if type(elem) == str and elem == firstline[index]:
                             retv[key] = index
+                        if retv[key] != -1:
                             break
-                if retv[key] != -1:
-                    break
         return retv
                     
     def close(self):
@@ -64,8 +79,10 @@ class ManifestParser(object):
                 if columns[key] != -1:
                     value = row[columns[key]]
                     if value.strip() == '':
-                        retv[key] = None
+                        retv[key] = self.defaults[key]
                     else:
                         retv[key] = value
+                else:
+                    retv[key] = self.defaults[key]
             yield retv
         raise StopIteration()

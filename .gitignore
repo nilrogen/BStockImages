@@ -3,5 +3,6 @@
 *.csv
 *.xlsx
 *.xls
+*.jpg
 mainout
 __pycache__

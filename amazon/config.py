@@ -1,6 +1,8 @@
 import sys
 import os
 
+sys.path.append(os.getenv('HOME'))
+
 ACCESS_KEY, SECRET_KEY = None, None
 
 def getKeys():

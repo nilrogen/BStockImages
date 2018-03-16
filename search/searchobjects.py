@@ -19,6 +19,22 @@ class SearchItem(object):
         self.reason = None
         self.searchresult = None
 
+    def getSearchOption(self, value):
+        """
+        This function helps the getQuery method by returning the
+        string value that the character value represents.
+        This allows users to easily define their own query options.
+        """
+        if value == 'M': 
+            return str(self.marketplace)
+        elif value == 'I':
+            return str(self.itemnumber)
+        elif value == 'B':
+            return str(self.brand)
+        elif value == 'D':
+            return str(self.description)
+        return ''
+
     def getQuery(self, options):
         """
         This function generates an appropriate query given an "options" string.
@@ -35,16 +51,12 @@ class SearchItem(object):
         """
         retv = ''
         for c in options.upper():
-            if c == 'M': 
-                retv += str(self.marketplace)
-            elif c == 'I':
-                retv += str(self.itemnumber)
-            elif c == 'B':
-                retv += str(self.brand)
-            elif c == 'D':
-                retv += str(self.description)
+            retv += self.getSearchOption(c)
             retv += ' '
         return retv[:-1]
+
+    def setReason(self, reason):
+        self.reason = reason
 
 class SearchReason(object):
     """
@@ -68,6 +80,7 @@ class SearchReason(object):
 
     def toJSON(self):
         return self.reasons
+
 
 if __name__ == '__main__':
     reason = SearchReason(False)

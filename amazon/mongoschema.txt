@@ -1,0 +1,6 @@
+Items.Amazon = {
+	'asin' : <asin>,
+	'description' : <description>,
+	'countrycode' : <cc>,
+	'brand' : <brand>,
+}

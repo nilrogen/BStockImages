@@ -49,7 +49,6 @@ class CostcoModel(SearchModel):
     def queryOptions(self):
         return [ 'MID', 'D' ] 
 
-
     def save(self, item):
         self.dbtbl.find_one_and_update( \
             { 'item-num' : item.itemnumber }, \
@@ -102,9 +101,10 @@ if __name__ == '__main__':
     items = col.find({'searched' : False, 'found' : False})
     fitem = col.find({'found' : True})
 
-    print('Found:              ', len(list(fitem)))
-    print('Remaining Items:    ', len(list(items)))
-    print('Total Items:        ', len(list(col.find())))
+    print('Found:              ', fitem.count())
+    print('Remaining Items:    ', items.count())
+    print('Processed Items:    ', col.count({'searched' : True, 'found' : False }))
+    print('Total Items:        ', col.count())
 
     """
     searchitems = list(map(toItem, items))

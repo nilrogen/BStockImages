@@ -1,3 +1,17 @@
+"""
+This module contains the classes and functions necessary to query Bing
+using Microsoft azure cognitive services. Azure keys are contained in 
+a keys.csv file, which should be added manually.
+
+Functions:
+    imageSearch - The function to use to grab images.
+Classes:
+    BingResult - Stores the results of a Bing search (a list of images and metadata)
+    BingValueResult - Stores a single image and its associated metadata
+
+@author: Michael Gorlin
+@date: 2018-02-22
+"""
 from PIL import Image 
 
 import requests as rq
@@ -23,14 +37,22 @@ _ADDR = 'https://api.cognitive.microsoft.com/bing/v7.0/images/search'
 _SESSION = None
 
 class bingValueResult(object):
+    """
+    This class stores the values of a single search result. It provides
+    methods to navigate the result structure and return the name, host
+    location, content link, and encoding for a result. It also provides
+    a function to download the image. 
+    """
     def __init__(self, jsn):
         self.jsn = jsn
         self.img = None
 
     def name(self):
+        """ The name of a result is its description """
         return self.jsn['name']
 
     def hostLocation(self):
+        """ The host location is the base url of the host """
         return urllib.parse.urlsplit(self.jsn['hostPageUrl']).netloc
 
     def contentLink(self):
@@ -72,14 +94,14 @@ class bingResults(object):
     def getValue(self, i):
         return bingValueResult(self.values()[i])
 
-def imageSearch(query):
+def imageSearch(query, cc='en-US'):
     _headers = {'Ocp-Apim-Subscription-Key' : _KEY1,
-                'User-agent' : 'Mozilla/5.0' }
+                'User-Agent' : 'Mozilla/5.0' }
     global _SESSION
 
     if not _SESSION:
         _SESSION = rq.Session()
-    fquery = { 'q' : query } 
+    fquery = { 'q' : query , 'mkt' : cc} 
     retv = None
     try:
         with _SESSION.get(_ADDR, params=fquery, headers=_headers) as request:

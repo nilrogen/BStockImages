@@ -60,11 +60,11 @@ class SearchModel(object):
 
 class SearchEngine(object):
 
-    def __init__(self, itemlist, model, maxsearch=60):
+    def __init__(self, itemlist, model, maxsearch=60, multithread=True):
         self.itemlist = itemlist
         self.model = model
         self.maxsearch = maxsearch
-        self.multithread = True
+        self.multithread = multithread
 
         self.lock = threading.Lock()
 
@@ -87,14 +87,13 @@ class SearchEngine(object):
 
         for i in range(min(search.valueCount(), self.maxsearch)):
             value = search.getValue(i)
-            # chose ratio (how good the image is) by layering
-            # the UQRatio, whitelist multiplyer, model specific selector
+            # chose ratio (how good the image is) by lay            # the UQRatio, whitelist multiplyer, model specific selector
             ratio = fuzz.UQRatio(item.description, value.name())
             ratio = self.model.checkWhitelist(value.hostLocation(), ratio)
-            ratio = self.model.preSelection(item, search, ratio)
+            ratio = self.model.preSelection(item, value, ratio)
             
             # Fix equal ratios by choosing one randomly
-            if ratio == item.reason.ratio:
+            if ratio != -1 and ratio == item.reason.ratio:
                 ratio += randint(0, 1) 
             # If ratio is higher than previous 
             if ratio > item.reason.ratio:
@@ -111,7 +110,7 @@ class SearchEngine(object):
         # Check Website
         if self.model.websiteCheck(item):
             item.reason.success = True
-            item.reason.misc = 'Website'
+            item.reason.website = True
             self.saveWebResult(item)
         
         # Test Queries
@@ -120,12 +119,19 @@ class SearchEngine(object):
             query = item.getQuery(qopt)
             item.reason.query = query
             #self.lock.acquire()
-            search = bi.imageSearch(query)
+            search = bi.imageSearch(query, cc='de-DE')
             while search is None:
                 time.sleep(.5)
                 search = bi.imageSearch(query)
             
             #self.lock.release()
+            # If no search results appear then save that result
+            if search.valueCount() == 0:
+                item.reason.success = False
+                item.reason.failedsearch = True
+                self.model.saveFailure(item)
+                return
+
             # Find best search result
             self.threadFindBestFunc(item, search)
 
