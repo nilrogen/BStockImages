@@ -3,256 +3,37 @@
     <HTTPHeaders>
       <Header Name="UserAgent" Value="Python-urllib/3.6"/>
     </HTTPHeaders>
-    <RequestId>d80e1a52-4c53-4a73-a376-0a0353d55259</RequestId>
+    <RequestId>e6a60cb2-4e3d-430a-a85c-efaca69620b2</RequestId>
     <Arguments>
       <Argument Name="AWSAccessKeyId" Value="AKIAI4VTZHYMVP26AFOQ"/>
       <Argument Name="AssociateTag" Value="nilrogen08-21"/>
-      <Argument Name="ItemId" Value="B01MZWIY1I"/>
+      <Argument Name="ItemId" Value="B01J9KLRS0"/>
       <Argument Name="ItemType" Value="ASIN"/>
       <Argument Name="Operation" Value="ItemLookup"/>
       <Argument Name="ResponseGroup" Value="Images,ItemAttributes"/>
       <Argument Name="Service" Value="AWSECommerceService"/>
-      <Argument Name="Timestamp" Value="2018-03-16T17:53:20Z"/>
+      <Argument Name="Timestamp" Value="2018-03-26T19:40:46Z"/>
       <Argument Name="Version" Value="2013-08-01"/>
-      <Argument Name="Signature" Value="yXAlrsMDwfxEA/n5Y4DmVgunyQackJi2l5a4AsDDTpI="/>
+      <Argument Name="Signature" Value="V3AWwuvvfvfHQOu6QlYVuGuSnFCnCeg8xJubvdt/YAc="/>
     </Arguments>
-    <RequestProcessingTime>0.0763130220000000</RequestProcessingTime>
+    <RequestProcessingTime>0.0544715380000000</RequestProcessingTime>
   </OperationRequest>
   <Items>
     <Request>
       <IsValid>True</IsValid>
       <ItemLookupRequest>
         <IdType>ASIN</IdType>
-        <ItemId>B01MZWIY1I</ItemId>
+        <ItemId>B01J9KLRS0</ItemId>
         <ResponseGroup>Images</ResponseGroup>
         <ResponseGroup>ItemAttributes</ResponseGroup>
         <VariationPage>All</VariationPage>
       </ItemLookupRequest>
+      <Errors>
+        <Error>
+          <Code>AWS.InvalidParameterValue</Code>
+          <Message>B01J9KLRS0 is not a valid value for ItemId. Please change this value and retry your request.</Message>
+        </Error>
+      </Errors>
     </Request>
-    <Item>
-      <ASIN>B01MZWIY1I</ASIN>
-      <ParentASIN>B01N98UHHK</ParentASIN>
-      <DetailPageURL>https://www.amazon.de/ESPRIT-Collection-Damen-Kleid-017EO1E010/dp/B01MZWIY1I?psc=1&amp;SubscriptionId=AKIAI4VTZHYMVP26AFOQ&amp;tag=nilrogen08-21&amp;linkCode=xm2&amp;camp=2025&amp;creative=165953&amp;creativeASIN=B01MZWIY1I</DetailPageURL>
-      <ItemLinks>
-        <ItemLink>
-          <Description>Add To Wishlist</Description>
-          <URL>https://www.amazon.de/gp/registry/wishlist/add-item.html?asin.0=B01MZWIY1I&amp;SubscriptionId=AKIAI4VTZHYMVP26AFOQ&amp;tag=nilrogen08-21&amp;linkCode=xm2&amp;camp=2025&amp;creative=12738&amp;creativeASIN=B01MZWIY1I</URL>
-        </ItemLink>
-        <ItemLink>
-          <Description>Tell A Friend</Description>
-          <URL>https://www.amazon.de/gp/pdp/taf/B01MZWIY1I?SubscriptionId=AKIAI4VTZHYMVP26AFOQ&amp;tag=nilrogen08-21&amp;linkCode=xm2&amp;camp=2025&amp;creative=12738&amp;creativeASIN=B01MZWIY1I</URL>
-        </ItemLink>
-        <ItemLink>
-          <Description>All Customer Reviews</Description>
-          <URL>https://www.amazon.de/review/product/B01MZWIY1I?SubscriptionId=AKIAI4VTZHYMVP26AFOQ&amp;tag=nilrogen08-21&amp;linkCode=xm2&amp;camp=2025&amp;creative=12738&amp;creativeASIN=B01MZWIY1I</URL>
-        </ItemLink>
-        <ItemLink>
-          <Description>All Offers</Description>
-          <URL>https://www.amazon.de/gp/offer-listing/B01MZWIY1I?SubscriptionId=AKIAI4VTZHYMVP26AFOQ&amp;tag=nilrogen08-21&amp;linkCode=xm2&amp;camp=2025&amp;creative=12738&amp;creativeASIN=B01MZWIY1I</URL>
-        </ItemLink>
-      </ItemLinks>
-      <SmallImage>
-        <URL>https://images-eu.ssl-images-amazon.com/images/I/417V20LKTjL._SL75_.jpg</URL>
-        <Height Units="pixels">75</Height>
-        <Width Units="pixels">50</Width>
-      </SmallImage>
-      <MediumImage>
-        <URL>https://images-eu.ssl-images-amazon.com/images/I/417V20LKTjL._SL160_.jpg</URL>
-        <Height Units="pixels">160</Height>
-        <Width Units="pixels">107</Width>
-      </MediumImage>
-      <LargeImage>
-        <URL>https://images-eu.ssl-images-amazon.com/images/I/417V20LKTjL.jpg</URL>
-        <Height Units="pixels">500</Height>
-        <Width Units="pixels">333</Width>
-      </LargeImage>
-      <ImageSets>
-        <ImageSet Category="swatch">
-          <SwatchImage>
-            <URL>https://images-eu.ssl-images-amazon.com/images/I/417V20LKTjL._SL30_.jpg</URL>
-            <Height Units="pixels">30</Height>
-            <Width Units="pixels">20</Width>
-          </SwatchImage>
-          <SmallImage>
-            <URL>https://images-eu.ssl-images-amazon.com/images/I/417V20LKTjL._SL75_.jpg</URL>
-            <Height Units="pixels">75</Height>
-            <Width Units="pixels">50</Width>
-          </SmallImage>
-          <ThumbnailImage>
-            <URL>https://images-eu.ssl-images-amazon.com/images/I/417V20LKTjL._SL75_.jpg</URL>
-            <Height Units="pixels">75</Height>
-            <Width Units="pixels">50</Width>
-          </ThumbnailImage>
-          <TinyImage>
-            <URL>https://images-eu.ssl-images-amazon.com/images/I/417V20LKTjL._SL110_.jpg</URL>
-            <Height Units="pixels">110</Height>
-            <Width Units="pixels">73</Width>
-          </TinyImage>
-          <MediumImage>
-            <URL>https://images-eu.ssl-images-amazon.com/images/I/417V20LKTjL._SL160_.jpg</URL>
-            <Height Units="pixels">160</Height>
-            <Width Units="pixels">107</Width>
-          </MediumImage>
-          <LargeImage>
-            <URL>https://images-eu.ssl-images-amazon.com/images/I/417V20LKTjL.jpg</URL>
-            <Height Units="pixels">500</Height>
-            <Width Units="pixels">333</Width>
-          </LargeImage>
-          <HiResImage>
-            <URL>https://images-eu.ssl-images-amazon.com/images/I/71oiotyL4GL.jpg</URL>
-            <Height Units="pixels">1545</Height>
-            <Width Units="pixels">1030</Width>
-          </HiResImage>
-        </ImageSet>
-        <ImageSet Category="variant">
-          <SwatchImage>
-            <URL>https://images-eu.ssl-images-amazon.com/images/I/41P3c2Xs5OL._SL30_.jpg</URL>
-            <Height Units="pixels">30</Height>
-            <Width Units="pixels">20</Width>
-          </SwatchImage>
-          <SmallImage>
-            <URL>https://images-eu.ssl-images-amazon.com/images/I/41P3c2Xs5OL._SL75_.jpg</URL>
-            <Height Units="pixels">75</Height>
-            <Width Units="pixels">50</Width>
-          </SmallImage>
-          <ThumbnailImage>
-            <URL>https://images-eu.ssl-images-amazon.com/images/I/41P3c2Xs5OL._SL75_.jpg</URL>
-            <Height Units="pixels">75</Height>
-            <Width Units="pixels">50</Width>
-          </ThumbnailImage>
-          <TinyImage>
-            <URL>https://images-eu.ssl-images-amazon.com/images/I/41P3c2Xs5OL._SL110_.jpg</URL>
-            <Height Units="pixels">110</Height>
-            <Width Units="pixels">73</Width>
-          </TinyImage>
-          <MediumImage>
-            <URL>https://images-eu.ssl-images-amazon.com/images/I/41P3c2Xs5OL._SL160_.jpg</URL>
-            <Height Units="pixels">160</Height>
-            <Width Units="pixels">107</Width>
-          </MediumImage>
-          <LargeImage>
-            <URL>https://images-eu.ssl-images-amazon.com/images/I/41P3c2Xs5OL.jpg</URL>
-            <Height Units="pixels">500</Height>
-            <Width Units="pixels">333</Width>
-          </LargeImage>
-          <HiResImage>
-            <URL>https://images-eu.ssl-images-amazon.com/images/I/71Qy-KU07TL.jpg</URL>
-            <Height Units="pixels">1545</Height>
-            <Width Units="pixels">1030</Width>
-          </HiResImage>
-        </ImageSet>
-        <ImageSet Category="variant">
-          <SwatchImage>
-            <URL>https://images-eu.ssl-images-amazon.com/images/I/41V90ryLQ%2BL._SL30_.jpg</URL>
-            <Height Units="pixels">30</Height>
-            <Width Units="pixels">20</Width>
-          </SwatchImage>
-          <SmallImage>
-            <URL>https://images-eu.ssl-images-amazon.com/images/I/41V90ryLQ%2BL._SL75_.jpg</URL>
-            <Height Units="pixels">75</Height>
-            <Width Units="pixels">50</Width>
-          </SmallImage>
-          <ThumbnailImage>
-            <URL>https://images-eu.ssl-images-amazon.com/images/I/41V90ryLQ%2BL._SL75_.jpg</URL>
-            <Height Units="pixels">75</Height>
-            <Width Units="pixels">50</Width>
-          </ThumbnailImage>
-          <TinyImage>
-            <URL>https://images-eu.ssl-images-amazon.com/images/I/41V90ryLQ%2BL._SL110_.jpg</URL>
-            <Height Units="pixels">110</Height>
-            <Width Units="pixels">73</Width>
-          </TinyImage>
-          <MediumImage>
-            <URL>https://images-eu.ssl-images-amazon.com/images/I/41V90ryLQ%2BL._SL160_.jpg</URL>
-            <Height Units="pixels">160</Height>
-            <Width Units="pixels">107</Width>
-          </MediumImage>
-          <LargeImage>
-            <URL>https://images-eu.ssl-images-amazon.com/images/I/41V90ryLQ%2BL.jpg</URL>
-            <Height Units="pixels">500</Height>
-            <Width Units="pixels">333</Width>
-          </LargeImage>
-          <HiResImage>
-            <URL>https://images-eu.ssl-images-amazon.com/images/I/71Qj2VWcIVL.jpg</URL>
-            <Height Units="pixels">1545</Height>
-            <Width Units="pixels">1030</Width>
-          </HiResImage>
-        </ImageSet>
-        <ImageSet Category="primary">
-          <SwatchImage>
-            <URL>https://images-eu.ssl-images-amazon.com/images/I/417V20LKTjL._SL30_.jpg</URL>
-            <Height Units="pixels">30</Height>
-            <Width Units="pixels">20</Width>
-          </SwatchImage>
-          <SmallImage>
-            <URL>https://images-eu.ssl-images-amazon.com/images/I/417V20LKTjL._SL75_.jpg</URL>
-            <Height Units="pixels">75</Height>
-            <Width Units="pixels">50</Width>
-          </SmallImage>
-          <ThumbnailImage>
-            <URL>https://images-eu.ssl-images-amazon.com/images/I/417V20LKTjL._SL75_.jpg</URL>
-            <Height Units="pixels">75</Height>
-            <Width Units="pixels">50</Width>
-          </ThumbnailImage>
-          <TinyImage>
-            <URL>https://images-eu.ssl-images-amazon.com/images/I/417V20LKTjL._SL110_.jpg</URL>
-            <Height Units="pixels">110</Height>
-            <Width Units="pixels">73</Width>
-          </TinyImage>
-          <MediumImage>
-            <URL>https://images-eu.ssl-images-amazon.com/images/I/417V20LKTjL._SL160_.jpg</URL>
-            <Height Units="pixels">160</Height>
-            <Width Units="pixels">107</Width>
-          </MediumImage>
-          <LargeImage>
-            <URL>https://images-eu.ssl-images-amazon.com/images/I/417V20LKTjL.jpg</URL>
-            <Height Units="pixels">500</Height>
-            <Width Units="pixels">333</Width>
-          </LargeImage>
-          <HiResImage>
-            <URL>https://images-eu.ssl-images-amazon.com/images/I/71oiotyL4GL.jpg</URL>
-            <Height Units="pixels">1545</Height>
-            <Width Units="pixels">1030</Width>
-          </HiResImage>
-        </ImageSet>
-      </ImageSets>
-      <ItemAttributes>
-        <Binding>Textilien</Binding>
-        <Brand>ESPRIT Collection</Brand>
-        <Color>Blau (Navy 400)</Color>
-        <Department>Damen</Department>
-        <EAN>4058907179226</EAN>
-        <EANList>
-          <EANListElement>4058907179226</EANListElement>
-        </EANList>
-        <Feature>Etui</Feature>
-        <Feature>Mit hochwertiger und sehr schmeichelnder Spitzenverzierung.</Feature>
-        <Feature>Passt optitmal zu jedem festlichen Anlass - Blickdicht gef&#252;ttert (mit Unterrock).</Feature>
-        <IsAdultProduct>0</IsAdultProduct>
-        <Label>ESPRIT</Label>
-        <ListPrice>
-          <Amount>9999</Amount>
-          <CurrencyCode>EUR</CurrencyCode>
-          <FormattedPrice>EUR 99,99</FormattedPrice>
-        </ListPrice>
-        <Manufacturer>ESPRIT</Manufacturer>
-        <Model>017EO1E010</Model>
-        <MPN>017EO1E010-400</MPN>
-        <PackageDimensions>
-          <Height Units="hundredths-inches">259</Height>
-          <Length Units="hundredths-inches">2283</Length>
-          <Weight Units="Hundertstel Pfund">101</Weight>
-          <Width Units="hundredths-inches">1905</Width>
-        </PackageDimensions>
-        <PackageQuantity>1</PackageQuantity>
-        <PartNumber>017EO1E010-400</PartNumber>
-        <ProductGroup>Apparel</ProductGroup>
-        <ProductTypeName>DRESS</ProductTypeName>
-        <Publisher>ESPRIT</Publisher>
-        <Size>42</Size>
-        <Studio>ESPRIT</Studio>
-        <Title>ESPRIT Collection Damen Kleid 017EO1E010 Blau (Navy 400), 42</Title>
-      </ItemAttributes>
-    </Item>
   </Items>
 </ItemLookupResponse>

@@ -25,5 +25,7 @@ _MANIFEST_PATH = os.path.join(_DROPBOX_PATH, 'New Manifests')
 _IMAGES_PATH = os.path.join(_DROPBOX_PATH, 'Local Images')
 _FNAME = os.path.join(_MANIFEST_PATH, 'AllFiles.json')
 
+__ALL__ = [getDropboxPath, _DROPBOX_PATH]
+
 if __name__ == '__main__':
    print(os.listdir(_IMAGES_PATH)) 

@@ -8,6 +8,7 @@ from BStockImages.util.images import download_image
 
 import glob
 import time
+from random import shuffle
 
 from productapi import *
 
@@ -29,15 +30,18 @@ if __name__ == '__main__':
     db = mongo.Items
     col = db.Amazon
 
-    il = ItemLookup('DE')
+    MKT = 'DE'
+
+    il = ItemLookup(MKT)
 
     fquery = { 
-        'region' : 'DE', 
+        'region' : MKT, 
         'found' : False,
         'searched' : True
     }
 
     itemlist = list(col.find(fquery))
+    shuffle(itemlist)
 
     if len(itemlist) == 0:
         exit()

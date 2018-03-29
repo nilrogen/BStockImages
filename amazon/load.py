@@ -22,9 +22,9 @@ if __name__ == '__main__':
 
 
     # Parse CR manifests
-    for fname in glob.glob('*_CR_*.csv'):
+    for fname in glob.glob('manifests/*_CR_*.csv'):
         print(fname, flush=True)
-        fin = open(fname, 'r')
+        fin = open(fname, 'r', encoding='utf-8')
         mpl = mp.ManifestParser(fin, AMZD)
 
         lst = []

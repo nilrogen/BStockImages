@@ -13,12 +13,14 @@ class ManifestParser(object):
     "
     " The format of the dictionary passed in is:
     "   <key> : <csv column name>
+    "   <key> : (<csv column name>, <default value>)
+    "   <key> : [ <list of above> ]
     " The output format is:
     "   <key> : <csv column value>
     " Where <key> is user defined (although usually a field name for
     " a table in the database. 
     "
-    " This class works but could use some work possible.
+    " Possible that it needs to handle dialects.
     """ 
     def __init__(self, fin, columndict, default=None):
         self.reader = csv.reader(fin)
