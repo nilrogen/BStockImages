@@ -1,35 +1,83 @@
-import sys, os
-sys.path.append(os.getenv('home'))
+import os, sys
+sys.path.append(os.getenv('HOME'))
 
-import BStockImages.util.manifestparser as mp
 from BStockImages.util.db.dbmongo import getClient
-from BStockImages.util.images import download_image
-from BStockImages.util.imagepulling import *
+from BStockImages.util.images import *
+import BStockImages.util.manifestparser as mp
 
-from html.parser import HTMLParser
+import glob
+import argparse
 
-import requests as rq
+from searchthd import *
+from random import shuffle
 
-from pprint import *
-
-THDPM = {
-    'price'       : Tag('span', 'id', 'ajaxPrice', 'content'),
-    'weight'      : Content('div', 'itemprop', 'weight'),
-    'description' : Content('h1', 'class', 'product-title__title'),
-    'brand'       : Content('h2', 'class', 'product-title__brand'),
-    'model'       : Content('h2', 'class', 'product_details modelNo'),
-    'gtin13'      : InsideContent('div', 'upc', 'class', 'product-title'),
-    'url'         : Tag('img', 'id', 'mainImage', 'src')
+CSVMAP = {
+    'model-num' : 'SKU',
+    'description' : 'Item Name'
 }
 
-def searchTHD(modelnum):
-    URL = 'http://www.homedepot.com/s/%s' % modelnum
-    parser = MarketplaceParser(THDPM)
+def _set(keyi, keyo, searchinfo, mapping):
+    value = searchinfo[keyi]
+    if value != 'None' and value != '':
+        mapping[keyo] = value
 
-    search_site(URL, parser)
-
-    return parser.getValues()
+def load(col):
+    for fname in glob.glob('pulled/*.csv'):
+        print(fname, end='')
+        with open(fname, 'r') as fin:
+            parser = mp.ManifestParser(fin, CSVMAP)
+            for values in parser:
+                values['found'] = False
+                values['searched'] = False
+                if col.find({'model-num' : values['model-num']}).count() == 0:
+                    col.insert(values)
+        print('+', flush=True)
 
 if __name__ == '__main__':
+    mongo = getClient()
+    db = mongo.Items
+    col = db.Homedepot
 
-    pprint(searchTHD('1000051192'))
+    parser = argparse.ArgumentParser()
+    parser.add_argument('-l', action='store_true') 
+
+    outfolder = 'images/%s.jpg'
+
+    args = parser.parse_args()
+
+    if args.l:
+        load(col)
+    
+    itemlist = list(col.find({'searched' : True, 'found' : False}))
+    shuffle(itemlist)
+    
+    for item in itemlist:
+        print('Finding: ', item['model-num'], flush=True)
+        searchinfo = searchTHD(item['model-num'])
+
+        searchinfo['model'] = searchinfo['model'].split(' ')[-1]
+
+        mapping = {}
+        _set('price', 'price', searchinfo, mapping)
+        _set('weight', 'weight', searchinfo, mapping)
+        _set('model', 'model', searchinfo, mapping)
+        _set('gtin13', 'gtin13', searchinfo, mapping)
+        _set('brand', 'brand', searchinfo, mapping)
+        _set('description', 'web-description', searchinfo, mapping)
+        mapping['categories'] = searchinfo['categories']
+
+        if len(mapping.keys()) == 1:
+            col.update({'model-num' : item['model-num']},
+                       {'$set' : {'searched' : True}})
+            continue
+
+        mapping['found'] = True
+        mapping['searched'] = True
+
+        col.update({'model-num' : item['model-num']}, {'$set' : mapping})
+
+        try:
+            img = download_image(searchinfo['url'])
+            img.save(outfolder % (item['model-num']))
+        except:
+            pass

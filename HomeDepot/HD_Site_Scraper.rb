@@ -153,7 +153,9 @@ class FileHandler
     File.open("#{LOOKUP_NAME}", "w") do |file|
       file << "sep=|\n"
       file << "UPC|Retail|Weight|Date Pulled|Desc|Brand|Model|GTIN13|URL\n"
-      @retails.each { |upc, data| file << "#{upc}|#{data[:price]}|#{data[:weight]}|#{data[:date_pulled]}|#{data[:desc]}|#{data[:brand]}|#{data[:model]}|#{data[:gtin13]}|#{data[:url]}\n" }
+      @retails.each { |upc, data| 
+        file << "#{upc}|#{data[:price]}|#{data[:weight]}|#{data[:date_pulled]}|#{data[:desc]}|#{data[:brand]}|#{data[:model]}|#{data[:gtin13]}|#{data[:url]}\n" 
+      }
     end
   end
 
@@ -181,41 +183,45 @@ class Scraper
     end
 
     begin
-      weight = page.css("div[id='specifications']").css("div[itemprop='weight']").first.text
+      weight = page.css("div[itemprop='weight']").first.text
       print "\nWeight:\t#{weight}\n"
     rescue
       weight = nil
     end
 
     begin
-      desc = page.css("div[class='product-title']").css("h1[class='product-title__title']").first.text.strip
+      desc = page.css("h1.product-title__title").first.text.strip
       print "\nDesc:\t#{desc}\n"
     rescue
       desc = nil
     end
 
     begin
-      brand = page.css("div[class='product-title']").css("h2[class='product-title__brand']").first.text.strip
+      brand = page.css("h2.product-title__brand").first.text.strip
       print "\nBrand:\t#{brand}\n"
     rescue
       brand = nil
     end
 
     begin
-      model = page.css("div[class='brandModelInfo']").css("h2[class='product_details modelNo']").first.text.strip
+      model = page.css("h2[class='product_details modelNo']").first.text.strip
       print "\nModel:\t#{model}\n"
     rescue
       model = nil
     end
 
     begin
-      gtin13 = page.css("div[class='product-title']").css("upc").text.strip
+      gtin13 = page.css("div.product-title").css("upc").text.strip
       print "\nGTIN13:\t#{gtin13}\n"
     rescue
       gtin13 = nil
     end
 
-    begin url = page.css("div[class='media__main-image'").css("src")#("div[class='media__main-image']").css("img['id=mainImg' src='!']") #{}#("div['media__main-image']")#.css(src)#.css("img['src']")#("div[class='media__main-image']").css("img['src']").first.text.strip #if this don't work try without no dang ol' quotes ###.css("img['src']")
+    cats = page.css("div#breadcrumb")
+    puts(cats)
+
+    begin 
+      url = page.css("img[id='mainImage']").first['src']
       print "\nURL:\t#{url}\n"
     rescue
       url = nil
@@ -225,5 +231,5 @@ class Scraper
   end
 end
 
-Scraper.scrape("1000051191")
+Scraper.scrape("206374433")
 

@@ -2,13 +2,6 @@ require 'csv'
 
 class ManifestParser
   def initialize(fpath, coldict, default)
-    @reader = CSV.read(
-
+    @reader = CSV.new(fpath, :headers=>true)
   end
-
-
-end
-
-CSV.foreach("test.csv") do |row|
-  
-end
+end 

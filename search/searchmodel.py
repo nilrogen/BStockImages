@@ -30,6 +30,7 @@ class SearchModel(object):
     def __init__(self, marketplace):
         self.marketplace = marketplace
         self.whitelist = { 'www.%s.com' % self.marketplace : 1 } 
+        self.descriptionmatching = True
 
     def websiteCheck(self, item):
         """
@@ -113,19 +114,21 @@ class SearchEngine(object):
             item.reason.website = True
             self.saveWebResult(item)
         
+        print('Tested Website', flush=True)
         # Test Queries
         item.reason.ratio = -1
         for qopt in self.model.queryOptions():
             query = item.getQuery(qopt)
             item.reason.query = query
             #self.lock.acquire()
-            search = bi.imageSearch(query, cc='de-DE')
+            search = bi.imageSearch(query, cc='en-US')
             while search is None:
                 time.sleep(.5)
                 search = bi.imageSearch(query)
             
             #self.lock.release()
             # If no search results appear then save that result
+            print(search.valueCount())
             if search.valueCount() == 0:
                 item.reason.success = False
                 item.reason.failedsearch = True

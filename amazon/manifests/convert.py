@@ -19,7 +19,7 @@ if __name__ == '__main__':
         xlsx = xlrd.open_workbook(fname)
         sheet = xlsx.sheet_by_index(0)
 
-        with open(name + '.csv', 'w', newline='', encoding='utf-8') as fout:
+        with open(name + '.csv', 'w', newline='', encoding='utf-7') as fout:
             writer = csv.writer(fout, quoting=csv.QUOTE_ALL)
             for i in range(sheet.nrows):
                 writer.writerow(sheet.row_values(i))
