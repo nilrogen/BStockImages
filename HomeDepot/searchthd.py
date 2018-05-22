@@ -45,7 +45,6 @@ def findCategories(html, values):
 
 def searchTHD(modelnum):
     URL = 'http://www.homedepot.com/s/%s' % modelnum
-    #webbrowser.open_new_tab(URL)h
     parser = MarketplaceParser(THDHTMLPM)
     html = search_site(URL, parser)
     

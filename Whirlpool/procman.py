@@ -95,6 +95,4 @@ if __name__ == '__main__':
     dbm = DBManager(conn, 'BestBuy')
     read_all(dbm, 'bbsamples', bbdict)
 
-
     conn.close()
-

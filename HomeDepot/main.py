@@ -10,6 +10,7 @@ import argparse
 
 from searchthd import *
 from random import shuffle
+from time import sleep
 
 CSVMAP = {
     'model-num' : 'SKU',
@@ -48,14 +49,19 @@ if __name__ == '__main__':
     if args.l:
         load(col)
     
-    itemlist = list(col.find({'searched' : True, 'found' : False}))
+    itemlist = list(col.find({'searched' : False, 'found' : False}))
     shuffle(itemlist)
     
+    i = 1
+    ilen = len(itemlist)
     for item in itemlist:
-        print('Finding: ', item['model-num'], flush=True)
+        print('(%04d/%4d) Finding: ' % (i, ilen), item['model-num'], flush=True)
+        sleep(4)
         searchinfo = searchTHD(item['model-num'])
+        i += 1
 
-        searchinfo['model'] = searchinfo['model'].split(' ')[-1]
+        if searchinfo['model']:
+            searchinfo['model'] = searchinfo['model'].split(' ')[-1]
 
         mapping = {}
         _set('price', 'price', searchinfo, mapping)

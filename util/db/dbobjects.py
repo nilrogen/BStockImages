@@ -94,9 +94,8 @@ class DBObject(object):
         if v.value is None:
             return "NULL"
         if v.ptype == str:
-            
             return "\"%s\"" % v.value.replace('\"', '\\"')
-        return "%s" % v.value
+        return str(v.value)
 
     def setValue(self, key, value):
         self.__dict__[key].value = value
