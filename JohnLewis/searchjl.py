@@ -7,7 +7,6 @@ from BStockImages.util.sitesearching import *
 
 import requests as rq
 
-
 import webbrowser
 JLHTMLP = {
     'url' : InsideAttribute('div', 'img', 'id', 'carousel-wrapper', 'src')

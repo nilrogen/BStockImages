@@ -56,7 +56,7 @@ if __name__ == '__main__':
     ilen = len(itemlist)
     for item in itemlist:
         print('(%04d/%4d) Finding: ' % (i, ilen), item['model-num'], flush=True)
-        sleep(4)
+        sleep(1)
         searchinfo = searchTHD(item['model-num'])
         i += 1
 

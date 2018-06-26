@@ -77,7 +77,7 @@ class OutputManifest:
             writer.writerows(self.values)
 
     @staticmethod
-    def get(lotnum):
+    def get(lotnum, outdir):
         global OutputManifests
         outputman = None
         for om in OutputManifests:
