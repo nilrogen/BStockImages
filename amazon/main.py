@@ -1,7 +1,11 @@
+"""
+" This script takes items from loaded into the mongodb database with load.py,
+" and queries Amazon associates for items image.
+" 
+" Author: Michael Gorlin
+"""
 import config
 import sys
-
-import BStockImages.util.manifestparser as mp
 
 from BStockImages.util.db.dbmongo import getClient
 from BStockImages.util.images import download_image
@@ -12,30 +16,19 @@ from random import shuffle
 
 from productapi import *
 
-AMZD = {
-    'asin' : 'Asin',
-    'region' : 'InventoryLocation',
-    'description' : 'ItemDesc'
-}
+MARKETS = ['EN', 'UK', 'DE', 'ES', 'FR']
 
 def getEXT(ext):
     if ext == 'JPEG':
         return 'jpg'
     elif ext == 'GIF':
         return 'gif'
-    
 
-if __name__ == '__main__':
-    mongo = getClient()
-    db = mongo.Items
-    col = db.Amazon
-
-    MKT = 'DE'
-
-    il = ItemLookup(MKT)
+def searchRegion(col, market):
+    il = ItemLookup(market)
 
     fquery = { 
-        'region' : MKT, 
+        'region' : market, 
         'found' : False,
         'searched' : True
     }
@@ -46,6 +39,7 @@ if __name__ == '__main__':
     if len(itemlist) == 0:
         exit()
 
+    print('Searching Region: %s', market)
     for item in itemlist:
         print('FINDING: ', item['asin'], item['description'], flush=True)
         # Lookup
@@ -65,7 +59,6 @@ if __name__ == '__main__':
         dimg = download_image(lvimg)
         if not dimg != None:
             continue
-
         # Save Image
         dimg.save('test/'+item['asin'] + '.' +  getEXT(dimg.format))
         dimg.close()
@@ -80,4 +73,13 @@ if __name__ == '__main__':
             }
         }
         col.update({'asin' : item['asin']}, {'$set' : reason})
+
+if __name__ == '__main__':
+    mongo = getClient()
+    db = mongo.Items
+    col = db.Amazon
+
+    for mkt in MARKETS:
+        searchRegion(mkt)
+
 

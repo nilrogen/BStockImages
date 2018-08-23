@@ -1,19 +1,32 @@
+"""
+" This file pulls item information from amazon associates.
+" It has objects to search for items based on UPC. SKU, and ASIN.
+"
+" This file uses two third party libraries:
+"   bottlenose - to query amazon associates
+"   lxml - to parse the query results
+" 
+" Author: Michael Gorlin
+"""
 from config import *
 
 from lxml import objectify, etree
-
 import bottlenose as bn
 
+# The values of this dictionary should be the amazon associates id.
 REGIONS = {
-    'US' : 'nilrogen-20', 
-    'UK' : 'nilrogen-21', 
-    'ES' : 'nilrogen0c-21',
-    'FR' : 'nilrogen07-21',
-    'DE' : 'nilrogen08-21'
+    'US' : '',
+    'UK' : '', 
+    'ES' : '',
+    'FR' : '',
+    'DE' : ''
 }
         
 class AmazonItem(object):
-            
+    """
+    " This class defines the results for each lookup. Right now it only has
+    " methods to get the item's image. 
+    """
     def __init__(self, lookup):
         self.root = objectify.fromstring(lookup)
         try:
@@ -34,6 +47,9 @@ class AmazonItem(object):
         return None
 
 class ItemLookup(object):
+    """
+    " This class has methods to lookup items from the specified region.
+    """
     def __init__(self, cc='US'):
         self.amzn = bn.Amazon(ACCESS_KEY, SECRET_KEY, REGIONS[cc], 
                               Region=cc, MaxQPS=0.9)
@@ -44,8 +60,9 @@ class ItemLookup(object):
             if not kwargs.get('ResponseGroup'):
                 kwargs['ResponseGroup'] = 'Images,ItemAttributes'
             lookup = self.amzn.ItemLookup(**kwargs)
-            with open('output.xml','wb') as fout:
-                fout.write(etree.tostring(etree.XML(lookup), pretty_print=True))
+
+            #with open('output.xml','wb') as fout:
+            #    fout.write(etree.tostring(etree.XML(lookup), pretty_print=True))
             itm = AmazonItem(lookup)
 
             return itm

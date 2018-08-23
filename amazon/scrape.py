@@ -6,9 +6,9 @@ import BStockImages.util.db.dbmongo as dbm
 import BStockImages.util.manifestparser as mp
 
 WHITELIST = { 
-   'www.amazon.com' : 1,
+   'www.amazon.com' :   1,
    'www.amazon.co.uk' : 1,
-   'www.amazon.de' : 1
+   'www.amazon.de' :    1
 }
 
 _SAVE_PATH = os.path.join(os.path.join(os.getenv('HOME'), 'Images', 'Amazon'))
